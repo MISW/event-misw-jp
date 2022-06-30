@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="https://event.misw.jp/shinkan2021/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MIS.W 2021｜MIS.W 新歓特設サイト2021" />
+    <meta
+      property="og:description"
+      content="早稲田大学最大のデジタル創作サークルである早稲田大学経営情報学会・MIS.Wの2021年度の新歓特設サイトです。"
+    />
+    <meta
+      property="og:image"
+      content="https://event.misw.jp/shinkan2021/img/og.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://event.misw.jp/shinkan2021/img/og.png"
+    />
+    <meta name="twitter:site" content="@misw_info" />
+
+    <title>MIS.W 2021｜MIS.W 新歓特設サイト2021</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- ここまでコピペ from wasesai-->
+  <body>
+    <div id="loader">
+      <div class="shutter-up"><p>創作は、青春だ――</p></div>
+      <div class="shutter-down"></div>
+    </div>
+
+    <!-- モーダルウィンドウ -->
+    <div class="modal-wrap" id="modal-prog">
+      <div class="modal-inner">
+        <div class="close-icon">
+          <span>×</span>
+        </div>
+        <div class="modal-ttl">
+          <h2>プログラミング研究会</h2>
+        </div>
+        <div class="flex">
+          <div class="flex-column">
+            <img src="img/mischan_prog.png" alt="プログラミングみすちゃん" />
+          </div>
+          <div class="flex-column">
+            <p class="modal-txt">
+              プログラミング研究会は、ゲーム制作とWeb開発をメインとして活動しているサークル員が多数所属しております。普段の活動では、チーム組んでゲームやアプリなどを開発したり、プログラミング関連の勉強会を開いたりしています。
+            </p>
+            <a href="#works-prog" class="group-btn modal-more">
+              プロ研の作品をもっと見る！
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-wrap" id="modal-cg">
+      <div class="modal-inner">
+        <div class="close-icon">
+          <span>×</span>
+        </div>
+        <div class="modal-ttl">
+          <h2>CG研究会</h2>
+        </div>
+        <div class="flex">
+          <div class="flex-column">
+            <img src="img/mischan_cg.png" alt="CGみすちゃん" />
+          </div>
+          <div class="flex-column">
+            <p class="modal-txt">
+              CG研究会は、主にイラストを制作しているサークル員が集まっています。キャラクターやゲーム用の素材、背景、動画、3DCG、印刷物やWebページのデザインなどなど！サークル員によるイラストの描き方、ツールの使い方講座も開かれています。
+            </p>
+            <a href="#works-cg" class="group-btn modal-more">
+              CG研の作品をもっと見る！
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-wrap" id="modal-midi">
+      <div class="modal-inner">
+        <div class="close-icon">
+          <span>×</span>
+        </div>
+        <div class="modal-ttl">
+          <h2>MIDI研究会</h2>
+        </div>
+        <div class="flex">
+          <div class="flex-column">
+            <img src="img/mischan_midi.png" alt="MIDIみすちゃん" />
+          </div>
+          <div class="flex-column">
+            <p class="modal-txt">
+              MIDI研究会は、DTM(作曲)をするサークル員が集まっています。定期的にコンピレーションアルバムを作ったり、サークル員が企画したゲームに使う曲を提供したり、サークル員と協力してボカロMVを作ったりしています。
+            </p>
+            <a href="#works-midi" class="group-btn modal-more">
+              MIDI研の作品をもっと見る！
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-wrap" id="modal-cg-1">
+      <div class="modal-inner">
+        <div class="close-icon">
+          <span>×</span>
+        </div>
+        <div class="modal-cg-img">
+          <img src="img/cg-1.jpg" alt="CG研究会画像１" />
+        </div>
+      </div>
+    </div>
+    <div class="modal-wrap" id="modal-cg-2-1">
+      <div class="modal-inner">
+        <div class="close-icon">
+          <span>×</span>
+        </div>
+        <div class="modal-cg-img">
+          <img src="img/cg-2-1.gif" alt="CG研究会画像２" />
+        </div>
+      </div>
+    </div>
+    <div class="modal-wrap" id="modal-cg-2-2">
+      <div class="modal-inner">
+        <div class="close-icon">
+          <span>×</span>
+        </div>
+        <div class="modal-cg-img">
+          <img src="img/cg-2-2.gif" alt="CG研究会画像２" />
+        </div>
+      </div>
+    </div>
+    <div class="modal-wrap" id="modal-cg-3">
+      <div class="modal-inner">
+        <div class="close-icon">
+          <span>×</span>
+        </div>
+        <div class="modal-cg-img">
+          <img src="img/cg-3.png" alt="CG研究会画像３" />
+        </div>
+      </div>
+    </div>
+
+    <div id="wrapper" class="wrapper">
+      <header id="header" class="header">
+        <div class="header-logo">
+          <a href="#"><img src="img/logo.png" alt="MIS.W" /></a>
+          <p>新歓2021</p>
+        </div>
+        <div class="hamburger">
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+        <div class="hamburger-wrap"></div>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#info">Information</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#special">Special</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="top-margin"></div>
+        <div><a id="toScroll" href="#about"></a></div>
+        <div><a id="backToTop" href="#"></a></div>
+
+        <section id="mv">
+          <img src="img/TOP_trimed.png" alt="メインビジュアル" />
+          <div id="mv-ttl">
+            <div class="mv-rect-white">
+              <div class="mv-rect-line mv-rect-1"></div>
+              <div class="mv-rect-line mv-rect-2"></div>
+              <div class="mv-rect-line mv-rect-3"></div>
+            </div>
+            <p class="mv-ttl-txt">MIS.W<br />新歓サイト<br />2021</p>
+            <div class="mv-rect">
+              <div class="mv-rect-line mv-rect-1"></div>
+              <div class="mv-rect-line mv-rect-2"></div>
+              <div class="mv-rect-line mv-rect-3"></div>
+            </div>
+          </div>
+          <a id="mv-btn" class="apply-btn" href="#how-to-join">入会はこちら</a>
+        </section>
+
+        <div id="container">
+          <section id="about" class="about">
+            <h1>
+              <div class="main-ttl">
+                <div class="main-ttl-letters">
+                  <span>A</span>
+                  <span>b</span>
+                  <span>o</span>
+                  <span>u</span>
+                  <span>t</span>
+                </div>
+                <div class="main-ttl-line"></div>
+                <div class="main-ttl-letters">
+                  <span>M</span>
+                  <span>I</span>
+                  <span>S</span>
+                  <span>W</span>
+                  <span>と</span>
+                  <span>は</span>
+                  <span>？</span>
+                </div>
+              </div>
+            </h1>
+            <div class="main-content-center">
+              <p class="main-txt-large">
+                <span class="marker-animation"
+                  >早稲田大学最大のデジタル創作サークルです！</span
+                >
+              </p>
+              <p class="main-txt">
+                早稲田大学経営情報学会(通称:MIS.W)は、早稲田大学最大のデジタル創作サークルです。<br />
+                サークル設立は1969年、会員数は2020年3月時点で90人以上。<br />
+                理工学部の学生のみならず、政治経済学部・商学部・文学部・文化構想学部など、<br />
+                様々な学部の学生が所属しています。<br />
+                会員は「<span class="marker-animation"
+                  >プログラミング研究会</span
+                >」・「<span class="marker-animation">CG研究会</span>」・「<span
+                  class="marker-animation"
+                  >MIDI研究会</span
+                >」の3つの研究会に所属して、<br />
+                創作活動に日々取り組んでいます。
+              </p>
+            </div>
+            <div class="group-intro">
+              <ul class="group">
+                <li id="group-prog">
+                  <div class="pointer"><img src="img/thum_prog.png" /></div>
+                </li>
+                <li id="group-cg">
+                  <div class="pointer"><img src="img/thum_cg.png" /></div>
+                </li>
+                <li id="group-midi">
+                  <div class="pointer"><img src="img/thum_midi.png" /></div>
+                </li>
+              </ul>
+              <a href="#works" class="group-btn group-btn-under">
+                各研究会の作品を見る！
+              </a>
+            </div>
+          </section>
+
+          <section id="info">
+            <h1>
+              <div class="main-ttl">
+                <div class="main-ttl-letters">
+                  <span>I</span>
+                  <span>n</span>
+                  <span>f</span>
+                  <span>o</span>
+                  <span>r</span>
+                  <span>m</span>
+                  <span>a</span>
+                  <span>t</span>
+                  <span>i</span>
+                  <span>o</span>
+                  <span>n</span>
+                </div>
+                <div class="main-ttl-line"></div>
+                <div class="main-ttl-letters">
+                  <span>活</span>
+                  <span>動</span>
+                  <span>情</span>
+                  <span>報</span>
+                </div>
+              </div>
+            </h1>
+            <div class="main-content-left">
+              <h2 class="info-ttl">
+                <span class="marker-animation"
+                  >新歓期はDiscordでオンライン活動！</span
+                >
+              </h2>
+              <div class="main-txt">
+                新型コロナウイルス感染症の影響により、現在学⽣団体への課外活動⾃粛要請が出されております。そのため通常通りのサークル活動を⾏うことが困難であり、新歓期におけるMIS.Wの活動はオンライン上で⾏います。<br />
+                MIS.W ではDiscord
+                というアプリを利⽤して、オンライン上でサークル員同⼠の交流や作業会などのサークル活動を⾏っていきます。
+              </div>
+              <div class="info-mini flex">
+                <div class="flex-column">
+                  <h4 class="info-ttl">
+                    <span>Discordとは？</span>
+                  </h4>
+                  <p>
+                    DiscordはDiscord
+                    Inc.がゲーマー向けに開発したボイスチャットアプリです。サーバーを開設することでグループ内でのチャット・⾳声通話・ビデオ通話・画⾯共有等の便利な機能を簡単に利⽤できます。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="main-content-left">
+              <h2 class="info-ttl">
+                <span class="marker-animation">オンライン期の活動時間</span>
+              </h2>
+              <div class="main-txt">
+                ・⽔曜⽇ 21:00-23:00<br />
+                ・⼟曜⽇ 14:00-17:00
+              </div>
+            </div>
+            <div class="main-content-left">
+              <h2 class="info-ttl">
+                <span class="marker-animation">オンライン活動への参加⽅法</span>
+              </h2>
+              <div class="main-txt">
+                <h3>1. 通話の準備</h3>
+                <p>
+                  ⾳声通話の際、PCやスマートフォンのスピーカーで⾳声を再⽣するとマイクが相⼿の声や⾳を拾ってしまい、反響で通話が聞き取りづらい状態になります。<br />
+                  <br />
+                  Discordで⾳声通話を⾏う際にはイヤホンやヘッドホンを接続するか、もしくはDiscord
+                  の⾳声設定の「エコー除去」をONにするようご協⼒お願いします。
+                </p>
+              </div>
+              <div class="main-txt">
+                <h3>2. MIS.W公式Twitterに連絡 & Discordに参加</h3>
+                <p>
+                  MIS.W公式TwitterにDMで「活動に参加したい（⾒学したい）」という旨をお伝えください。<br />
+                  その後、⾒学参加⽤のDiscord招待リンクを送信させていただきます。<br />
+                  <br />
+                  <span class="triangle"
+                    >MIS.W公式Twitterは<a
+                      href="https://twitter.com/misw_info"
+                      target="_blank"
+                      rel="noopener"
+                      >こちら</a
+                    ></span
+                  ><br />
+                  <br />
+                  受け取ったリンクからDiscord のMIS.W
+                  公式サーバーにアクセスしてください。すでにDiscordのアカウント登録が済んでいる⽅は、そのまま画⾯の指⽰に従ってサーバーに参加してください。<br />
+                  <br />
+                  Discordのアカウントをお持ちでない⽅は、画⾯の指⽰に従ってユーザー名（ニックネーム）を⼊⼒し、仮アカウントを作成してサーバーに参加してください。<br />
+                  <img src="img/example-1.png" alt="説明画像1" /><br />
+                  仮アカウントを作成した後、メールアドレスとパスワードを設定して本登録を⾏うと2
+                  回⽬以降の設定が不要になります。
+                  <img src="img/example-2.png" alt="説明画像2" /><br />
+                </p>
+              </div>
+              <div class="main-txt">
+                <h3>3. ボイスチャンネル「新⼊⽣はこちら」へ</h3>
+                <p>
+                  サーバーに参加したら、まずは画⾯左のサイドバーにあるチャンネルの⼀覧から「新⼊⽣はこちら」というボイスチャンネル（⾳声通話チャンネル）を
+                  クリック（タップ）してチャンネルに⼊室してください。<br />
+                  担当のサークル員がMIS.Wの紹介をさせていただきます！
+                  <img src="img/example-3.png" alt="説明画像3" /><br />
+                </p>
+              </div>
+            </div>
+            <div id="how-to-join" class="main-content-left">
+              <h2 class="info-ttl">
+                <span class="marker-animation">入会方法</span>
+              </h2>
+              <div class="main-txt">
+                <h3>1. MISW Portalにアクセスして情報を⼊⼒</h3>
+                <p>
+                  MIS.W への⼊会⼿続きは、MIS.W 専⽤のポータルサイト「MISW
+                  Portal」から⾏います。<br />
+                  下のリンクからMISW Portalにアクセスしてください。<br />
+                  <br />
+                  <span class="triangle"
+                    >MISW Portalは<a
+                      href=" https://portal.misw.jp/signup"
+                      target="_blank"
+                      rel="noopener"
+                      >こちら</a
+                    ></span
+                  ><br />
+                </p>
+                <div class="info-mini">
+                  早稲⽥⼤学以外の⼤学からのインカレの⽅については、事務⼿続き上の関係で⼀度⾯談を⾏う必要がございます。お⼿数ではございますが、会員登録の前に⼀度オンライン活動にお越しいただき、その旨をお申し付けください。<br />
+                </div>
+                <p>
+                  MISW Portal
+                  にアクセス後、画⾯の指⽰に従って会員登録フォームから情報を⼊⼒してください。
+                  <img src="img/example-4.png" alt="説明画像4  " /><br />
+                </p>
+              </div>
+              <div class="main-txt">
+                <h3>2. メール認証 & ⼊会費の⽀払い</h3>
+                <p>
+                  会員登録フォームに⼊⼒したメールアドレス宛にアカウント認証⽤のメールが送信されます。メールの指⽰に従ってアカウントの認証を⾏ってください。<br />
+                  アカウントの認証後、⼊会費の⽀払いに移ります。画⾯の指⽰に従って、MIS.W
+                  の銀⾏⼝座へ⼊会費1000
+                  円の振り込みを⾏ってください。（振込⼿数料はご⾃⾝でのご負担となりますのでご了承ください。）
+                </p>
+              </div>
+              <div class="main-txt">
+                <h3>3. MIS.WのSlackへ参加</h3>
+                <p>
+                  振り込みが確認され次第、会員登録フォームに⼊⼒したメールアドレス宛にMIS.WのSlackへの招待メールが送信されます。
+                  <br />
+                  招待メールからSlackに参加し、MIS.Wへの⼊会⼿続きは全て完了です。
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="schedule">
+            <h1>
+              <div class="main-ttl">
+                <div class="main-ttl-letters">
+                  <span>S</span>
+                  <span>c</span>
+                  <span>h</span>
+                  <span>e</span>
+                  <span>d</span>
+                  <span>u</span>
+                  <span>l</span>
+                  <span>e</span>
+                </div>
+                <div class="main-ttl-line"></div>
+                <div class="main-ttl-letters">
+                  <span>活</span>
+                  <span>動</span>
+                  <span>予</span>
+                  <span>定</span>
+                </div>
+              </div>
+            </h1>
+            <div class="main-content-center">
+              <p class="main-txt">
+                新歓イベントのスケジュールは、決まり次第掲載いたします。<br />
+                最新情報は、公式Twitterをチェック！<br />
+                <br />
+                <span class="triangle"
+                  >MIS.W公式Twitterは<a
+                    href="https://twitter.com/misw_info"
+                    target="_blank"
+                    rel="noopener"
+                    >こちら</a
+                  ></span
+                >
+              </p>
+              <div class="schedule-list">
+                <div class="schedule-list-line"></div>
+                <div class="schedule-list-box">
+                  <div class="for-mobile">
+                    <div class="schedule-list-date">
+                      <p class="schedule-list-date-month">04</p>
+                      <div class="schedule-list-date-line"></div>
+                      <p class="schedule-list-date-day">03</p>
+                    </div>
+                    <div class="schedule-list-thum">
+                      <img src="img/mislogo.ico" />
+                    </div>
+                  </div>
+                  <div class="schedule-list-content">
+                    <div class="schedule-list-ttl">サークル説明会</div>
+                    <!-- <div class="schedule-list-txt">イベント内容の説明<br />イベント内容の説明<br />2～3行に収まってほしい</div> -->
+                    <div class="schedule-list-groupList">
+                      <span class="schedule-list-group">プログラミング</span>
+                      <span class="schedule-list-group">CG</span>
+                      <span class="schedule-list-group">MIDI</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-list-line"></div>
+                <div class="schedule-list-box">
+                  <div class="for-mobile">
+                    <div class="schedule-list-date">
+                      <p class="schedule-list-date-month">04</p>
+                      <div class="schedule-list-date-line"></div>
+                      <p class="schedule-list-date-day">07</p>
+                    </div>
+                    <div class="schedule-list-thum">
+                      <img src="img/mislogo.ico" />
+                    </div>
+                  </div>
+                  <div class="schedule-list-content">
+                    <div class="schedule-list-ttl">サークル説明会</div>
+                    <!-- <div class="schedule-list-txt">イベント内容の説明<br />イベント内容の説明<br />2～3行に収まってほしい</div> -->
+                    <div class="schedule-list-groupList">
+                      <span class="schedule-list-group">プログラミング</span>
+                      <span class="schedule-list-group">CG</span>
+                      <span class="schedule-list-group">MIDI</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-list-line"></div>
+                <div class="schedule-list-box">
+                  <div class="for-mobile">
+                    <div class="schedule-list-date">
+                      <p class="schedule-list-date-month">04</p>
+                      <div class="schedule-list-date-line"></div>
+                      <p class="schedule-list-date-day">10</p>
+                    </div>
+                    <div class="schedule-list-thum">
+                      <img src="img/mischan_prog.png" />
+                    </div>
+                  </div>
+                  <div class="schedule-list-content">
+                    <div class="schedule-list-ttl">プロ研講座</div>
+                    <!-- <div class="schedule-list-txt">イベント内容の説明<br />イベント内容の説明<br />2～3行に収まってほしい</div> -->
+                    <div class="schedule-list-groupList">
+                      <span class="schedule-list-group">プログラミング</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-list-line"></div>
+                <div class="schedule-list-box">
+                  <div class="for-mobile">
+                    <div class="schedule-list-date">
+                      <p class="schedule-list-date-month">04</p>
+                      <div class="schedule-list-date-line"></div>
+                      <p class="schedule-list-date-day">14</p>
+                    </div>
+                    <div class="schedule-list-thum">
+                      <img src="img/mischan_cg.png" />
+                    </div>
+                  </div>
+                  <div class="schedule-list-content">
+                    <div class="schedule-list-ttl">CG研講座</div>
+                    <!-- <div class="schedule-list-txt">イベント内容の説明<br />イベント内容の説明<br />2～3行に収まってほしい</div> -->
+                    <div class="schedule-list-groupList">
+                      <span class="schedule-list-group">CG</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-list-line"></div>
+                <div class="schedule-list-box">
+                  <div class="for-mobile">
+                    <div class="schedule-list-date">
+                      <p class="schedule-list-date-month">04</p>
+                      <div class="schedule-list-date-line"></div>
+                      <p class="schedule-list-date-day">17</p>
+                    </div>
+                    <div class="schedule-list-thum">
+                      <img src="img/mischan_midi.png" />
+                    </div>
+                  </div>
+                  <div class="schedule-list-content">
+                    <div class="schedule-list-ttl">midi研講座</div>
+                    <!-- <div class="schedule-list-txt">イベント内容の説明<br />イベント内容の説明<br />2～3行に収まってほしい</div> -->
+                    <div class="schedule-list-groupList">
+                      <span class="schedule-list-group">MIDI</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-list-line"></div>
+                <div class="schedule-list-box">
+                  <div class="for-mobile">
+                    <div class="schedule-list-date">
+                      <p class="schedule-list-date-month">04</p>
+                      <div class="schedule-list-date-line"></div>
+                      <p class="schedule-list-date-day">21</p>
+                    </div>
+                    <div class="schedule-list-thum">
+                      <img src="img/mischan_prog.png" />
+                    </div>
+                  </div>
+                  <div class="schedule-list-content">
+                    <div class="schedule-list-ttl">プロ研講座</div>
+                    <!-- <div class="schedule-list-txt">イベント内容の説明<br />イベント内容の説明<br />2～3行に収まってほしい</div> -->
+                    <div class="schedule-list-groupList">
+                      <span class="schedule-list-group">プログラミング</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-list-line"></div>
+                <div class="schedule-list-box">
+                  <div class="for-mobile">
+                    <div class="schedule-list-date">
+                      <p class="schedule-list-date-month">04</p>
+                      <div class="schedule-list-date-line"></div>
+                      <p class="schedule-list-date-day">24</p>
+                    </div>
+                    <div class="schedule-list-thum">
+                      <img src="img/mischan_cg.png" />
+                    </div>
+                  </div>
+                  <div class="schedule-list-content">
+                    <div class="schedule-list-ttl">CG研講座</div>
+                    <!-- <div class="schedule-list-txt">イベント内容の説明<br />イベント内容の説明<br />2～3行に収まってほしい</div> -->
+                    <div class="schedule-list-groupList">
+                      <span class="schedule-list-group">CG</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-list-line"></div>
+                <div class="schedule-list-box">
+                  <div class="for-mobile">
+                    <div class="schedule-list-date">
+                      <p class="schedule-list-date-month">04</p>
+                      <div class="schedule-list-date-line"></div>
+                      <p class="schedule-list-date-day">28</p>
+                    </div>
+                    <div class="schedule-list-thum">
+                      <img src="img/mischan_midi.png" />
+                    </div>
+                  </div>
+                  <div class="schedule-list-content">
+                    <div class="schedule-list-ttl">midi研講座</div>
+                    <!-- <div class="schedule-list-txt">イベント内容の説明<br />イベント内容の説明<br />2～3行に収まってほしい</div> -->
+                    <div class="schedule-list-groupList">
+                      <span class="schedule-list-group">MIDI</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-list-line"></div>
+                <div class="schedule-list-box">
+                  <div class="for-mobile">
+                    <div class="schedule-list-date">
+                      <p class="schedule-list-date-month">05</p>
+                      <div class="schedule-list-date-line"></div>
+                      <p class="schedule-list-date-day">01</p>
+                    </div>
+                    <div class="schedule-list-thum">
+                      <img src="img/mislogo.ico" />
+                    </div>
+                  </div>
+                  <div class="schedule-list-content">
+                    <div class="schedule-list-ttl">新歓発表会</div>
+                    <!-- <div class="schedule-list-txt">イベント内容の説明<br />イベント内容の説明<br />2～3行に収まってほしい</div> -->
+                    <div class="schedule-list-groupList">
+                      <span class="schedule-list-group">プログラミング</span>
+                      <span class="schedule-list-group">CG</span>
+                      <span class="schedule-list-group">MIDI</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-list-line"></div>
+                <div class="schedule-list-box">
+                  <div class="for-mobile">
+                    <div class="schedule-list-date">
+                      <p class="schedule-list-date-month">05</p>
+                      <div class="schedule-list-date-line"></div>
+                      <p class="schedule-list-date-day">05</p>
+                    </div>
+                    <div class="schedule-list-thum">
+                      <img src="img/mislogo.ico" />
+                    </div>
+                  </div>
+                  <div class="schedule-list-content">
+                    <div class="schedule-list-ttl">新歓発表会</div>
+                    <!-- <div class="schedule-list-txt">イベント内容の説明<br />イベント内容の説明<br />2～3行に収まってほしい</div> -->
+                    <div class="schedule-list-groupList">
+                      <span class="schedule-list-group">プログラミング</span>
+                      <span class="schedule-list-group">CG</span>
+                      <span class="schedule-list-group">MIDI</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-list-line"></div>
+              </div>
+            </div>
+          </section>
+
+          <section id="works">
+            <h1>
+              <div class="main-ttl">
+                <div class="main-ttl-letters">
+                  <span>W</span>
+                  <span>o</span>
+                  <span>r</span>
+                  <span>k</span>
+                  <span>s</span>
+                </div>
+                <div class="main-ttl-line"></div>
+                <div class="main-ttl-letters">
+                  <span>作</span>
+                  <span>品</span>
+                  <span>集</span>
+                </div>
+              </div>
+            </h1>
+            <div id="works-prog" class="main-content-left">
+              <h2 class="info-ttl">
+                <span class="marker-animation">プログラミング研究会</span>
+              </h2>
+              <div class="flex align-bottom">
+                <div class="main-txt">
+                  <a
+                    href="https://unityroom.com/games/hammersurvival"
+                    target="_blank"
+                    rel="noopener"
+                    ><img
+                      src="img/prog-1.jpeg"
+                      alt="プログラミング研究会画像１"
+                  /></a>
+                  <p>
+                    作者: ヘビ<br />ゲーム名: Hammer Survival<br />
+                    <span class="triangle"
+                      ><a
+                        href="https://unityroom.com/games/hammersurvival"
+                        target="_blank"
+                        rel="noopener"
+                        >遊ぶ</a
+                      ></span
+                    >
+                  </p>
+                </div>
+                <div class="main-txt">
+                  <a
+                    href="https://github.com/HarrisonKawagoe3960X/TrainSimulator2020"
+                    target="_blank"
+                    rel="noopener"
+                    ><img src="img/prog-2.png" alt="プログラミング研究会画像２"
+                  /></a>
+                  <p>
+                    作者: HarrisonKawagoe<br />ゲーム名: 鉄道企画2020<br />
+                    <span class="triangle"
+                      ><a
+                        href="https://github.com/HarrisonKawagoe3960X/TrainSimulator2020"
+                        target="_blank"
+                        rel="noopener"
+                        >遊ぶ</a
+                      ></span
+                    >
+                  </p>
+                </div>
+                <div class="main-txt">
+                  <a
+                    href="https://t-sum-u.github.io/T-SUM-U/Games/Tenkaiki/index.html"
+                    target="_blank"
+                    rel="noopener"
+                    ><img src="img/prog-3.png" alt="プログラミング研究会画像３"
+                  /></a>
+                  <p>
+                    作者: T_SUM_U<br />ゲーム名: 転回帰<br />
+                    <span class="triangle"
+                      ><a
+                        href="https://t-sum-u.github.io/T-SUM-U/Games/Tenkaiki/index.html"
+                        target="_blank"
+                        rel="noopener"
+                        >遊ぶ</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="works-cg" class="main-content-left">
+              <h2 class="info-ttl">
+                <span class="marker-animation">CG研究会</span>
+              </h2>
+              <div class="flex align-bottom">
+                <div class="main-txt">
+                  <div id="cg-pic-1" class="pointer">
+                    <img src="img/cg-1.jpg" alt="CG研究会画像１" />
+                  </div>
+                  <p>作者: 藤汐<br /></p>
+                </div>
+                <div class="main-txt">
+                  <div id="cg-pic-2-1" class="pointer">
+                    <img src="img/cg-2-1.gif" alt="CG研究会画像２ー１" />
+                  </div>
+                  <div id="cg-pic-2-2" class="pointer">
+                    <img src="img/cg-2-2.gif" alt="CG研究会画像２ー２" />
+                  </div>
+                  <p>作者: サカモト<br /></p>
+                </div>
+                <div class="main-txt">
+                  <div id="cg-pic-3" class="pointer">
+                    <img src="img/cg-3.png" alt="CG研究会画像３" />
+                  </div>
+                  <p>作者: ゆちぇ<br /></p>
+                </div>
+              </div>
+            </div>
+            <div id="works-midi" class="main-content-left">
+              <h2 class="info-ttl">
+                <span class="marker-animation">MIDI研究会</span>
+              </h2>
+              <div class="main-txt">
+                <div class="video">
+                  <iframe
+                    src="https://www.youtube.com/embed/8aLerNel33I"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>作者: タニシ</p>
+              </div>
+              <div class="main-txt">
+                <div>
+                  <audio src="img/Morning.ogg" controls></audio>
+                </div>
+                <p>作者: みかたけ<br />曲名: Morning</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="special">
+            <h1>
+              <div class="main-ttl">
+                <div class="main-ttl-letters">
+                  <span>S</span>
+                  <span>p</span>
+                  <span>e</span>
+                  <span>c</span>
+                  <span>i</span>
+                  <span>a</span>
+                  <span>l</span>
+                </div>
+                <div class="main-ttl-line"></div>
+                <div class="main-ttl-letters">
+                  <span>新</span>
+                  <span>歓</span>
+                  <span>企</span>
+                  <span>画</span>
+                </div>
+              </div>
+            </h1>
+            <div class="main-content-left">
+              <h2 class="info-ttl">
+                <span class="marker-animation">CG研究会</span>
+              </h2>
+              <div class="main-txt">
+                <a href="special-cg.html" class="special-cg-thum"
+                  ><img src="img/head.jpg" alt="新歓画集2021"
+                /></a>
+              </div>
+            </div>
+            <div class="main-content-left">
+              <h2 class="info-ttl">
+                <span class="marker-animation">MIDI研究会</span>
+              </h2>
+              <div class="main-txt">
+                <iframe
+                  scrolling="no"
+                  frameborder="no"
+                  allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1019774935&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                ></iframe>
+                <div
+                  style="
+                    font-size: 10px;
+                    color: #cccccc;
+                    line-break: anywhere;
+                    word-break: normal;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+                      Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+                    font-weight: 100;
+                  "
+                >
+                  <a
+                    href="https://soundcloud.com/mis-w"
+                    title="MIS.W"
+                    target="_blank"
+                    style="color: #cccccc; text-decoration: none"
+                    >MIS.W</a
+                  >
+                  ·
+                  <a
+                    href="https://soundcloud.com/mis-w/2021opening"
+                    title="[2021年度新歓]OPENING!"
+                    target="_blank"
+                    style="color: #cccccc; text-decoration: none"
+                    >[2021年度新歓]OPENING!</a
+                  >
+                </div>
+                <p>
+                  <span class="triangle"
+                    >新歓コンピダウンロードは<a
+                      href="https://drive.google.com/drive/folders/1xCO8b4GJzO7xonVAwoxO-KH0ayPrlKAu?usp=sharing"
+                      target="_blank"
+                      rel="noopener"
+                      >こちら</a
+                    ></span
+                  ><br />
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer id="footer">
+        <div class="credits flex-column">
+          <h2>MIS.W 新歓特設サイト2021</h2>
+          <div class="flex">
+            <div class="flex-column main-content-center">
+              <p>Web Design & Illustration</p>
+              <p class="main-txt-large">Maiな</p>
+            </div>
+            <div class="flex-column main-content-center">
+              <p>Illustration</p>
+              <p class="main-txt-large">ささみ</p>
+            </div>
+          </div>
+          <div class="links main-content-center">
+            <a href="https://misw.jp/" target="_blank" rel="noopener"
+              ><img
+                src="img/mislogo.ico"
+                alt="MIS.Wアイコン"
+              />MISW公式サイト</a
+            >
+            <a
+              href="https://twitter.com/misw_info"
+              target="_blank"
+              rel="noopener"
+              >twitter</a
+            >
+          </div>
+          <div class="social-area-syncer main-content-center">
+            <p>SHARE</p>
+            <ul class="flex">
+              <li>
+                <a
+                  target="_blank"
+                  href="http://twitter.com/share?url=https://event.misw.jp/shinkan2021/&text=MIS.W 2021｜MIS.W 新歓特設サイト2021&related=misw_info"
+                >
+                  <i class="twitter fab fa-twitter-square fa-3x"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="http://line.me/R/msg/text/?MIS.W 2021｜MIS.W 新歓特設サイト2021 https://event.misw.jp/shinkan2021/"
+                >
+                  <i class="line fab fa-line fa-3x"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://event.misw.jp/shinkan2021/"
+                  class="icon__share"
+                >
+                  <i class="facebook fab fa-facebook-square fa-3x"></i>
+                </a>
+              </li>
+            </ul>
+            <div id="fb-root"></div>
+            <script
+              async
+              defer
+              crossorigin="anonymous"
+              src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v10.0"
+              nonce="5rC6E0YM"
+            ></script>
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+            <script
+              src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"
+              async="async"
+              defer="defer"
+            ></script>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
