@@ -29,7 +29,9 @@
             $('#wrap').css('display', 'block');
         });
         $(function () {
-            setTimeout(stopload(), 10000);
+            setTimeout(()=>{ 
+                stopload(); 
+            }, 10000);
         });
         function stopload() {
             $('#loader-bg').delay(900).fadeOut(800);
