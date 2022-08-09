@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="https://event.misw.jp/c100/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MIS.W c100特設サイト" />
+    <meta property="og:description" content="夏コミにMIS.Wが参戦!" />
+    <meta property="og:image" content="https://event.misw.jp/c100/images/og.png" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://event.misw.jp/c100/images/og.png" />
+    <meta name="twitter:site" content="@misw_info">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MIS.W 夏コミ特設ページ</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var h = $(window).height();
+            $('#wrap').css('display', 'none');
+            $('#loader-bg ,#loader').height(h).css('display', 'block');
+        });
+        $(window).load(function () {
+            $('#loader-bg').delay(900).fadeOut(800);
+            $('#loader').delay(600).fadeOut(300);
+            $('#wrap').css('display', 'block');
+        });
+        $(function () {
+            setTimeout(()=>{ 
+                stopload(); 
+            }, 10000);
+        });
+        function stopload() {
+            $('#loader-bg').delay(900).fadeOut(800);
+            $('#loader').delay(600).fadeOut(300);
+            $('#wrap').css('display', 'block');
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="loader-bg">
+        <div id="loader">
+            <p>Now Loading...</p>
+        </div>
+    </div>
+    <div id="wrap">
+        <header>
+            <div>
+                <a target="_blank" href="https://misw.jp/"><img src="images/MISW_logo_v.png" class="header-logo"
+                        alt="logo" /></a>
+            </div>
+        </header>
+        <main>
+            <section class="top">
+                <div class="top-bg"></div>
+
+                <div class="top-title">
+                    <h1>MIS.W</h1>
+                    <h1>COMIC MARKET 100</h1>
+                    <h1>SUMMER</h1>
+                </div>
+                <div class="top-info">
+                    <h1>DATE&nbsp;: Day1&nbsp;&nbsp;8/13 (Sat)</h1>
+                    <h1>PLACE : 東ホール "Q" 20-b</h1>
+                </div>
+                <div class="top-img"></div>
+                <div class="scroll">
+                    <p>scroll</p>
+                    <div class="bar"></div>
+                </div>
+            </section>
+            <section class="distribution">
+                <h1 class="title">DISTRIBUTION</h1>
+                <p class="title-sub">頒布物</p>
+                <div class="container">
+                    <div class="item1">
+                        <img src="images/cg_book.png" alt="画集表紙" />
+                        <p class="goods-name">CG研画集<span>「MISHMASH」</span></p>
+                        <p class="price">free</p>
+                        <ul>
+                            <li>
+                                総勢28名によるテーマ未設定、なんでもありの作品集です。
+                            </li>
+                            <li>
+                                多彩な作品の数々をぜひお楽しみください！
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item2">
+                        <img src="images/cd_jacket.png" alt="アルバム表紙" />
+                        <p class="goods-name">MIDI研アルバム<span>「MIS.WORKs Vol.1」</span></p>
+                        <p class="price">free</p>
+                        <ul>
+                            <li>
+                                MIDI研究会の全個性、ここに集結！！！
+                            </li>
+                            <li>
+                                しっとりなボカロ曲からイケイケなエレクトリックまで完全網羅。このアルバムを聴かずしてMIS.Wは語れない、そんなアルバムに仕上げました！！
+                            </li>
+                        </ul>
+                        <div class="btn">
+                            <!-- <a target="_blank" href="https://soundcloud.com/mis-w/first-love"> -->
+                                <i class="soundcloud fab fa-soundcloud fa-fw"></i>
+                                <p>試聴ページ</p>
+                            <!-- </a> -->
+                        </div>
+                    </div>
+                    <div class="item3">
+                        <img src="images/pro_game.png" alt="画集表紙" />
+                        <p class="goods-name">プロ研ゲーム集<span>「<!-- ぴよ -->」</span></p>
+                        <p class="price">free</p>
+                        <ul>
+                            <li>
+                                プロ研による丹精込めて作られたゲーム集
+                            </li>
+                            <li>
+                                <!-- ぴよぴよぴよぴよぴよ -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="information">
+                <div class="info-bg"></div>
+                <h1 class="title">PROFILE</h1>
+                <p class="title-sub">What is MIS.W?</p>
+                <div class="content">
+                    <p class="top-content">
+                        mis.wは早稲田大学最大のデジタル創作サークルです。
+                    </p>
+                    <p>
+                        活動内容はイラスト・DTM・プログラミングをはじめ、3Dモデリングやインフラシステム構築など多岐に渡ります。
+                    </p>
+                    <p>
+                        今回の夏コミでは土曜日東Ｑ20bにて、サークル員が制作した画集・アルバム・ゲームを無料頒布します。
+                    </p>
+                    <p>是非お手に取ってご覧ください。</p>
+                    <div class="content-link">
+                        <div class="btn2 mis-official">
+                            <a target="_blank" href="https://misw.jp/"><img class="mis_ico" src="images/mis_icon.png"
+                                    alt="" />
+                                <p>公式サイト</p>
+                            </a>
+                        </div>
+                        <div class="btn2 twitter-official">
+                            <a target="_blank" class=" twitter-color" href="https://twitter.com/misw_info"><i
+                                    class="link-twitter fab fa-twitter"></i>
+                                <p>公式Twitter</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="share">
+                    <p>share</p>
+                    <ul>
+                        <li>
+                            <a target="_blank"
+                                href="http://twitter.com/share?url=https://event.misw.jp/c100/&text=MIS.W 2022｜MIS.W 夏コミ特設サイト2022&related=misw_info">
+                                <i class="twitter fab fa-twitter-square fa-3x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="http://line.me/R/msg/text/?MIS.W 2022｜MIS.W 夏コミ特設サイト2022 https://event.misw.jp/c100/">
+                                <i class="line fab fa-line fa-3x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https://event.misw.jp/c100/"
+                                class="icon__share">
+                                <i class="facebook fab fa-facebook-square fa-3x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="staff">
+                    <div class="designer">
+                        <p>webdesign</p>
+                        <p>たまかけ</p>
+                    </div>
+                    <div class="illustrator">
+                        <p>illust</p>
+                        <p>那由他の翁</p>
+                        <p>たまかけ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>© 2022 MIS.W</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
