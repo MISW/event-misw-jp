@@ -10,7 +10,7 @@ RUN pnpm i --frozen-lockfile --dev
 
 RUN pnpm sass:build
 
-RUN rm -rf node_modules/
+RUN rm -rf ./node_modules/
 
 RUN pnpm i --frozen-lockfile --prod
 
