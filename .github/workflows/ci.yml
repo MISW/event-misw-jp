@@ -22,11 +22,9 @@ jobs:
     - name: Install Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 16.x
+        node-version: 18
         cache: 'pnpm'
     - name: Install dependencies
       run: pnpm i --frozen-lockfile --dev
     - name: Build Sass
       run: pnpm sass:build
-    - name: Build the Docker image
-      run: docker build . -t misw:event-misw-jp
