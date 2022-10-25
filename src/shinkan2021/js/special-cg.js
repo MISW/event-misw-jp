@@ -52,19 +52,6 @@ $(function() {
       $(_this).find('.main-ttl-letters span').addClass('ttl-anime-letters');
       $(_this).find('.main-ttl-line').addClass('ttl-anime-line');
       $(_this).children('*').each(function(i) {
-        ScrollReveal().reveal(this, {
-          delay: 60*i,
-          viewFactor: 0.1,
-          duration: 250,
-          origin: 'bottom',
-          distance: '20px',
-          reset: false,
-          afterReveal: function(_this) {
-            $(_this).find(".marker-animation").each(function(){
-              $(this).addClass('active');
-            });
-          },
-        })
       });
       $(_this).children('*').css('opacity', '1');
     }
@@ -74,17 +61,6 @@ $(function() {
       $(_this).children('*').css('visibility', 'hidden');
       $(_this).children('*').css('opacity', '1');
     }
-
-    ScrollReveal().reveal(this, {
-      viewFactor: 0.0,
-      duration: 800,
-      origin: 'bottom',
-      distance: '40px',
-      reset: false,
-      afterReveal: afterSectionRevealed, //()をつけてはだめ
-      afterReset: afterSectionReseted,
-      beforeReveal: beforeSectionRevealed
-    });
   });
 
   //スクロール関連
