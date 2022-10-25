@@ -78,12 +78,10 @@ $(window).on('load', function () {
 });
 
 $(function() {
-  var h = $(window).height(); //windowの高さ(px) 1vh = h/100(px);
-
-  //フェードイン
-  $('#container > section').not('#mv').each(function () {
-    //タイトルのアニメーション
-    var windowWidth = window.innerWidth;
+  $(window).scroll(function() {
+    //スクロール関連
+    var h = $(window).height(); //windowの高さ(px) 1vh = h/100(px);
+  
     function beforeSectionRevealed(_this) {
       $(_this).children('*').css('visibility', 'hidden');
       $(_this).children('*').css('opacity', '1');
@@ -95,14 +93,7 @@ $(function() {
       });
       $(_this).removeAttr('style');
     }
-    function afterSectionReseted (_this) {
-      $(_this).find('.main-ttl-letters span').removeClass('ttl-anime-letters');
-      $(_this).find('.main-ttl-line').removeClass('ttl-anime-line');
-    }
-  });
 
-  //スクロール関連
-  $(window).scroll(function() {
     //パララックス
     var scr = $(window).scrollTop(); //スクロールの値を取得(px)
     var ttl_top = scr / (h/100) / 6;
@@ -123,23 +114,32 @@ $(function() {
     $('main section').each(function () {
       var secPosition = $(this).offset().top;
       if (scr > secPosition - h + 50) {
-        if ($(this).attr('id') == 'mv') {
-          $('#wrapper').css('backgroundColor', '#E9E9E9');
-        }
-        if ($(this).attr('id') == 'about') {
-          $('#wrapper').css('backgroundColor', '#D5EAFF');
-        }
-        if ($(this).attr('id') == 'info') {
-          $('#wrapper').css('backgroundColor', '#E9E9E9');
-        }
-        if ($(this).attr('id') == 'schedule') {
-          $('#wrapper').css('backgroundColor', '#D5EAFF');
-        }
-        if ($(this).attr('id') == 'works') {
-          $('#wrapper').css('backgroundColor', '#E9E9E9');
-        }
-        if ($(this).attr('id') == 'special') {
-          $('#wrapper').css('backgroundColor', '#D5EAFF');
+        switch ($(this).attr('id')) {
+          case 'mv':
+            $('#wrapper').css('backgroundColor', '#E9E9E9');
+            break;
+          
+          case 'info':
+          case 'works':
+            $('#wrapper').css('backgroundColor', '#E9E9E9');
+            $('#container > section').not(this).each( (this_) =>
+              beforeSectionRevealed(this_)
+            )
+            afterSectionRevealed(this);
+            break;
+
+          case 'about':
+          case 'schedule':
+          case 'special':
+            $('#wrapper').css('backgroundColor', '#D5EAFF');
+            $('#container > section').not(this).each( (this_) =>
+              beforeSectionRevealed(this_)
+            )
+            afterSectionRevealed(this);
+            break;
+        
+          default:
+            break;
         }
       }
     });
