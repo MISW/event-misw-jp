@@ -2,12 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   http-server: ^14.1.1
+  prettier: ^2.7.1
   sass: ^1.55.0
 
 dependencies:
   http-server: 14.1.1
 
 devDependencies:
+  prettier: 2.7.1
   sass: 1.55.0
 
 packages:
@@ -309,6 +311,12 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
+
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
 
   /qs/6.11.0:
     resolution: {integrity: sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==}

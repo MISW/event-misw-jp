@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "format": "prettier --write src/",
+    "format:check": "prettier --check src/",
     "sass:build": "sass src:src",
     "sass:watch": "sass --watch src:src",
     "start": "http-server src/ -p 8080 -o",
@@ -9,6 +11,7 @@
     "http-server": "^14.1.1"
   },
   "devDependencies": {
+    "prettier": "^2.7.1",
     "sass": "^1.55.0"
   }
 }

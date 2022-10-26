@@ -42,10 +42,7 @@ $(window).on('load', function () {
 $(function () {
   $('.movie__thumbnail').on('click', function () {
     $('.modal__movie').fadeIn();
-    $('.youtube iframe').attr(
-      'src',
-      'https://www.youtube.com/embed/JPHCfBfOVEQ'
-    );
+    $('.youtube iframe').attr('src', 'https://www.youtube.com/embed/JPHCfBfOVEQ');
   });
   $('.close-btn').on('click', function () {
     $('.modal__movie').fadeOut();

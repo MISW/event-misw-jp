@@ -1,10 +1,10 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
@@ -62,11 +62,11 @@ select {
 @media (prefers-reduced-motion: reduce) {
   * {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -121,11 +121,11 @@ a:hover {
   left: 0;
   z-index: 100;
   -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  transform: translateY(10px);
   -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation-delay: 5s;
   opacity: 0;
 }
 
@@ -136,11 +136,11 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__logo {
@@ -209,7 +209,7 @@ a:hover {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .modal__player {
@@ -242,7 +242,7 @@ a:hover {
 .movie {
   opacity: 0;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
 }
@@ -250,7 +250,7 @@ a:hover {
 .movie.is__scrolled {
   opacity: 1;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .movie__thumbnail {
@@ -271,52 +271,52 @@ a:hover {
 @-webkit-keyframes slideOut-1 {
   0% {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
   100% {
     -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    transform: translateX(100%);
   }
 }
 
 @keyframes slideOut-1 {
   0% {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
   100% {
     -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    transform: translateX(100%);
   }
 }
 
 @-webkit-keyframes slideOut-2 {
   0% {
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   70% {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
   100% {
     -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    transform: translateX(100%);
   }
 }
 
 @keyframes slideOut-2 {
   0% {
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   70% {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
   100% {
     -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    transform: translateX(100%);
   }
 }
 
@@ -338,34 +338,34 @@ a:hover {
 
 .loader .loading-slide1.open {
   -webkit-animation-name: slideOut-1;
-          animation-name: slideOut-1;
+  animation-name: slideOut-1;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
+  animation-duration: 1.2s;
   -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 @-webkit-keyframes loading {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    transform: scale(0.8);
   }
 }
 
 @keyframes loading {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    transform: scale(0.8);
   }
 }
 
@@ -374,7 +374,7 @@ a:hover {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .loading-text span {
@@ -383,37 +383,37 @@ a:hover {
   font-weight: bold;
   margin: 0 -0.075em;
   -webkit-animation: loading 0.7s infinite alternate;
-          animation: loading 0.7s infinite alternate;
+  animation: loading 0.7s infinite alternate;
 }
 
 .loading-text span:nth-child(2) {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .loading-text span:nth-child(3) {
   -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .loading-text span:nth-child(4) {
   -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .loading-text span:nth-child(5) {
   -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .loading-text span:nth-child(6) {
   -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .loading-text span:nth-child(7) {
   -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .loading-slide2 {
@@ -428,13 +428,13 @@ a:hover {
 
 .loading-slide2.open {
   -webkit-animation-name: slideOut-2;
-          animation-name: slideOut-2;
+  animation-name: slideOut-2;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-duration: 1.7s;
-          animation-duration: 1.7s;
+  animation-duration: 1.7s;
   -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 .footer {
@@ -475,14 +475,14 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
   .footer__link {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     max-width: 450px;
   }
 }
@@ -504,9 +504,9 @@ a:hover {
   height: 6px;
   background: #73c0d6;
   -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
+  transform: scale(0, 1);
   -webkit-transform-origin: right top;
-          transform-origin: right top;
+  transform-origin: right top;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -519,9 +519,9 @@ a:hover {
 
 .footer__link a:hover::after {
   -webkit-transform-origin: left top;
-          transform-origin: left top;
+  transform-origin: left top;
   -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 .footer__link img {
@@ -551,8 +551,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .credit-item span {
@@ -584,9 +584,9 @@ a:hover {
   height: 2px;
   background: #fff;
   -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
+  transform: scale(0, 1);
   -webkit-transform-origin: right top;
-          transform-origin: right top;
+  transform-origin: right top;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -599,9 +599,9 @@ a:hover {
 
 .credit-item a:hover::after {
   -webkit-transform-origin: left top;
-          transform-origin: left top;
+  transform-origin: left top;
   -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 .section-header {
@@ -611,16 +611,16 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   opacity: 0;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
 }
 
 .section-header div {
@@ -638,7 +638,7 @@ a:hover {
 .section-header.is__scrolled {
   opacity: 1;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .section-header span {
@@ -659,7 +659,7 @@ a:hover {
   right: -30px;
   opacity: 0;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -670,7 +670,7 @@ a:hover {
 
 .section-heading.is__scrolled {
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   opacity: 1;
 }
 
@@ -684,7 +684,8 @@ a:hover {
   }
 }
 
-.topic-heading, .topic-heading-l {
+.topic-heading,
+.topic-heading-l {
   width: 300px;
   color: #73c0d6;
   font-size: 20px;
@@ -695,7 +696,8 @@ a:hover {
   position: relative;
 }
 
-.topic-heading::before, .topic-heading-l::before {
+.topic-heading::before,
+.topic-heading-l::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -704,31 +706,34 @@ a:hover {
   content: '';
   background: #fff;
   -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+  transform-origin: 0 0;
   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.topic-heading.is__scrolled, .is__scrolled.topic-heading-l {
+.topic-heading.is__scrolled,
+.is__scrolled.topic-heading-l {
   opacity: 1;
 }
 
-.topic-heading.is__scrolled::before, .is__scrolled.topic-heading-l::before {
+.topic-heading.is__scrolled::before,
+.is__scrolled.topic-heading-l::before {
   width: 100%;
   -webkit-animation-name: slidein;
-          animation-name: slidein;
+  animation-name: slidein;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 @media screen and (max-width: 768px) {
-  .topic-heading, .topic-heading-l {
+  .topic-heading,
+  .topic-heading-l {
     font-size: 16px;
     width: 250px;
   }
@@ -762,7 +767,7 @@ a:hover {
 .topic-block p {
   margin-bottom: 1em;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   opacity: 0;
@@ -771,7 +776,7 @@ a:hover {
 .topic-block p.is__scrolled {
   opacity: 1;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .topic-block .screenshot {
@@ -779,7 +784,7 @@ a:hover {
   width: 100%;
   max-width: 600px;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   opacity: 0;
@@ -788,7 +793,7 @@ a:hover {
 .topic-block .screenshot.is__scrolled {
   opacity: 1;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .link-btn {
@@ -798,18 +803,18 @@ a:hover {
   width: 300px;
   margin: 50px auto;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   opacity: 0;
 }
 
 .link-btn.is__scrolled {
   opacity: 1;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .link-btn span {
@@ -829,7 +834,7 @@ a:hover {
 
 .link-btn:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
   opacity: 0.9;
 }
 
@@ -840,9 +845,9 @@ a:hover {
   width: 400px;
   margin: 60px auto;
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   opacity: 0;
@@ -851,7 +856,7 @@ a:hover {
 .link-btn__discord.is__scrolled {
   opacity: 1;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .link-btn__discord span {
@@ -874,7 +879,7 @@ a:hover {
 
 .link-btn__discord:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
   opacity: 0.9;
 }
 
@@ -885,7 +890,7 @@ a:hover {
   width: 300px;
   margin: auto;
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
 }
@@ -907,7 +912,7 @@ a:hover {
 
 .info__discord__btn:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
   opacity: 0.9;
 }
 
@@ -917,7 +922,7 @@ a:hover {
   letter-spacing: 0.2em;
   margin-bottom: 40px;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   opacity: 0;
@@ -926,7 +931,7 @@ a:hover {
 .heading-text.is__scrolled {
   opacity: 1;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .heading-text img {
@@ -947,7 +952,7 @@ a:hover {
   margin: 40px 0;
   min-height: 196px;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   opacity: 0;
@@ -956,7 +961,7 @@ a:hover {
 .event-item.is__scrolled {
   opacity: 1;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .event-item__inner {
@@ -989,8 +994,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -1020,7 +1025,7 @@ a:hover {
   font-size: 24px;
   font-weight: bold;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   opacity: 0;
@@ -1029,7 +1034,7 @@ a:hover {
 .event__and-more.is__scrolled {
   opacity: 1;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .kv {
@@ -1077,12 +1082,12 @@ a:hover {
 
 .kv-typography .kv-btn {
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .kv-typography .kv-btn:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
   opacity: 0.9;
 }
 
@@ -1117,7 +1122,7 @@ a:hover {
   font-size: 14px;
   line-height: 2;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   opacity: 0;
@@ -1126,7 +1131,7 @@ a:hover {
 .description__about p.is__scrolled {
   opacity: 1;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .team-list {
@@ -1134,18 +1139,18 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 60px auto 90px;
 }
 
 @media screen and (max-width: 768px) {
   .team-list {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin: 60px auto 60px;
   }
 }
@@ -1155,7 +1160,7 @@ a:hover {
   border-radius: 30px;
   background: #0087a7;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   opacity: 0;
@@ -1164,7 +1169,7 @@ a:hover {
 .team-list-item.is__scrolled {
   opacity: 1;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .team-list-item__inner {
@@ -1221,7 +1226,7 @@ a:hover {
   font-size: 14px;
   line-height: 2;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   opacity: 0;
@@ -1230,7 +1235,7 @@ a:hover {
 .info__description p.is__scrolled {
   opacity: 1;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .time-schedule {
@@ -1243,7 +1248,7 @@ a:hover {
   display: flex;
   opacity: 0;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
 }
@@ -1251,7 +1256,7 @@ a:hover {
 .time-schedule__date.is__scrolled {
   opacity: 1;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .time-schedule__date span {
@@ -1266,7 +1271,7 @@ a:hover {
   max-width: 900px;
   margin: auto;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   opacity: 0;
@@ -1275,7 +1280,7 @@ a:hover {
 .info__discord.is__scrolled {
   opacity: 1;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .info__discord__inner {
@@ -1310,8 +1315,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -1347,7 +1352,7 @@ a:hover {
 
 .soundcloud {
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   opacity: 0;
@@ -1355,7 +1360,7 @@ a:hover {
 
 .soundcloud.is__scrolled {
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   opacity: 1;
 }
 
@@ -1364,8 +1369,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .list__special li {
@@ -1386,7 +1391,7 @@ a:hover {
   width: 100%;
   margin-bottom: 20px;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   opacity: 0;
@@ -1394,7 +1399,7 @@ a:hover {
 
 .list__special img.is__scrolled {
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   opacity: 1;
 }
 
@@ -1423,15 +1428,15 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-transform: translate3d(0, 20px, 0);
-          transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   transition: all 0.5s cubic-bezier(0.3, 0, 0.1, 1);
   opacity: 0;
@@ -1440,7 +1445,7 @@ a:hover {
 .garelly-list.is__scrolled {
   opacity: 1;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .garelly-list li {
