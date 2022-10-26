@@ -1,6 +1,6 @@
-@use "sass:math";
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;600;700&display=swap");
+@use 'sass:math';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;600;700&display=swap');
 
 /*--- common style ---*/
 * {
@@ -29,8 +29,7 @@ td,
 header,
 nav,
 section {
-  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN,
-    Arial, "メイリオ", Meiryo, sans-serif;
+  font-family: 'Noto Sans JP', 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, Arial, 'メイリオ', Meiryo, sans-serif;
   color: #221b2e;
   font-weight: 300;
   line-height: 1.5;
@@ -44,7 +43,7 @@ h1 {
 }
 h2 {
   font-size: 4rem;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 500;
   line-height: 1.8;
   letter-spacing: 0.1em;
@@ -111,7 +110,7 @@ iframe {
 
 nav *,
 #share * {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   line-height: 1;
 }
@@ -461,7 +460,7 @@ header {
               will-change: scale, padding;
 
               &::before {
-                content: "";
+                content: '';
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -536,7 +535,7 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    content: "";
+    content: '';
     width: 30%;
     height: 30%;
     mix-blend-mode: difference;
@@ -1009,7 +1008,7 @@ main {
         &:after {
           border-radius: 50%;
           position: absolute;
-          content: "";
+          content: '';
           width: 51%;
           height: 102%;
           background: #221b2e;
@@ -1064,7 +1063,7 @@ main {
           position: relative;
 
           &::before {
-            content: "";
+            content: '';
             position: absolute;
             bottom: 0;
             left: 0;
@@ -1310,7 +1309,7 @@ main {
           position: absolute;
           top: 50%;
           left: 50%;
-          content: "";
+          content: '';
           width: 20%;
           height: 20%;
           mix-blend-mode: difference;
@@ -1541,7 +1540,7 @@ main {
         padding-left: 1.2rem;
       }
       .triangle:before {
-        content: "";
+        content: '';
         display: inline-block;
         position: absolute;
         top: 0;
@@ -1741,7 +1740,7 @@ footer {
 
             &::after {
               position: absolute;
-              content: "―";
+              content: '―';
               top: 50%;
               left: 0.5em;
             }

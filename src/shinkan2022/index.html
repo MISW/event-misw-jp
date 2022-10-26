@@ -1,744 +1,889 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="メインページ" />
     <meta property="og:description" content="MIS.W2022年度新入生歓迎特設サイト" />
     <meta property="og:url" content="https://event.misw.jp/shinkan2022/" />
     <meta property="og:site_name" content="MIS.W 新歓サイト 2022" />
     <meta property="og:image" content="https://event.misw.jp/shinkan2022/images/card.png" />
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://event.misw.jp/shinkan2022/images/card.png" />
     <meta name="twitter:site" content="misw-info" />
     <title>MIS.W 新歓サイト 2022</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/destyle.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles/destyle.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <script src="scripts/main.js"></script>
     <link rel="shortcut icon" href="images/favicon.ico" />
-</head>
+  </head>
 
-
-<body>
+  <body>
     <div id="loader">
-        <div id="loadtxt">
-            <svg viewbox="0 0 727.06 110.52" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M702.06 31.56c4.2 3 6.9 6.2 9 8.8 2 2.5 3 4.7 4.6 4.7 1.5 0 2.6-.9 2.6-2.6 0-1.9-1-3.7-3.5-5.9-2.5-2.4-6.3-4.7-11.4-6.8l-1.3 1.8Zm-19 28.2c4.4-1 9-1.6 13.4-1.6 3 0 6.4.3 8.8 1.2.9.3 1.2.8.4 1.4-1.3 1.3-7.1 5.1-10.5 7.3l1.3 1.8c3.4-1.7 8.1-4.1 11.2-5.2 2.6-1.1 4.1-1.4 5.9-1.6 2.4-.2 4.1-.7 4.1-2.5 0-1.7-1.3-3.2-3.6-4.4-2.4-1.1-6.9-2.4-13.5-2.4s-13.4 1.7-18.1 3.6l.6 2.4Zm-24.1-32.6c2.1.4 4.3 1 6.3 1.7 1.8.9 2.3 1.8 2.1 4-.3 3.1-1.2 7.8-2.5 13-3.8.9-8.3 1.6-13 1.6-4.9 0-7.9-1.9-12.2-5.7l-1.7 1.3c3.3 7.6 8.1 9.8 13.9 9.8 3.7 0 7.9-.5 11.5-1.2-1.2 4.2-2.5 8.4-3.8 12.1-4.9 14-10.5 24-15.6 31.6-1.5 2.7-2.4 3.6-2.4 5.8 0 2.3 1.2 4.1 2.9 4.1 2 0 3-.9 4.4-3.2 4.3-7 10.7-23.1 15.4-36.6 1.8-4.8 3.5-10.2 4.9-15.1 7.2-1.8 15-4.6 17.3-5.6 3.7-1.6 4.8-2.6 4.8-4.5 0-1.8-2.6-2.8-4.3-2.8-.8 0-1.9.6-3.4 1.4-3.1 1.6-7.3 3.5-12.6 5.3.8-2.8 1.4-5.3 1.9-7.1 1.2-3.8 2.6-6.3 2.6-8-.1-2.3-6.4-4.7-10-4.9-2.4-.1-4.2.2-6.3.7l-.2 2.3Zm15.4 53.9c.1 3.5.5 7.3 2.2 11.1 3.1 8.8 12.3 12.3 23.9 12.3 5.8 0 10.3-.6 13.4-1.3 2.9-.6 5.5-1.7 5.5-3.7 0-2.3-2.6-3.4-4.9-3.4-2.9 0-6.1 1.9-16.1 1.9-8.6 0-14.7-2.3-18.2-7.7-1.9-3-2.8-6.6-3.4-9.5l-2.4.3Zm36.5-55.7c4.5 3.1 6.8 5.5 9 8s3.2 4.8 4.8 4.8c1.4 0 2.4-.8 2.4-2.5 0-2.1-1-4-3.6-6.2-2.5-2.1-6.2-3.9-11.5-5.9l-1.1 1.8ZM553.7 99.6v-15h40.8v15h-40.8Zm35.04-49.68c2.28 3.6 4.8 6.96 7.56 10.2l-2.64 2.64h-38.4l-3.96-1.68c3-3.48 5.76-7.32 8.04-11.16h29.4Zm-8.28-16.44c1.68 4.44 3.72 8.76 6.12 12.84H561.5c2.28-4.2 4.32-8.4 6-12.84h12.96ZM553.7 66.24h40.8V81h-40.8V66.24Zm71.64-16.32c1.68 0 2.88-.6 3.12-1.92-4.2-3.72-10.8-9-10.8-9l-6 7.32h-19.92c-3.24-3.96-6.12-8.28-8.28-12.84h31.92c1.68 0 2.88-.6 3.12-1.92-3.84-3.6-10.08-8.52-10.08-8.52l-5.52 6.84h-34.08c1.44-3.96 2.64-8.04 3.72-12.24h47.16c1.68 0 3-.6 3.24-1.8-4.08-3.84-10.56-8.88-10.56-8.88l-5.76 7.32h-33.24c.72-2.88 1.32-5.88 1.8-8.76 2.52 0 3.96-.96 4.44-3L566.54 0c-.6 4.8-1.44 9.6-2.4 14.28H525.5l.96 3.36h36.96c-1.08 4.08-2.16 8.28-3.48 12.24h-28.68l.96 3.6h26.4c-1.68 4.44-3.48 8.64-5.64 12.84h-33.12l.96 3.6h30.24c-7.56 13.2-18.24 24.84-33.12 33.48l1.2 1.44c10.8-4.8 19.56-10.92 26.76-17.88v43.32h1.32c3.84 0 6.48-2.04 6.48-2.76v-4.32h40.8v6.6h1.32c2.64 0 6.6-1.92 6.72-2.76v-40.2h.24c5.76 5.4 12.24 9.96 19.2 13.44.84-3.48 3.96-5.64 7.92-6.48l.24-1.44c-12.6-4.44-25.44-12.24-35.16-22.44h30.36ZM430.7 83.28V71.04h47.76v12.24H430.7Zm47.76-27.72v11.88H430.7V55.56h47.76Zm-1.2-3.48h-45.84l-8.4-3.96v62.16h1.2c3.36 0 6.48-1.8 6.48-2.76V86.64h47.76v12c0 1.8-.6 2.64-2.88 2.64-2.88 0-15.72-.96-15.72-.96v1.8c5.76.72 8.88 1.68 10.8 3 1.68 1.08 2.4 3 2.76 5.4 11.4-1.2 12.84-5.04 12.84-11.04V57c2.28-.36 4.32-1.32 5.04-2.16l-10.08-7.68-3.96 4.92Zm15-13.08H457.7V28.32h35.4c1.68 0 2.88-.6 3.24-1.92-3.96-3.48-9.96-8.28-9.96-8.28l-5.4 6.72H457.7v-10.2h41.52c1.8 0 3-.6 3.24-1.92-3.96-3.6-10.32-8.52-10.32-8.52l-5.52 6.96H457.7v-6c2.88-.48 4.08-1.68 4.32-3.36L449.78.48v10.68h-42.36l1.08 3.48h41.28v10.2h-36.84l.96 3.48h35.88V39H400.7l1.08 3.48H505.1c1.68 0 2.88-.6 3.12-1.92-3.84-3.6-10.32-8.52-10.32-8.52L492.26 39ZM247.72 27.26c3.5 4.1 5.9 7.3 5.8 10.9-.1 3.3-1.3 6.8-2.6 11.6-1.7 6-4.8 16-4.8 27.9 0 10.1 3.1 19.4 5.8 23.4 1.5 2.2 3 3.8 4.8 3.8 1.8 0 2.8-1.2 2.8-3.1 0-2.4-1.4-5.5-1.4-8.6 0-1.6.7-3.7 1.6-6.9 1.3-3.6 5.6-15.3 7.5-20.5l-2.4-1.2c-2.3 5.1-7.8 18.5-9.9 21.8-.8 1.4-1.7 1.2-2.3 0-1.1-2-1.9-4.8-1.9-10.1 0-10.4 4.1-20.7 6.5-26.4 2.5-6 3.9-7.8 3.9-10 0-4.2-4.6-9.3-6.7-10.9-1.8-1.6-2.8-2-5.1-3l-1.6 1.3Zm55 57.5c0 8.1-1.9 12.1-12.8 12.1-6 0-10.5-1.9-10.5-6.4 0-4.8 6.8-7.4 13-7.4 3.8 0 7.2.4 10.3 1.2v.5Zm-10.1-54.9c2.7.1 5.1.4 7 .9 1.4.4 1.8 1 1.8 3.3 0 2.6-.1 8.5 0 13.4-3.5.6-7.4 1-11.5 1-5.7 0-10-2-14-5.1l-1.5 1.4c5.4 7.7 9.5 9.1 15.7 9.1 3.7 0 7.5-.4 11.3-.9.2 8.7.8 19.1 1.1 26.2-2.2-.3-4.6-.5-7.2-.5-10.8 0-19.6 3.9-19.6 12.4 0 7.2 7.1 11.3 16 11.3 12.3 0 17-5.4 17-13 0-.9 0-1.8-.1-2.9 4.7 2.1 8.5 5.2 12.1 8.7 1.9 1.8 3.1 3 4.6 3 1.7 0 2.6-1.2 2.6-3.2 0-1.9-1.2-3.8-3.2-5.6-3.1-2.9-8.4-6.8-16.5-9-.6-7.7-1.5-18-1.5-28.3 5.8-1.2 10.8-2.6 13.6-3.5 3.3-1.2 4.6-2.1 4.6-4 0-2-3.1-3.1-5.2-3.2-.9 0-2.2 1-6.4 2.7-1.5.6-3.7 1.4-6.5 2.2.2-3.3.4-6.1.8-8.3.7-4.4 1.6-5 1.6-7 0-2.4-5.3-5.1-9.5-5.1-2.2 0-5.2 1-7.3 1.9l.2 2.1ZM150.6.6c-7.08 23.28-18.84 46.2-30.12 60.48l1.68 1.32c5.76-5.28 11.4-11.76 16.56-19.08v67.2h1.44c2.88 0 6.12-2.04 6.36-2.64V37.92c2.04-.36 3.24-1.2 3.6-2.16l-5.28-1.92c5.04-8.28 9.48-17.4 13.2-26.88 2.76.24 4.08-.72 4.68-2.04L150.6.6Zm65.52 24.12h-38.16c3.12-5.52 6.12-11.4 8.64-17.52 2.64.12 4.2-.72 4.68-2.04L179.16.72c-6.36 20.64-17.04 40.92-27.12 53.52l1.68 1.32c8.16-6.96 15.72-16.56 22.32-27.48h9.36v82.44h1.2c4.2 0 6.72-2.04 6.72-2.52V78.84h33c1.56 0 2.76-.6 3.12-1.92-4.08-3.72-10.56-8.76-10.56-8.76l-5.64 7.2h-19.92v-22.2h30.72c1.68 0 2.88-.6 3.24-1.92-3.84-3.6-10.08-8.4-10.08-8.4l-5.4 6.84h-18.48v-21.6h36.12c1.56 0 2.76-.6 3.12-1.8-4.08-3.72-10.68-8.88-10.68-8.88l-5.76 7.32ZM23.28 29.04h31.68c1.68 0 2.76-.6 3.12-1.92-3.48-3.24-9-7.56-9-7.56l-4.92 6H22.92c6.36-6 11.76-12.48 15.72-18.36 11.64 6.36 20.28 15 23.76 21.96 7.92 4.68 14.76-13.32-22.56-23.28 3-.12 4.2-.84 4.68-2.16L31.8.12C26.4 12.6 13.56 29.76 0 39.84l1.32 1.44C9 37.32 16.2 31.92 22.44 26.04l.84 3Zm-1.56 34.8c.24-3.24.24-6.24.24-9.12v-.48h34.2v9.6H21.72ZM56.16 41.4v9.36h-34.2V41.4h34.2Zm.24 39.48v17.4H25.56v-17.4H56.4Zm-1.44-42.96H23.4l-8.88-3.84v20.76c0 16.44-1.68 34.8-13.8 50.16l1.44 1.32c8.4-6.84 13.32-15.12 16.08-23.52v27.6h1.2c3.72 0 6.12-1.92 6.12-2.52v-6H56.4v6.84h1.08c2.52 0 6.36-1.68 6.48-2.4V82.08c2.04-.36 3.96-1.32 4.68-2.28l-9.24-6.84-4.08 4.44h-28.2l-6.72-2.88c.48-2.52.84-4.92.96-7.32h34.8v3.84h1.2c2.4 0 6.12-1.68 6.36-2.4V42.96c2.28-.6 4.32-1.56 5.16-2.52l-9.6-7.2-4.32 4.68Zm29.4-22.32c2.88-.36 3.96-1.56 4.32-3.24l-11.64-1.2v75.12h1.44c2.76 0 5.88-1.44 5.88-2.64V15.6ZM98.28 2.88V98.4c0 1.8-.6 2.52-2.64 2.52-2.4 0-13.68-.96-13.68-.96V102c5.04.6 7.92 1.56 9.48 2.88 1.56 1.2 2.16 3.24 2.52 5.64 10.56-1.08 11.88-5.04 11.88-11.4V7.32c2.88-.36 4.08-1.44 4.44-3.12l-12-1.32Z" />
-            </svg>
-        </div>
+      <div id="loadtxt">
+        <svg viewbox="0 0 727.06 110.52" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M702.06 31.56c4.2 3 6.9 6.2 9 8.8 2 2.5 3 4.7 4.6 4.7 1.5 0 2.6-.9 2.6-2.6 0-1.9-1-3.7-3.5-5.9-2.5-2.4-6.3-4.7-11.4-6.8l-1.3 1.8Zm-19 28.2c4.4-1 9-1.6 13.4-1.6 3 0 6.4.3 8.8 1.2.9.3 1.2.8.4 1.4-1.3 1.3-7.1 5.1-10.5 7.3l1.3 1.8c3.4-1.7 8.1-4.1 11.2-5.2 2.6-1.1 4.1-1.4 5.9-1.6 2.4-.2 4.1-.7 4.1-2.5 0-1.7-1.3-3.2-3.6-4.4-2.4-1.1-6.9-2.4-13.5-2.4s-13.4 1.7-18.1 3.6l.6 2.4Zm-24.1-32.6c2.1.4 4.3 1 6.3 1.7 1.8.9 2.3 1.8 2.1 4-.3 3.1-1.2 7.8-2.5 13-3.8.9-8.3 1.6-13 1.6-4.9 0-7.9-1.9-12.2-5.7l-1.7 1.3c3.3 7.6 8.1 9.8 13.9 9.8 3.7 0 7.9-.5 11.5-1.2-1.2 4.2-2.5 8.4-3.8 12.1-4.9 14-10.5 24-15.6 31.6-1.5 2.7-2.4 3.6-2.4 5.8 0 2.3 1.2 4.1 2.9 4.1 2 0 3-.9 4.4-3.2 4.3-7 10.7-23.1 15.4-36.6 1.8-4.8 3.5-10.2 4.9-15.1 7.2-1.8 15-4.6 17.3-5.6 3.7-1.6 4.8-2.6 4.8-4.5 0-1.8-2.6-2.8-4.3-2.8-.8 0-1.9.6-3.4 1.4-3.1 1.6-7.3 3.5-12.6 5.3.8-2.8 1.4-5.3 1.9-7.1 1.2-3.8 2.6-6.3 2.6-8-.1-2.3-6.4-4.7-10-4.9-2.4-.1-4.2.2-6.3.7l-.2 2.3Zm15.4 53.9c.1 3.5.5 7.3 2.2 11.1 3.1 8.8 12.3 12.3 23.9 12.3 5.8 0 10.3-.6 13.4-1.3 2.9-.6 5.5-1.7 5.5-3.7 0-2.3-2.6-3.4-4.9-3.4-2.9 0-6.1 1.9-16.1 1.9-8.6 0-14.7-2.3-18.2-7.7-1.9-3-2.8-6.6-3.4-9.5l-2.4.3Zm36.5-55.7c4.5 3.1 6.8 5.5 9 8s3.2 4.8 4.8 4.8c1.4 0 2.4-.8 2.4-2.5 0-2.1-1-4-3.6-6.2-2.5-2.1-6.2-3.9-11.5-5.9l-1.1 1.8ZM553.7 99.6v-15h40.8v15h-40.8Zm35.04-49.68c2.28 3.6 4.8 6.96 7.56 10.2l-2.64 2.64h-38.4l-3.96-1.68c3-3.48 5.76-7.32 8.04-11.16h29.4Zm-8.28-16.44c1.68 4.44 3.72 8.76 6.12 12.84H561.5c2.28-4.2 4.32-8.4 6-12.84h12.96ZM553.7 66.24h40.8V81h-40.8V66.24Zm71.64-16.32c1.68 0 2.88-.6 3.12-1.92-4.2-3.72-10.8-9-10.8-9l-6 7.32h-19.92c-3.24-3.96-6.12-8.28-8.28-12.84h31.92c1.68 0 2.88-.6 3.12-1.92-3.84-3.6-10.08-8.52-10.08-8.52l-5.52 6.84h-34.08c1.44-3.96 2.64-8.04 3.72-12.24h47.16c1.68 0 3-.6 3.24-1.8-4.08-3.84-10.56-8.88-10.56-8.88l-5.76 7.32h-33.24c.72-2.88 1.32-5.88 1.8-8.76 2.52 0 3.96-.96 4.44-3L566.54 0c-.6 4.8-1.44 9.6-2.4 14.28H525.5l.96 3.36h36.96c-1.08 4.08-2.16 8.28-3.48 12.24h-28.68l.96 3.6h26.4c-1.68 4.44-3.48 8.64-5.64 12.84h-33.12l.96 3.6h30.24c-7.56 13.2-18.24 24.84-33.12 33.48l1.2 1.44c10.8-4.8 19.56-10.92 26.76-17.88v43.32h1.32c3.84 0 6.48-2.04 6.48-2.76v-4.32h40.8v6.6h1.32c2.64 0 6.6-1.92 6.72-2.76v-40.2h.24c5.76 5.4 12.24 9.96 19.2 13.44.84-3.48 3.96-5.64 7.92-6.48l.24-1.44c-12.6-4.44-25.44-12.24-35.16-22.44h30.36ZM430.7 83.28V71.04h47.76v12.24H430.7Zm47.76-27.72v11.88H430.7V55.56h47.76Zm-1.2-3.48h-45.84l-8.4-3.96v62.16h1.2c3.36 0 6.48-1.8 6.48-2.76V86.64h47.76v12c0 1.8-.6 2.64-2.88 2.64-2.88 0-15.72-.96-15.72-.96v1.8c5.76.72 8.88 1.68 10.8 3 1.68 1.08 2.4 3 2.76 5.4 11.4-1.2 12.84-5.04 12.84-11.04V57c2.28-.36 4.32-1.32 5.04-2.16l-10.08-7.68-3.96 4.92Zm15-13.08H457.7V28.32h35.4c1.68 0 2.88-.6 3.24-1.92-3.96-3.48-9.96-8.28-9.96-8.28l-5.4 6.72H457.7v-10.2h41.52c1.8 0 3-.6 3.24-1.92-3.96-3.6-10.32-8.52-10.32-8.52l-5.52 6.96H457.7v-6c2.88-.48 4.08-1.68 4.32-3.36L449.78.48v10.68h-42.36l1.08 3.48h41.28v10.2h-36.84l.96 3.48h35.88V39H400.7l1.08 3.48H505.1c1.68 0 2.88-.6 3.12-1.92-3.84-3.6-10.32-8.52-10.32-8.52L492.26 39ZM247.72 27.26c3.5 4.1 5.9 7.3 5.8 10.9-.1 3.3-1.3 6.8-2.6 11.6-1.7 6-4.8 16-4.8 27.9 0 10.1 3.1 19.4 5.8 23.4 1.5 2.2 3 3.8 4.8 3.8 1.8 0 2.8-1.2 2.8-3.1 0-2.4-1.4-5.5-1.4-8.6 0-1.6.7-3.7 1.6-6.9 1.3-3.6 5.6-15.3 7.5-20.5l-2.4-1.2c-2.3 5.1-7.8 18.5-9.9 21.8-.8 1.4-1.7 1.2-2.3 0-1.1-2-1.9-4.8-1.9-10.1 0-10.4 4.1-20.7 6.5-26.4 2.5-6 3.9-7.8 3.9-10 0-4.2-4.6-9.3-6.7-10.9-1.8-1.6-2.8-2-5.1-3l-1.6 1.3Zm55 57.5c0 8.1-1.9 12.1-12.8 12.1-6 0-10.5-1.9-10.5-6.4 0-4.8 6.8-7.4 13-7.4 3.8 0 7.2.4 10.3 1.2v.5Zm-10.1-54.9c2.7.1 5.1.4 7 .9 1.4.4 1.8 1 1.8 3.3 0 2.6-.1 8.5 0 13.4-3.5.6-7.4 1-11.5 1-5.7 0-10-2-14-5.1l-1.5 1.4c5.4 7.7 9.5 9.1 15.7 9.1 3.7 0 7.5-.4 11.3-.9.2 8.7.8 19.1 1.1 26.2-2.2-.3-4.6-.5-7.2-.5-10.8 0-19.6 3.9-19.6 12.4 0 7.2 7.1 11.3 16 11.3 12.3 0 17-5.4 17-13 0-.9 0-1.8-.1-2.9 4.7 2.1 8.5 5.2 12.1 8.7 1.9 1.8 3.1 3 4.6 3 1.7 0 2.6-1.2 2.6-3.2 0-1.9-1.2-3.8-3.2-5.6-3.1-2.9-8.4-6.8-16.5-9-.6-7.7-1.5-18-1.5-28.3 5.8-1.2 10.8-2.6 13.6-3.5 3.3-1.2 4.6-2.1 4.6-4 0-2-3.1-3.1-5.2-3.2-.9 0-2.2 1-6.4 2.7-1.5.6-3.7 1.4-6.5 2.2.2-3.3.4-6.1.8-8.3.7-4.4 1.6-5 1.6-7 0-2.4-5.3-5.1-9.5-5.1-2.2 0-5.2 1-7.3 1.9l.2 2.1ZM150.6.6c-7.08 23.28-18.84 46.2-30.12 60.48l1.68 1.32c5.76-5.28 11.4-11.76 16.56-19.08v67.2h1.44c2.88 0 6.12-2.04 6.36-2.64V37.92c2.04-.36 3.24-1.2 3.6-2.16l-5.28-1.92c5.04-8.28 9.48-17.4 13.2-26.88 2.76.24 4.08-.72 4.68-2.04L150.6.6Zm65.52 24.12h-38.16c3.12-5.52 6.12-11.4 8.64-17.52 2.64.12 4.2-.72 4.68-2.04L179.16.72c-6.36 20.64-17.04 40.92-27.12 53.52l1.68 1.32c8.16-6.96 15.72-16.56 22.32-27.48h9.36v82.44h1.2c4.2 0 6.72-2.04 6.72-2.52V78.84h33c1.56 0 2.76-.6 3.12-1.92-4.08-3.72-10.56-8.76-10.56-8.76l-5.64 7.2h-19.92v-22.2h30.72c1.68 0 2.88-.6 3.24-1.92-3.84-3.6-10.08-8.4-10.08-8.4l-5.4 6.84h-18.48v-21.6h36.12c1.56 0 2.76-.6 3.12-1.8-4.08-3.72-10.68-8.88-10.68-8.88l-5.76 7.32ZM23.28 29.04h31.68c1.68 0 2.76-.6 3.12-1.92-3.48-3.24-9-7.56-9-7.56l-4.92 6H22.92c6.36-6 11.76-12.48 15.72-18.36 11.64 6.36 20.28 15 23.76 21.96 7.92 4.68 14.76-13.32-22.56-23.28 3-.12 4.2-.84 4.68-2.16L31.8.12C26.4 12.6 13.56 29.76 0 39.84l1.32 1.44C9 37.32 16.2 31.92 22.44 26.04l.84 3Zm-1.56 34.8c.24-3.24.24-6.24.24-9.12v-.48h34.2v9.6H21.72ZM56.16 41.4v9.36h-34.2V41.4h34.2Zm.24 39.48v17.4H25.56v-17.4H56.4Zm-1.44-42.96H23.4l-8.88-3.84v20.76c0 16.44-1.68 34.8-13.8 50.16l1.44 1.32c8.4-6.84 13.32-15.12 16.08-23.52v27.6h1.2c3.72 0 6.12-1.92 6.12-2.52v-6H56.4v6.84h1.08c2.52 0 6.36-1.68 6.48-2.4V82.08c2.04-.36 3.96-1.32 4.68-2.28l-9.24-6.84-4.08 4.44h-28.2l-6.72-2.88c.48-2.52.84-4.92.96-7.32h34.8v3.84h1.2c2.4 0 6.12-1.68 6.36-2.4V42.96c2.28-.6 4.32-1.56 5.16-2.52l-9.6-7.2-4.32 4.68Zm29.4-22.32c2.88-.36 3.96-1.56 4.32-3.24l-11.64-1.2v75.12h1.44c2.76 0 5.88-1.44 5.88-2.64V15.6ZM98.28 2.88V98.4c0 1.8-.6 2.52-2.64 2.52-2.4 0-13.68-.96-13.68-.96V102c5.04.6 7.92 1.56 9.48 2.88 1.56 1.2 2.16 3.24 2.52 5.64 10.56-1.08 11.88-5.04 11.88-11.4V7.32c2.88-.36 4.08-1.44 4.44-3.12l-12-1.32Z" />
+        </svg>
+      </div>
     </div>
     <nav class="toc">
-        <div class="container">
-            <ul class="toc-list">
-                <li class="toc-list_item">
-                    <a href="#about" class="toc-list_item_link">
-                        <p>MIS.W<br class="br-responsive">とは</p>
-                    </a>
-                </li>
-                <li class="toc-list_item">
-                    <a href="#info" class="toc-list_item_link">
-                        <p>新歓<br class="br-responsive">情報</p>
-                    </a>
-                </li>
-                <li class="toc-list_item">
-                    <a href="#join" class="toc-list_item_link">
-                        <p>入会の<br class="br-responsive">流れ</p>
-                    </a>
-                </li>
-                <li class="toc-list_item">
-                    <a href="#works" class="toc-list_item_link">
-                        <p>作品<br class="br-responsive">紹介</p>
-                    </a>
-                </li>
-                <li class="toc-list_item">
-                    <a href="#specials" class="toc-list_item_link">
-                        <p>新歓<br class="br-responsive">企画</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <ul class="toc-list">
+          <li class="toc-list_item">
+            <a href="#about" class="toc-list_item_link">
+              <p>MIS.W<br class="br-responsive" />とは</p>
+            </a>
+          </li>
+          <li class="toc-list_item">
+            <a href="#info" class="toc-list_item_link">
+              <p>新歓<br class="br-responsive" />情報</p>
+            </a>
+          </li>
+          <li class="toc-list_item">
+            <a href="#join" class="toc-list_item_link">
+              <p>入会の<br class="br-responsive" />流れ</p>
+            </a>
+          </li>
+          <li class="toc-list_item">
+            <a href="#works" class="toc-list_item_link">
+              <p>作品<br class="br-responsive" />紹介</p>
+            </a>
+          </li>
+          <li class="toc-list_item">
+            <a href="#specials" class="toc-list_item_link">
+              <p>新歓<br class="br-responsive" />企画</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="bg-wrapper">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100% 100%">
-            <defs>
-                <pattern id="line-1" width="500" height="60" patternunits="userSpaceOnUse"
-                    patterntransform="translate(180,0)" viewbox="0 0 50% 60">
-                    <line class="prog" x1="30" y1="30" x2="230" y2="30" />
-                </pattern>
-                <pattern id="line-2" width="500" height="60" patternunits="userSpaceOnUse"
-                    patterntransform="translate(180,0)" viewbox="0 0 50% 60">
-                    <line class="cg" x1="100" y1="30" x2="350" y2="30" />
-                </pattern>
-                <pattern id="line-3" width="450" height="60" patternunits="userSpaceOnUse" y="30"
-                    patterntransform="translate(20,0)" viewbox="0 0 50% 60">
-                    <line class="midi" x1="60" y1="30" x2="260" y2="30" />
-                </pattern>
-                <pattern id="lines" width="2000" height="240px" x="800px" y="0" patternunits="userSpaceOnUse"
-                    patterntransform="rotate(140)">
-                    <rect x="0" y="0" width="2000" height="60px" fill="url(#line-1)"></rect>
-                    <rect x="0" y="60" width="2000" height="60px" fill="url(#line-2)"></rect>
-                    <rect x="0" y="150" width="2000" height="60px" fill="url(#line-3)"></rect>
-                </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#lines)" viewbox="0 0 100% 100%"></rect>
-        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100% 100%">
+        <defs>
+          <pattern id="line-1" width="500" height="60" patternunits="userSpaceOnUse" patterntransform="translate(180,0)" viewbox="0 0 50% 60">
+            <line class="prog" x1="30" y1="30" x2="230" y2="30" />
+          </pattern>
+          <pattern id="line-2" width="500" height="60" patternunits="userSpaceOnUse" patterntransform="translate(180,0)" viewbox="0 0 50% 60">
+            <line class="cg" x1="100" y1="30" x2="350" y2="30" />
+          </pattern>
+          <pattern id="line-3" width="450" height="60" patternunits="userSpaceOnUse" y="30" patterntransform="translate(20,0)" viewbox="0 0 50% 60">
+            <line class="midi" x1="60" y1="30" x2="260" y2="30" />
+          </pattern>
+          <pattern id="lines" width="2000" height="240px" x="800px" y="0" patternunits="userSpaceOnUse" patterntransform="rotate(140)">
+            <rect x="0" y="0" width="2000" height="60px" fill="url(#line-1)"></rect>
+            <rect x="0" y="60" width="2000" height="60px" fill="url(#line-2)"></rect>
+            <rect x="0" y="150" width="2000" height="60px" fill="url(#line-3)"></rect>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#lines)" viewbox="0 0 100% 100%"></rect>
+      </svg>
     </div>
     <header class="hero">
-        <h1 class="hero_heading">MIS.W<br>新歓サイト<br>2022</h1>
+      <h1 class="hero_heading">MIS.W<br />新歓サイト<br />2022</h1>
     </header>
     <main class="main">
-        <div class="container">
-            <section id="about" class="about main_content">
-                <h2 class="main_h2">MIS.Wとは</h2>
-                <div class="about_content">
-                    <section class="misw-intro">
-                        <h3 class="main_h3">早稲田最大の<br class="br-responsive">デジタル創作サークル</h3>
-                        <div class="misw-intro_content">
-                            <p class="main_paragraph justified">
-                                早稲田大学経営情報学会（通称：MIS.W）は、早稲田大学最大のデジタル創作サークルです。サークル創立は1969年、会員数は2022年3月時点で70人以上。理工学部の学生のみならず、法学部・商学部・文学部・文化構想学部など、様々な学部の学生が所属しています。会員は
-                                <span class="group-inline bg-prog">プログラミング研究会</span> <span class="group-inline bg-cg">CG研究会</span> <span class="group-inline bg-midi">MIDI研究会</span> の3つの研究会に所属して、日々創作活動に取り組んでいます。
-                            </p>
-                            <div class="group-intro-list">
-                                <section class="group-intro-list_item bg-prog">
-                                    <div class="group-intro-list_item_content">
-                                        <h4 class="group-intro-list_item_content_heading">プログラミング研究会</h4>
-                                        <p class="main_paragraph justified">
-                                            ゲーム制作とWeb開発をメインとして活動しているサークル員が多数所属しています。普段の活動では、チームを組んでゲームやアプリなどを開発したり、プログラミング関連の勉強会を開いたりしています。
-                                        </p>
-                                    </div>
-                                    <div class="group-intro-list_item_goto-works">
-                                        <a href="#works_prog" class="group-intro-list_item_goto-works_link">
-                                            <p>プログラミング研究会の作品を見る</p>
-                                        </a>
-                                    </div>
-                                </section>
-                                <section class="group-intro-list_item bg-cg">
-                                    <div class="group-intro-list_item_content">
-                                        <h4 class="group-intro-list_item_content_heading">CG研究会</h4>
-                                        <p class="main_paragraph justified">
-                                            主にイラストを制作しているサークル員が集まっています。キャラクターやゲーム用の素材、背景、動画、3DCG、印刷物やWebページのデザインなどなど！サークル員によるイラストの描き方、ツールの使い方講座も開かれています。
-                                        </p>
-                                    </div>
-                                    <div class="group-intro-list_item_goto-works">
-                                        <a href="#works_cg" class="group-intro-list_item_goto-works_link">
-                                            <p>CG研究会の作品を見る</p>
-                                        </a>
-                                    </div>
-                                </section>
-                                <section class="group-intro-list_item bg-midi">
-                                    <div class="group-intro-list_item_content">
-                                        <h4 class="group-intro-list_item_content_heading">MIDI研究会</h4>
-                                        <p class="main_paragraph justified">
-                                            DTM（作曲）をするサークル員が集まっています。定期的にコンピレーションアルバムを作ったり、サークル員が企画したゲームに使う曲を提供したり、サークル員と協力してボカロMVを作ったりしています。
-                                        </p>
-                                    </div>
-                                    <div class="group-intro-list_item_goto-works">
-                                        <a href="#works_midi" class="group-intro-list_item_goto-works_link">
-                                            <p>MIDI研究会の作品を見る</p>
-                                        </a>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="place">
-                        <h3 class="main_h3">活動場所</h3>
-                        <div class="place_content">
-                            <p class="main_paragraph">現在はオンライン（Discord）で活動しています。</p>
-                        </div>
-                    </section>
-                    <section class="days-and-times">
-                        <h3 class="main_h3">活動日時</h3>
-                        <div class="days-and-times_content">
-                            <dl class="day-and-time-list">
-                                <div class="day-and-time-list_item">
-                                    <dt class="day-and-time-list_item_day">水<span class="unit">曜日</span></dt>
-                                    <dd class="day-and-time-list_item_time">21:00 - 23:00</dd>
-                                </div>
-                                <div class="day-and-time-list_item">
-                                    <dt class="day-and-time-list_item_day">土<span class="unit">曜日</span></dt>
-                                    <dd class="day-and-time-list_item_time">14:00 - 17:00</dd>
-                                </div>
-                            </dl>
-                        </div>
-                    </section>
-                </div>
-            </section>
-            <div class="main_rule"></div>
-            <section id="info" class="info main_content">
-                <h2 class="main_h2">新歓情報</h2>
-                <div class="info_content">
-                    <section class="events">
-                        <h3 class="main_h3">予定</h3>
-                        <div class="events_content">
-                            <p class="main_paragraph">最新情報は<a href="https://twitter.com/misw_info" target="_blank" rel="noopener noreferrer" class="main_external-link">公式Twitter</a>をチェック！</p>
-                            <div class="schedule">
-                                <div class="schedule_item">
-                                    <div class="schedule_item_date">
-                                        <p class="schedule_item_date_month">4<span class="unit">月</span></p>
-                                        <p class="schedule_item_date_day">2</p>
-                                        <p class="schedule_item_date_dddd">土<span class="unit">曜日</span></p>
-                                    </div>
-                                    <div class="schedule_item_content">
-                                        <h4 class="schedule_item_content_heading">説明会</h4>
-                                        <p class="schedule_item_content_desc justified">
-                                            サークルの概要の説明を行います。</p>
-                                        <p class="schedule_item_content_groups"><span class="group-inline bg-prog">プログラミング</span> <span class="group-inline bg-cg">CG</span><span class="group-inline bg-midi">MIDI</span></p>
-                                    </div>
-                                </div>
-
-                                <div class="schedule_item">
-                                    <div class="schedule_item_date">
-                                        <p class="schedule_item_date_month">4<span class="unit">月</span></p>
-                                        <p class="schedule_item_date_day">4</p>
-                                        <p class="schedule_item_date_dddd">月<span class="unit">曜日</span></p>
-                                    </div>
-                                    <div class="schedule_item_content">
-                                        <h4 class="schedule_item_content_heading">サークル合同説明会</h4>
-                                        <p class="schedule_item_content_desc justified">
-                                            早稲田キャンパス15号館102教室にて、12:15より説明会を行います。</p>
-                                        <p class="schedule_item_content_groups"><span class="group-inline bg-prog">プログラミング</span> <span class="group-inline bg-cg">CG</span><span class="group-inline bg-midi">MIDI</span></p>
-                                    </div>
-                                </div>
-
-                                <div class="schedule_item">
-                                    <div class="schedule_item_date">
-                                        <p class="schedule_item_date_month">4<span class="unit">月</span></p>
-                                        <p class="schedule_item_date_day">6</p>
-                                        <p class="schedule_item_date_dddd">水<span class="unit">曜日</span></p>
-                                    </div>
-                                    <div class="schedule_item_content">
-                                        <h4 class="schedule_item_content_heading">Processing講座</h4>
-                                        <p class="schedule_item_content_desc justified">
-                                            Processingと呼ばれる開発環境を用いたグラフィックの生成の講座を行います。</p>
-                                        <p class="schedule_item_content_groups"><span class="group-inline bg-prog">プログラミング</span> <span class="group-inline bg-cg">CG</span></p>
-                                    </div>
-                                </div>
-
-                                <div class="schedule_item">
-                                    <div class="schedule_item_date">
-                                        <p class="schedule_item_date_month">4<span class="unit">月</span></p>
-                                        <p class="schedule_item_date_day">9</p>
-                                        <p class="schedule_item_date_dddd">土<span class="unit">曜日</span></p>
-                                    </div>
-                                    <div class="schedule_item_content">
-                                        <h4 class="schedule_item_content_heading">イラスト講座</h4>
-                                        <p class="schedule_item_content_desc justified">CLIP STUDIO PAINTを用いてデジタルイラスト講座を行います。
-                                        </p>
-                                        <p class="schedule_item_content_groups"><span class="group-inline bg-cg">CG</span></p>
-                                    </div>
-                                </div>
-
-                                <div class="schedule_item">
-                                    <div class="schedule_item_date">
-                                        <p class="schedule_item_date_month">4<span class="unit">月</span></p>
-                                        <p class="schedule_item_date_day">13</p>
-                                        <p class="schedule_item_date_dddd">水<span class="unit">曜日</span></p>
-                                    </div>
-                                    <div class="schedule_item_content">
-                                        <h4 class="schedule_item_content_heading">3DCG講座</h4>
-                                        <p class="schedule_item_content_desc justified">モデリングしながらblenderの操作を覚えよう。</p>
-                                        <p class="schedule_item_content_groups"><span class="group-inline bg-cg">CG</span></p>
-                                    </div>
-                                </div>
-
-                                <div class="schedule_item">
-                                    <div class="schedule_item_date">
-                                        <p class="schedule_item_date_month">4<span class="unit">月</span></p>
-                                        <p class="schedule_item_date_day">16</p>
-                                        <p class="schedule_item_date_dddd">土<span class="unit">曜日</span></p>
-                                    </div>
-                                    <div class="schedule_item_content">
-                                        <h4 class="schedule_item_content_heading">MIDI研究会ライトニングトーク</h4>
-                                        <p class="schedule_item_content_desc justified">
-                                            音楽オタクのMIDI研究会会員が各自の推しについて語ります。早口注意！</p>
-                                        <p class="schedule_item_content_groups"><span class="group-inline bg-midi">MIDI</span></p>
-                                    </div>
-                                </div>
-
-                                <div class="schedule_item">
-                                    <div class="schedule_item_date">
-                                        <p class="schedule_item_date_month">4<span class="unit">月</span></p>
-                                        <p class="schedule_item_date_day">20</p>
-                                        <p class="schedule_item_date_dddd">水<span class="unit">曜日</span></p>
-                                    </div>
-                                    <div class="schedule_item_content">
-                                        <h4 class="schedule_item_content_heading">塗り絵大会</h4>
-                                        <p class="schedule_item_content_desc justified">
-                                            線画を配布し、サークル員・新入生みんなで塗り絵大会を行います。</p>
-                                        <p class="schedule_item_content_groups"><span class="group-inline bg-cg">CG</span></p>
-                                    </div>
-                                </div>
-
-                                <div class="schedule_item">
-                                    <div class="schedule_item_date">
-                                        <p class="schedule_item_date_month">4<span class="unit">月</span></p>
-                                        <p class="schedule_item_date_day">23</p>
-                                        <p class="schedule_item_date_dddd">土<span class="unit">曜日</span></p>
-                                    </div>
-                                    <div class="schedule_item_content">
-                                        <h4 class="schedule_item_content_heading">Processing講座</h4>
-                                        <p class="schedule_item_content_desc justified">
-                                            Processingと呼ばれる開発環境を用いたグラフィックの生成の講座を行います。</p>
-                                        <p class="schedule_item_content_groups"><span class="group-inline bg-prog">プログラミング</span> <span class="group-inline bg-cg">CG</span></p>
-                                    </div>
-                                </div>
-
-                                <div class="schedule_item">
-                                    <div class="schedule_item_date">
-                                        <p class="schedule_item_date_month">4<span class="unit">月</span></p>
-                                        <p class="schedule_item_date_day">27</p>
-                                        <p class="schedule_item_date_dddd">水<span class="unit">曜日</span></p>
-                                    </div>
-                                    <div class="schedule_item_content">
-                                        <h4 class="schedule_item_content_heading">作曲配信</h4>
-                                        <p class="schedule_item_content_desc justified">MIDI研会長の9W3R7Y (<a href="https://twitter.com/qwerty_16180339" target="_blank" rel="noopener noreferrer">@qwerty_16180339</a>) が作曲配信をします。お手柔らかに...
-                                        </p>
-                                        <p class="schedule_item_content_groups"><span class="group-inline bg-midi">MIDI</span></p>
-                                    </div>
-                                </div>
-
-                                <div class="schedule_item">
-                                    <div class="schedule_item_date">
-                                        <p class="schedule_item_date_month">4<span class="unit">月</span></p>
-                                        <p class="schedule_item_date_day">30</p>
-                                        <p class="schedule_item_date_dddd">土<span class="unit">曜日</span></p>
-                                    </div>
-                                    <div class="schedule_item_content">
-                                        <h4 class="schedule_item_content_heading">3DCG講座</h4>
-                                        <p class="schedule_item_content_desc justified">初心者向け3Dキャラクターモデリング講座をやります。</p>
-                                        <p class="schedule_item_content_groups"><span class="group-inline bg-cg">CG</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="attend">
-                        <h3 class="main_h3">参加方法</h3>
-                        <div class="attend_content">
-                            <div class="attend-procedure">
-                                <section class="attend-procedure_step">
-                                    <h4 class="attend-procedure_step_heading">通話の準備</h4>
-                                    <div class="attend-procedure_step_content">
-                                        <div class="attend-procedure_step_content_desc">
-                                            <p class="main_paragraph justified">
-                                                音声通話の際、PCやスマートフォンのスピーカーで音声を再生すると、マイクが相手の声を拾ってしまい、反響で通話が聞き取りづらい状態になってしまいます。<br>Discordで音声通話を行う際には、イヤホンやヘッドホンを接続するか、それが難しい場合はDiscordの音声設定の「エコー除去」をONにするようご協力お願いします。
-                                            </p>
-                                        </div>
-                                        <div><img src="images/attend1.png" alt="" class="attend-procedure_step_content_img"></div>
-                                    </div>
-                                </section>
-                                <section class="attend-procedure_step">
-                                    <h4 class="attend-procedure_step_heading">公式Twitterに連絡 <br class="br-responsive">&amp; Discordサーバーに参加
-                                    </h4>
-                                    <div class="attend-procedure_step_content">
-                                        <div class="attend-procedure_step_content_desc">
-                                            <p class="main_paragraph justified">活動日ごとにMIS.WのDiscordサーバーへのリンクを<a href="https://twitter.com/misw_info" target="_blank" rel="noopener noreferrer" class="main_external-link">公式Twitter</a>でツイートしますので、このリンクからサーバーにアクセスしてください。
-                                            </p>
-                                            <p class="main_paragraph justified">
-                                                既にDiscordのアカウントをお持ちの方は、そのまま画面の指示に従ってサーバーに参加してください。
-                                            </p>
-                                            <p class="main_paragraph justified">
-                                                Discordのアカウントをお持ちでない方は、画面の指示に従ってユーザー名（ニックネーム）を入力し、仮アカウントを作成してサーバーに参加してください。
-                                            </p>
-                                            <p class="main_notice">仮アカウントを作成した後、メールとパスワードを設定して本登録を行うと、2回目以降の設定が不要になります。
-                                            </p>
-                                        </div>
-                                        <div><img src="images/attend2.png" alt="" class="attend-procedure_step_content_img"></div>
-                                    </div>
-                                </section>
-                                <section class="attend-procedure_step">
-                                    <h4 class="attend-procedure_step_heading">「新入生はこちら」<br class="br-responsive">ボイスチャンネルに参加</h4>
-                                    <div class="attend-procedure_step_content">
-                                        <div class="attend-procedure_step_content_desc">
-                                            <p class="main_paragraph justified">
-                                                サーバーに参加したら、画面左のサイドバーにあるチャンネルの一覧から「新入生はこちら」というボイスチャンネル（音声通話チャンネル）をクリック（タップ）してチャンネルに入室してください。担当のサークル員がMIS.Wの紹介をさせていただきます。
-                                            </p>
-                                        </div>
-                                        <div><img src="images/attend3.png" alt="" class="attend-procedure_step_content_img"></div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </section>
-            <div class="main_rule"></div>
-            <section id="join" class="join main_content">
-                <h2 class="main_h2">入会の流れ</h2>
-                <div class="join_content">
-                    <div class="join-procedure">
-                        <section class="join-procedure_step">
-                            <h3 class="join-procedure_step_heading">MISW Portalで情報を入力</h3>
-                            <div class="join-procedure_step_content">
-                                <div class="join-procedure_step_content_desc">
-                                    <p class="main_paragraph justified">MIS.Wへの入会手続きは、MIS.W専用のポータルサイト「<a href="https://portal.misw.jp/signup" target="_blank" rel="noopener noreferrer">MISW
-                                            Portal</a>」から行います。</p>
-                                    <p class="main_paragraph justified">MISW Portalにアクセス後、画面の指示に従って会員登録フォームから情報を入力してください。
-                                    </p>
-                                    <p class="main_notice">
-                                        早稲田大学以外の大学（インカレ）の方については、事務手続き上の関係で一度面談を行う必要があります。<br>お手数ではございますが、会員登録の前に一度オンライン活動にお越しいただき、その旨をお申し付けください。
-                                    </p>
-                                </div>
-                                <div><img src="images/join1.png" alt="" class="join-procedure_step_content_img"></div>
-                            </div>
-                        </section>
-                        <section class="join-procedure_step">
-                            <h3 class="join-procedure_step_heading">メール認証 &amp; 入会費の支払い</h3>
-                            <div class="join-procedure_step_content">
-                                <div class="join-procedure_step_content_desc">
-                                    <p class="main_paragraph justified">
-                                        会員登録フォームに入力したメールアドレス宛にアカウント認証用のメールが送信されます。メールの指示に従ってアカウントの認証を行ってください。アカウントの認証後、入会費の支払いに移ります。画面の指示に従って、MIS.Wの銀行口座へ入会費<span class="temp">1000円</span>の振り込みを行ってください。（振込手数料はご自身での負担となりますのでご了承ください。）</p>
-                                </div>
-                                <div><img src="images/join2.png" alt="" class="join-procedure_step_content_img"></div>
-                            </div>
-                        </section>
-                        <section class="join-procedure_step">
-                            <h3 class="join-procedure_step_heading">MIS.WのSlackへ参加</h3>
-                            <div class="join-procedure_step_content">
-                                <div class="join-procedure_step_content_desc">
-                                    <p class="main_paragraph justified">
-                                        振り込みが確認され次第、会員登録フォームに入力したメールアドレス宛にMIS.WのSlackワークスペースへの招待メールが送信されます。招待メールからSlackに参加すると、MIS.Wへの入会手続きはすべて完了となります。
-                                    </p>
-                                </div>
-                                <div><img src="images/Slack_RGB.png" alt="" class="join-procedure_step_content_img">
-                                </div>
-                            </div>
-                        </section>
+      <div class="container">
+        <section id="about" class="about main_content">
+          <h2 class="main_h2">MIS.Wとは</h2>
+          <div class="about_content">
+            <section class="misw-intro">
+              <h3 class="main_h3">早稲田最大の<br class="br-responsive" />デジタル創作サークル</h3>
+              <div class="misw-intro_content">
+                <p class="main_paragraph justified">
+                  早稲田大学経営情報学会（通称：MIS.W）は、早稲田大学最大のデジタル創作サークルです。サークル創立は1969年、会員数は2022年3月時点で70人以上。理工学部の学生のみならず、法学部・商学部・文学部・文化構想学部など、様々な学部の学生が所属しています。会員は
+                  <span class="group-inline bg-prog">プログラミング研究会</span>
+                  <span class="group-inline bg-cg">CG研究会</span>
+                  <span class="group-inline bg-midi">MIDI研究会</span>
+                  の3つの研究会に所属して、日々創作活動に取り組んでいます。
+                </p>
+                <div class="group-intro-list">
+                  <section class="group-intro-list_item bg-prog">
+                    <div class="group-intro-list_item_content">
+                      <h4 class="group-intro-list_item_content_heading">プログラミング研究会</h4>
+                      <p class="main_paragraph justified">
+                        ゲーム制作とWeb開発をメインとして活動しているサークル員が多数所属しています。普段の活動では、チームを組んでゲームやアプリなどを開発したり、プログラミング関連の勉強会を開いたりしています。
+                      </p>
                     </div>
+                    <div class="group-intro-list_item_goto-works">
+                      <a href="#works_prog" class="group-intro-list_item_goto-works_link">
+                        <p>プログラミング研究会の作品を見る</p>
+                      </a>
+                    </div>
+                  </section>
+                  <section class="group-intro-list_item bg-cg">
+                    <div class="group-intro-list_item_content">
+                      <h4 class="group-intro-list_item_content_heading">CG研究会</h4>
+                      <p class="main_paragraph justified">
+                        主にイラストを制作しているサークル員が集まっています。キャラクターやゲーム用の素材、背景、動画、3DCG、印刷物やWebページのデザインなどなど！サークル員によるイラストの描き方、ツールの使い方講座も開かれています。
+                      </p>
+                    </div>
+                    <div class="group-intro-list_item_goto-works">
+                      <a href="#works_cg" class="group-intro-list_item_goto-works_link">
+                        <p>CG研究会の作品を見る</p>
+                      </a>
+                    </div>
+                  </section>
+                  <section class="group-intro-list_item bg-midi">
+                    <div class="group-intro-list_item_content">
+                      <h4 class="group-intro-list_item_content_heading">MIDI研究会</h4>
+                      <p class="main_paragraph justified">
+                        DTM（作曲）をするサークル員が集まっています。定期的にコンピレーションアルバムを作ったり、サークル員が企画したゲームに使う曲を提供したり、サークル員と協力してボカロMVを作ったりしています。
+                      </p>
+                    </div>
+                    <div class="group-intro-list_item_goto-works">
+                      <a href="#works_midi" class="group-intro-list_item_goto-works_link">
+                        <p>MIDI研究会の作品を見る</p>
+                      </a>
+                    </div>
+                  </section>
                 </div>
+              </div>
             </section>
-            <div class="main_rule"></div>
-            <section id="works" class="works main_content">
-                <h2 class="main_h2">作品紹介</h2>
-                <div class="works_content">
-                    <section id="works_joint" class="group-works bg-misw">
-                        <h3 class="group-works_heading">合同作品</h3>
-                        <div class="group-works_list">
-                            <section class="group-works_list_item">
-                                <div>
-                                    <a href="https://misw.jp/portfolio/%e3%83%90%e3%83%bc%e3%83%89%e3%83%ab%e2%98%86%e3%83%9e%e3%83%bc%e3%83%81/" class="group-works_list_item_link" target="_blank" rel="noopener noreferrer"><img src="images/gr1.jpg" alt="" class="group-works_list_item_thumb"></a>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">バードル☆マーチ</h4>
-                                    <p class="group-works_list_item_caption_creater">企画長:藤汐</p>
-                                </div>
-                            </section>
-                            <section class="group-works_list_item">
-                                <div>
-                                    <a href="https://drive.google.com/drive/u/1/folders/15VR347jiqJSvjtIMJawkwQxit4SFPzlQ" class="group-works_list_item_link" target="_blank" rel="noopener noreferrer"><img src="images/gr2.jpg" alt="" class="group-works_list_item_thumb"></a>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">少女とケモノの国</h4>
-                                    <p class="group-works_list_item_caption_creater">企画長:らふぇ</p>
-                                </div>
-                            </section>
-                        </div>
-                    </section>
-                    <section id="works_prog" class="group-works bg-prog">
-                        <h3 class="group-works_heading">プログラミング研究会</h3>
-                        <div class="group-works_list">
-                            <section class="group-works_list_item">
-                                <div>
-                                    <a href="https://unityroom.com/games/snakesneaks-chuunibyou-battle" class="group-works_list_item_link" target="_blank" rel="noopener noreferrer"><img src="images/prog1.gif" alt="" class="group-works_list_item_thumb"></a>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">厨二病バトル〜ああ、愛しき我が同胞たちよ〜</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:ヘビ</p>
-                                </div>
-                            </section>
-                            <section class="group-works_list_item">
-                                <div>
-                                    <a href="prog2.html#specials" class="group-works_list_item_link"><img src="images/prog2_4.png" alt="" class="group-works_list_item_thumb"></a>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title"></h4>
-                                    <p class="group-works_list_item_caption_creater">作者:PASQ</p>
-                                </div>
-                            </section>
-                            <section class="group-works_list_item">
-                                <div>
-                                    <a href="https://t-sum-u.github.io/games/Inseki/" class="group-works_list_item_link" target="_blank" rel="noopener noreferrer"><img src="images/prog3.gif" alt="" class="group-works_list_item_thumb"></a>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">引斥</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:T_SUM_U</p>
-                                </div>
-                            </section>
-                        </div>
-                    </section>
-                    <section id="works_cg" class="group-works bg-cg">
-                        <h3 class="group-works_heading">CG研究会</h3>
-                        <div class="group-works_list">
-                            <section class="group-works_list_item">
-                                <div class="group-works_list_item_thumb">
-                                    <div>
-                                        <a href="https://twitter.com/menma_3dcg/status/1466664604814409732?s=21" class="group-works_list_item_link" target="_blank" rel="noopener noreferrer"><img src="images/placeholder.png" alt="" class="group-works_list_item_thumb"></a>
-                                    </div>
-                                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title"></h4>
-                                    <p class="group-works_list_item_caption_creater">作者:メンマ</p>
-                                </div>
-                            </section>
-                            <section class="group-works_list_item">
-                                <div>
-                                    <a href="cg2.html#specials" class="group-works_list_item_link"><img src="images/cg2.jpg" alt="" class="group-works_list_item_thumb"></a>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title"></h4>
-                                    <p class="group-works_list_item_caption_creater">作者:メンマ</p>
-                                </div>
-                            </section>
-                            <section class="group-works_list_item">
-                                <div>
-                                    <a href="cg3.html#specials" class="group-works_list_item_link"><img src="images/cg3.jpg" alt="" class="group-works_list_item_thumb"></a>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title"></h4>
-                                    <p class="group-works_list_item_caption_creater">作者:シンノ</p>
-                                </div>
-                            </section>
-                            <section class="group-works_list_item">
-                                <div>
-                                    <a href="cg4.html#specials" class="group-works_list_item_link"><img src="images/cg4.png" alt="" class="group-works_list_item_thumb"></a>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">ウミネコ（バードル☆マーチより）</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:ユチェ</p>
-                                </div>
-                            </section>
-                            <section class="group-works_list_item">
-                                <div>
-                                    <a href="cg5.html#specials" class="group-works_list_item_link"><img src="images/cg5.png" alt="" class="group-works_list_item_thumb"></a>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">告白</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:すい</p>
-                                </div>
-                            </section>
-                            <section class="group-works_list_item">
-                                <div>
-                                    <a href="cg6.html#specials" class="group-works_list_item_link"><img src="images/cg6.png" alt="" class="group-works_list_item_thumb"></a>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">ジュークボックス</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:あさのもめん</p>
-                                </div>
-                            </section>
-                            <section class="group-works_list_item">
-                                <div>
-                                    <a href="cg7.html#specials" class="group-works_list_item_link"><img src="images/cg7.jpg" alt="" class="group-works_list_item_thumb"></a>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">ハロウィーン</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:あさのもめん</p>
-                                </div>
-                            </section>
-                            <section class="group-works_list_item">
-                                <div>
-                                    <a href="cg8.html#specials" class="group-works_list_item_link"><img src="images/cg8.png" alt="" class="group-works_list_item_thumb"></a>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">2022_4</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:あさのもめん</p>
-                                </div>
-                            </section>
-                            <section class="group-works_list_item">
-                                <div>
-                                    <a href="cg9.html#specials" class="group-works_list_item_link"><img src="images/cg9.png" alt="" class="group-works_list_item_thumb"></a>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">飛行艇</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:あさのもめん</p>
-                                </div>
-                            </section>
-                        </div>
-                    </section>
-                    <section id="works_midi" class="group-works bg-midi">
-                        <h3 class="group-works_heading">MIDI研究会</h3>
-                        <div class="group-works_list">
-                            <section class="group-works_list_item">
-                                <div>
-                                    <iframe src="https://www.youtube.com/embed/jn4uCDeI4o4" class="group-works_list_item_thumb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">Dissolve</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:すい</p>
-                                </div>
-                            </section>
+            <section class="place">
+              <h3 class="main_h3">活動場所</h3>
+              <div class="place_content">
+                <p class="main_paragraph">現在はオンライン（Discord）で活動しています。</p>
+              </div>
+            </section>
+            <section class="days-and-times">
+              <h3 class="main_h3">活動日時</h3>
+              <div class="days-and-times_content">
+                <dl class="day-and-time-list">
+                  <div class="day-and-time-list_item">
+                    <dt class="day-and-time-list_item_day">水<span class="unit">曜日</span></dt>
+                    <dd class="day-and-time-list_item_time">21:00 - 23:00</dd>
+                  </div>
+                  <div class="day-and-time-list_item">
+                    <dt class="day-and-time-list_item_day">土<span class="unit">曜日</span></dt>
+                    <dd class="day-and-time-list_item_time">14:00 - 17:00</dd>
+                  </div>
+                </dl>
+              </div>
+            </section>
+          </div>
+        </section>
+        <div class="main_rule"></div>
+        <section id="info" class="info main_content">
+          <h2 class="main_h2">新歓情報</h2>
+          <div class="info_content">
+            <section class="events">
+              <h3 class="main_h3">予定</h3>
+              <div class="events_content">
+                <p class="main_paragraph">
+                  最新情報は<a href="https://twitter.com/misw_info" target="_blank" rel="noopener noreferrer" class="main_external-link">公式Twitter</a
+                  >をチェック！
+                </p>
+                <div class="schedule">
+                  <div class="schedule_item">
+                    <div class="schedule_item_date">
+                      <p class="schedule_item_date_month">4<span class="unit">月</span></p>
+                      <p class="schedule_item_date_day">2</p>
+                      <p class="schedule_item_date_dddd">土<span class="unit">曜日</span></p>
+                    </div>
+                    <div class="schedule_item_content">
+                      <h4 class="schedule_item_content_heading">説明会</h4>
+                      <p class="schedule_item_content_desc justified">サークルの概要の説明を行います。</p>
+                      <p class="schedule_item_content_groups">
+                        <span class="group-inline bg-prog">プログラミング</span>
+                        <span class="group-inline bg-cg">CG</span><span class="group-inline bg-midi">MIDI</span>
+                      </p>
+                    </div>
+                  </div>
 
-                            <section class="group-works_list_item">
-                                <div>
-                                    <iframe src="https://ext.nicovideo.jp/thumb/sm39994044" class="group-works_list_item_thumb" scrolling="no" style="border:solid 1px #ccc;" frameborder="0"><a
-                                            href="https://www.nicovideo.jp/watch/sm39994044" target="_blank"
-                                            rel="noopener noreferrer">海とメランコリー／蓮谷彗
-                                            feat.闇音レンリ</a></iframe>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">海とメランコリー</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:すい</p>
-                                </div>
-                            </section>
+                  <div class="schedule_item">
+                    <div class="schedule_item_date">
+                      <p class="schedule_item_date_month">4<span class="unit">月</span></p>
+                      <p class="schedule_item_date_day">4</p>
+                      <p class="schedule_item_date_dddd">月<span class="unit">曜日</span></p>
+                    </div>
+                    <div class="schedule_item_content">
+                      <h4 class="schedule_item_content_heading">サークル合同説明会</h4>
+                      <p class="schedule_item_content_desc justified">早稲田キャンパス15号館102教室にて、12:15より説明会を行います。</p>
+                      <p class="schedule_item_content_groups">
+                        <span class="group-inline bg-prog">プログラミング</span>
+                        <span class="group-inline bg-cg">CG</span><span class="group-inline bg-midi">MIDI</span>
+                      </p>
+                    </div>
+                  </div>
 
-                            <section class="group-works_list_item">
-                                <div>
-                                    <iframe class="group-works_list_item_thumb" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1218190729&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">Canopus</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:すい</p>
-                                </div>
-                            </section>
+                  <div class="schedule_item">
+                    <div class="schedule_item_date">
+                      <p class="schedule_item_date_month">4<span class="unit">月</span></p>
+                      <p class="schedule_item_date_day">6</p>
+                      <p class="schedule_item_date_dddd">水<span class="unit">曜日</span></p>
+                    </div>
+                    <div class="schedule_item_content">
+                      <h4 class="schedule_item_content_heading">Processing講座</h4>
+                      <p class="schedule_item_content_desc justified">Processingと呼ばれる開発環境を用いたグラフィックの生成の講座を行います。</p>
+                      <p class="schedule_item_content_groups">
+                        <span class="group-inline bg-prog">プログラミング</span>
+                        <span class="group-inline bg-cg">CG</span>
+                      </p>
+                    </div>
+                  </div>
 
-                            <section class="group-works_list_item">
-                                <div>
-                                    <a href="https://soundcloud.com/qla9rltkewpe/fern-m4r-uplifting-remix/s-yexymXJ2HY5?ref=clipboard&p=a&c=1&si=aa9cd61ce8b94835989fbe6efd77defb&utm_campaign=social_sharing&utm_medium=text&utm_source=clipboard" class="group-works_list_item_link" target="_blank"
-                                        rel="noopener noreferrer"><img src="images/placeholder.png" alt="" class="group-works_list_item_thumb"></a>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">Fern(M4/R Uplifting Remix)最終調整版</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:もり</p>
-                                </div>
-                            </section>
+                  <div class="schedule_item">
+                    <div class="schedule_item_date">
+                      <p class="schedule_item_date_month">4<span class="unit">月</span></p>
+                      <p class="schedule_item_date_day">9</p>
+                      <p class="schedule_item_date_dddd">土<span class="unit">曜日</span></p>
+                    </div>
+                    <div class="schedule_item_content">
+                      <h4 class="schedule_item_content_heading">イラスト講座</h4>
+                      <p class="schedule_item_content_desc justified">CLIP STUDIO PAINTを用いてデジタルイラスト講座を行います。</p>
+                      <p class="schedule_item_content_groups">
+                        <span class="group-inline bg-cg">CG</span>
+                      </p>
+                    </div>
+                  </div>
 
-                            <section class="group-works_list_item">
-                                <div>
-                                    <a href="https://soundcloud.com/qla9rltkewpe/epic-ver/s-rcelkgsHFoR?ref=clipboard&p=a&c=1&si=cf6cc1fd05e845b8b4db1109c6cdfafe&utm_campaign=social_sharing&utm_medium=text&utm_source=clipboard" class="group-works_list_item_link" target="_blank" rel="noopener noreferrer"><img src="images/placeholder.png" alt="" class="group-works_list_item_thumb"></a>
-                                </div>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">粉雪Epic Ver</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:もり</p>
-                                </div>
-                            </section>
+                  <div class="schedule_item">
+                    <div class="schedule_item_date">
+                      <p class="schedule_item_date_month">4<span class="unit">月</span></p>
+                      <p class="schedule_item_date_day">13</p>
+                      <p class="schedule_item_date_dddd">水<span class="unit">曜日</span></p>
+                    </div>
+                    <div class="schedule_item_content">
+                      <h4 class="schedule_item_content_heading">3DCG講座</h4>
+                      <p class="schedule_item_content_desc justified">モデリングしながらblenderの操作を覚えよう。</p>
+                      <p class="schedule_item_content_groups">
+                        <span class="group-inline bg-cg">CG</span>
+                      </p>
+                    </div>
+                  </div>
 
-                            <section class="group-works_list_item">
-                                <iframe class="group-works_list_item_thumb" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1147048912&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">About You</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:9W3R7Y</p>
-                                </div>
-                            </section>
+                  <div class="schedule_item">
+                    <div class="schedule_item_date">
+                      <p class="schedule_item_date_month">4<span class="unit">月</span></p>
+                      <p class="schedule_item_date_day">16</p>
+                      <p class="schedule_item_date_dddd">土<span class="unit">曜日</span></p>
+                    </div>
+                    <div class="schedule_item_content">
+                      <h4 class="schedule_item_content_heading">MIDI研究会ライトニングトーク</h4>
+                      <p class="schedule_item_content_desc justified">音楽オタクのMIDI研究会会員が各自の推しについて語ります。早口注意！</p>
+                      <p class="schedule_item_content_groups">
+                        <span class="group-inline bg-midi">MIDI</span>
+                      </p>
+                    </div>
+                  </div>
 
-                            <section class="group-works_list_item">
-                                <div>
-                                    <iframe class="group-works_list_item_thumb" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1076595973&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                                </div>
+                  <div class="schedule_item">
+                    <div class="schedule_item_date">
+                      <p class="schedule_item_date_month">4<span class="unit">月</span></p>
+                      <p class="schedule_item_date_day">20</p>
+                      <p class="schedule_item_date_dddd">水<span class="unit">曜日</span></p>
+                    </div>
+                    <div class="schedule_item_content">
+                      <h4 class="schedule_item_content_heading">塗り絵大会</h4>
+                      <p class="schedule_item_content_desc justified">線画を配布し、サークル員・新入生みんなで塗り絵大会を行います。</p>
+                      <p class="schedule_item_content_groups">
+                        <span class="group-inline bg-cg">CG</span>
+                      </p>
+                    </div>
+                  </div>
 
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">Universe</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:9W3R7Y</p>
-                                </div>
-                            </section>
+                  <div class="schedule_item">
+                    <div class="schedule_item_date">
+                      <p class="schedule_item_date_month">4<span class="unit">月</span></p>
+                      <p class="schedule_item_date_day">23</p>
+                      <p class="schedule_item_date_dddd">土<span class="unit">曜日</span></p>
+                    </div>
+                    <div class="schedule_item_content">
+                      <h4 class="schedule_item_content_heading">Processing講座</h4>
+                      <p class="schedule_item_content_desc justified">Processingと呼ばれる開発環境を用いたグラフィックの生成の講座を行います。</p>
+                      <p class="schedule_item_content_groups">
+                        <span class="group-inline bg-prog">プログラミング</span>
+                        <span class="group-inline bg-cg">CG</span>
+                      </p>
+                    </div>
+                  </div>
 
-                            <section class="group-works_list_item">
-                                <div>
-                                    <iframe class="group-works_list_item_thumb" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1226991406&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                                </div>
+                  <div class="schedule_item">
+                    <div class="schedule_item_date">
+                      <p class="schedule_item_date_month">4<span class="unit">月</span></p>
+                      <p class="schedule_item_date_day">27</p>
+                      <p class="schedule_item_date_dddd">水<span class="unit">曜日</span></p>
+                    </div>
+                    <div class="schedule_item_content">
+                      <h4 class="schedule_item_content_heading">作曲配信</h4>
+                      <p class="schedule_item_content_desc justified">
+                        MIDI研会長の9W3R7Y (<a href="https://twitter.com/qwerty_16180339" target="_blank" rel="noopener noreferrer">@qwerty_16180339</a>)
+                        が作曲配信をします。お手柔らかに...
+                      </p>
+                      <p class="schedule_item_content_groups">
+                        <span class="group-inline bg-midi">MIDI</span>
+                      </p>
+                    </div>
+                  </div>
 
-                                <div class="group-works_list_item_caption">
-                                    <h4 class="group-works_list_item_caption_title">Photon</h4>
-                                    <p class="group-works_list_item_caption_creater">作者:9W3R7Y</p>
-                                </div>
-                            </section>
-
-
-                        </div>
-                    </section>
-
+                  <div class="schedule_item">
+                    <div class="schedule_item_date">
+                      <p class="schedule_item_date_month">4<span class="unit">月</span></p>
+                      <p class="schedule_item_date_day">30</p>
+                      <p class="schedule_item_date_dddd">土<span class="unit">曜日</span></p>
+                    </div>
+                    <div class="schedule_item_content">
+                      <h4 class="schedule_item_content_heading">3DCG講座</h4>
+                      <p class="schedule_item_content_desc justified">初心者向け3Dキャラクターモデリング講座をやります。</p>
+                      <p class="schedule_item_content_groups">
+                        <span class="group-inline bg-cg">CG</span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </section>
-            <div class="main_rule "></div>
-            <section id="specials" class="specials main_content ">
-                <h2 class="main_h2 ">新歓企画</h2>
-                <div class="specials_content ">
-                    <ul class="special-list ">
-                        <li class="special-list_item ">
-                            <a href="special_cg.html#specials" class="special-list_item_link"><img src="images/special_cg.png " alt=" " class="special-list_item_thumb "></a>
-                        </li>
-                        <li class="special-list_item ">
-                            <iframe scrolling="no" frameborder="no" allow="autoplay" class="special-list_item_thumb " src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1243496335&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                        </li>
-                    </ul>
+            <section class="attend">
+              <h3 class="main_h3">参加方法</h3>
+              <div class="attend_content">
+                <div class="attend-procedure">
+                  <section class="attend-procedure_step">
+                    <h4 class="attend-procedure_step_heading">通話の準備</h4>
+                    <div class="attend-procedure_step_content">
+                      <div class="attend-procedure_step_content_desc">
+                        <p class="main_paragraph justified">
+                          音声通話の際、PCやスマートフォンのスピーカーで音声を再生すると、マイクが相手の声を拾ってしまい、反響で通話が聞き取りづらい状態になってしまいます。<br />Discordで音声通話を行う際には、イヤホンやヘッドホンを接続するか、それが難しい場合はDiscordの音声設定の「エコー除去」をONにするようご協力お願いします。
+                        </p>
+                      </div>
+                      <div>
+                        <img src="images/attend1.png" alt="" class="attend-procedure_step_content_img" />
+                      </div>
+                    </div>
+                  </section>
+                  <section class="attend-procedure_step">
+                    <h4 class="attend-procedure_step_heading">
+                      公式Twitterに連絡
+                      <br class="br-responsive" />&amp; Discordサーバーに参加
+                    </h4>
+                    <div class="attend-procedure_step_content">
+                      <div class="attend-procedure_step_content_desc">
+                        <p class="main_paragraph justified">
+                          活動日ごとにMIS.WのDiscordサーバーへのリンクを<a
+                            href="https://twitter.com/misw_info"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="main_external-link"
+                            >公式Twitter</a
+                          >でツイートしますので、このリンクからサーバーにアクセスしてください。
+                        </p>
+                        <p class="main_paragraph justified">既にDiscordのアカウントをお持ちの方は、そのまま画面の指示に従ってサーバーに参加してください。</p>
+                        <p class="main_paragraph justified">
+                          Discordのアカウントをお持ちでない方は、画面の指示に従ってユーザー名（ニックネーム）を入力し、仮アカウントを作成してサーバーに参加してください。
+                        </p>
+                        <p class="main_notice">仮アカウントを作成した後、メールとパスワードを設定して本登録を行うと、2回目以降の設定が不要になります。</p>
+                      </div>
+                      <div>
+                        <img src="images/attend2.png" alt="" class="attend-procedure_step_content_img" />
+                      </div>
+                    </div>
+                  </section>
+                  <section class="attend-procedure_step">
+                    <h4 class="attend-procedure_step_heading">「新入生はこちら」<br class="br-responsive" />ボイスチャンネルに参加</h4>
+                    <div class="attend-procedure_step_content">
+                      <div class="attend-procedure_step_content_desc">
+                        <p class="main_paragraph justified">
+                          サーバーに参加したら、画面左のサイドバーにあるチャンネルの一覧から「新入生はこちら」というボイスチャンネル（音声通話チャンネル）をクリック（タップ）してチャンネルに入室してください。担当のサークル員がMIS.Wの紹介をさせていただきます。
+                        </p>
+                      </div>
+                      <div>
+                        <img src="images/attend3.png" alt="" class="attend-procedure_step_content_img" />
+                      </div>
+                    </div>
+                  </section>
                 </div>
+              </div>
             </section>
-        </div>
+          </div>
+        </section>
+        <div class="main_rule"></div>
+        <section id="join" class="join main_content">
+          <h2 class="main_h2">入会の流れ</h2>
+          <div class="join_content">
+            <div class="join-procedure">
+              <section class="join-procedure_step">
+                <h3 class="join-procedure_step_heading">MISW Portalで情報を入力</h3>
+                <div class="join-procedure_step_content">
+                  <div class="join-procedure_step_content_desc">
+                    <p class="main_paragraph justified">
+                      MIS.Wへの入会手続きは、MIS.W専用のポータルサイト「<a href="https://portal.misw.jp/signup" target="_blank" rel="noopener noreferrer"
+                        >MISW Portal</a
+                      >」から行います。
+                    </p>
+                    <p class="main_paragraph justified">MISW Portalにアクセス後、画面の指示に従って会員登録フォームから情報を入力してください。</p>
+                    <p class="main_notice">
+                      早稲田大学以外の大学（インカレ）の方については、事務手続き上の関係で一度面談を行う必要があります。<br />お手数ではございますが、会員登録の前に一度オンライン活動にお越しいただき、その旨をお申し付けください。
+                    </p>
+                  </div>
+                  <div>
+                    <img src="images/join1.png" alt="" class="join-procedure_step_content_img" />
+                  </div>
+                </div>
+              </section>
+              <section class="join-procedure_step">
+                <h3 class="join-procedure_step_heading">メール認証 &amp; 入会費の支払い</h3>
+                <div class="join-procedure_step_content">
+                  <div class="join-procedure_step_content_desc">
+                    <p class="main_paragraph justified">
+                      会員登録フォームに入力したメールアドレス宛にアカウント認証用のメールが送信されます。メールの指示に従ってアカウントの認証を行ってください。アカウントの認証後、入会費の支払いに移ります。画面の指示に従って、MIS.Wの銀行口座へ入会費<span
+                        class="temp"
+                        >1000円</span
+                      >の振り込みを行ってください。（振込手数料はご自身での負担となりますのでご了承ください。）
+                    </p>
+                  </div>
+                  <div>
+                    <img src="images/join2.png" alt="" class="join-procedure_step_content_img" />
+                  </div>
+                </div>
+              </section>
+              <section class="join-procedure_step">
+                <h3 class="join-procedure_step_heading">MIS.WのSlackへ参加</h3>
+                <div class="join-procedure_step_content">
+                  <div class="join-procedure_step_content_desc">
+                    <p class="main_paragraph justified">
+                      振り込みが確認され次第、会員登録フォームに入力したメールアドレス宛にMIS.WのSlackワークスペースへの招待メールが送信されます。招待メールからSlackに参加すると、MIS.Wへの入会手続きはすべて完了となります。
+                    </p>
+                  </div>
+                  <div>
+                    <img src="images/Slack_RGB.png" alt="" class="join-procedure_step_content_img" />
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+        <div class="main_rule"></div>
+        <section id="works" class="works main_content">
+          <h2 class="main_h2">作品紹介</h2>
+          <div class="works_content">
+            <section id="works_joint" class="group-works bg-misw">
+              <h3 class="group-works_heading">合同作品</h3>
+              <div class="group-works_list">
+                <section class="group-works_list_item">
+                  <div>
+                    <a
+                      href="https://misw.jp/portfolio/%e3%83%90%e3%83%bc%e3%83%89%e3%83%ab%e2%98%86%e3%83%9e%e3%83%bc%e3%83%81/"
+                      class="group-works_list_item_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img src="images/gr1.jpg" alt="" class="group-works_list_item_thumb"
+                    /></a>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">バードル☆マーチ</h4>
+                    <p class="group-works_list_item_caption_creater">企画長:藤汐</p>
+                  </div>
+                </section>
+                <section class="group-works_list_item">
+                  <div>
+                    <a
+                      href="https://drive.google.com/drive/u/1/folders/15VR347jiqJSvjtIMJawkwQxit4SFPzlQ"
+                      class="group-works_list_item_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img src="images/gr2.jpg" alt="" class="group-works_list_item_thumb"
+                    /></a>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">少女とケモノの国</h4>
+                    <p class="group-works_list_item_caption_creater">企画長:らふぇ</p>
+                  </div>
+                </section>
+              </div>
+            </section>
+            <section id="works_prog" class="group-works bg-prog">
+              <h3 class="group-works_heading">プログラミング研究会</h3>
+              <div class="group-works_list">
+                <section class="group-works_list_item">
+                  <div>
+                    <a
+                      href="https://unityroom.com/games/snakesneaks-chuunibyou-battle"
+                      class="group-works_list_item_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img src="images/prog1.gif" alt="" class="group-works_list_item_thumb"
+                    /></a>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">厨二病バトル〜ああ、愛しき我が同胞たちよ〜</h4>
+                    <p class="group-works_list_item_caption_creater">作者:ヘビ</p>
+                  </div>
+                </section>
+                <section class="group-works_list_item">
+                  <div>
+                    <a href="prog2.html#specials" class="group-works_list_item_link"
+                      ><img src="images/prog2_4.png" alt="" class="group-works_list_item_thumb"
+                    /></a>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title"></h4>
+                    <p class="group-works_list_item_caption_creater">作者:PASQ</p>
+                  </div>
+                </section>
+                <section class="group-works_list_item">
+                  <div>
+                    <a href="https://t-sum-u.github.io/games/Inseki/" class="group-works_list_item_link" target="_blank" rel="noopener noreferrer"
+                      ><img src="images/prog3.gif" alt="" class="group-works_list_item_thumb"
+                    /></a>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">引斥</h4>
+                    <p class="group-works_list_item_caption_creater">作者:T_SUM_U</p>
+                  </div>
+                </section>
+              </div>
+            </section>
+            <section id="works_cg" class="group-works bg-cg">
+              <h3 class="group-works_heading">CG研究会</h3>
+              <div class="group-works_list">
+                <section class="group-works_list_item">
+                  <div class="group-works_list_item_thumb">
+                    <div>
+                      <a
+                        href="https://twitter.com/menma_3dcg/status/1466664604814409732?s=21"
+                        class="group-works_list_item_link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img src="images/placeholder.png" alt="" class="group-works_list_item_thumb"
+                      /></a>
+                    </div>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title"></h4>
+                    <p class="group-works_list_item_caption_creater">作者:メンマ</p>
+                  </div>
+                </section>
+                <section class="group-works_list_item">
+                  <div>
+                    <a href="cg2.html#specials" class="group-works_list_item_link"><img src="images/cg2.jpg" alt="" class="group-works_list_item_thumb" /></a>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title"></h4>
+                    <p class="group-works_list_item_caption_creater">作者:メンマ</p>
+                  </div>
+                </section>
+                <section class="group-works_list_item">
+                  <div>
+                    <a href="cg3.html#specials" class="group-works_list_item_link"><img src="images/cg3.jpg" alt="" class="group-works_list_item_thumb" /></a>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title"></h4>
+                    <p class="group-works_list_item_caption_creater">作者:シンノ</p>
+                  </div>
+                </section>
+                <section class="group-works_list_item">
+                  <div>
+                    <a href="cg4.html#specials" class="group-works_list_item_link"><img src="images/cg4.png" alt="" class="group-works_list_item_thumb" /></a>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">ウミネコ（バードル☆マーチより）</h4>
+                    <p class="group-works_list_item_caption_creater">作者:ユチェ</p>
+                  </div>
+                </section>
+                <section class="group-works_list_item">
+                  <div>
+                    <a href="cg5.html#specials" class="group-works_list_item_link"><img src="images/cg5.png" alt="" class="group-works_list_item_thumb" /></a>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">告白</h4>
+                    <p class="group-works_list_item_caption_creater">作者:すい</p>
+                  </div>
+                </section>
+                <section class="group-works_list_item">
+                  <div>
+                    <a href="cg6.html#specials" class="group-works_list_item_link"><img src="images/cg6.png" alt="" class="group-works_list_item_thumb" /></a>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">ジュークボックス</h4>
+                    <p class="group-works_list_item_caption_creater">作者:あさのもめん</p>
+                  </div>
+                </section>
+                <section class="group-works_list_item">
+                  <div>
+                    <a href="cg7.html#specials" class="group-works_list_item_link"><img src="images/cg7.jpg" alt="" class="group-works_list_item_thumb" /></a>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">ハロウィーン</h4>
+                    <p class="group-works_list_item_caption_creater">作者:あさのもめん</p>
+                  </div>
+                </section>
+                <section class="group-works_list_item">
+                  <div>
+                    <a href="cg8.html#specials" class="group-works_list_item_link"><img src="images/cg8.png" alt="" class="group-works_list_item_thumb" /></a>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">2022_4</h4>
+                    <p class="group-works_list_item_caption_creater">作者:あさのもめん</p>
+                  </div>
+                </section>
+                <section class="group-works_list_item">
+                  <div>
+                    <a href="cg9.html#specials" class="group-works_list_item_link"><img src="images/cg9.png" alt="" class="group-works_list_item_thumb" /></a>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">飛行艇</h4>
+                    <p class="group-works_list_item_caption_creater">作者:あさのもめん</p>
+                  </div>
+                </section>
+              </div>
+            </section>
+            <section id="works_midi" class="group-works bg-midi">
+              <h3 class="group-works_heading">MIDI研究会</h3>
+              <div class="group-works_list">
+                <section class="group-works_list_item">
+                  <div>
+                    <iframe
+                      src="https://www.youtube.com/embed/jn4uCDeI4o4"
+                      class="group-works_list_item_thumb"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">Dissolve</h4>
+                    <p class="group-works_list_item_caption_creater">作者:すい</p>
+                  </div>
+                </section>
+
+                <section class="group-works_list_item">
+                  <div>
+                    <iframe
+                      src="https://ext.nicovideo.jp/thumb/sm39994044"
+                      class="group-works_list_item_thumb"
+                      scrolling="no"
+                      style="border: solid 1px #ccc"
+                      frameborder="0"
+                      ><a href="https://www.nicovideo.jp/watch/sm39994044" target="_blank" rel="noopener noreferrer"
+                        >海とメランコリー／蓮谷彗 feat.闇音レンリ</a
+                      ></iframe
+                    >
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">海とメランコリー</h4>
+                    <p class="group-works_list_item_caption_creater">作者:すい</p>
+                  </div>
+                </section>
+
+                <section class="group-works_list_item">
+                  <div>
+                    <iframe
+                      class="group-works_list_item_thumb"
+                      scrolling="no"
+                      frameborder="no"
+                      allow="autoplay"
+                      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1218190729&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">Canopus</h4>
+                    <p class="group-works_list_item_caption_creater">作者:すい</p>
+                  </div>
+                </section>
+
+                <section class="group-works_list_item">
+                  <div>
+                    <a
+                      href="https://soundcloud.com/qla9rltkewpe/fern-m4r-uplifting-remix/s-yexymXJ2HY5?ref=clipboard&p=a&c=1&si=aa9cd61ce8b94835989fbe6efd77defb&utm_campaign=social_sharing&utm_medium=text&utm_source=clipboard"
+                      class="group-works_list_item_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img src="images/placeholder.png" alt="" class="group-works_list_item_thumb"
+                    /></a>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">Fern(M4/R Uplifting Remix)最終調整版</h4>
+                    <p class="group-works_list_item_caption_creater">作者:もり</p>
+                  </div>
+                </section>
+
+                <section class="group-works_list_item">
+                  <div>
+                    <a
+                      href="https://soundcloud.com/qla9rltkewpe/epic-ver/s-rcelkgsHFoR?ref=clipboard&p=a&c=1&si=cf6cc1fd05e845b8b4db1109c6cdfafe&utm_campaign=social_sharing&utm_medium=text&utm_source=clipboard"
+                      class="group-works_list_item_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img src="images/placeholder.png" alt="" class="group-works_list_item_thumb"
+                    /></a>
+                  </div>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">粉雪Epic Ver</h4>
+                    <p class="group-works_list_item_caption_creater">作者:もり</p>
+                  </div>
+                </section>
+
+                <section class="group-works_list_item">
+                  <iframe
+                    class="group-works_list_item_thumb"
+                    scrolling="no"
+                    frameborder="no"
+                    allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1147048912&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">About You</h4>
+                    <p class="group-works_list_item_caption_creater">作者:9W3R7Y</p>
+                  </div>
+                </section>
+
+                <section class="group-works_list_item">
+                  <div>
+                    <iframe
+                      class="group-works_list_item_thumb"
+                      scrolling="no"
+                      frameborder="no"
+                      allow="autoplay"
+                      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1076595973&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  </div>
+
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">Universe</h4>
+                    <p class="group-works_list_item_caption_creater">作者:9W3R7Y</p>
+                  </div>
+                </section>
+
+                <section class="group-works_list_item">
+                  <div>
+                    <iframe
+                      class="group-works_list_item_thumb"
+                      scrolling="no"
+                      frameborder="no"
+                      allow="autoplay"
+                      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1226991406&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  </div>
+
+                  <div class="group-works_list_item_caption">
+                    <h4 class="group-works_list_item_caption_title">Photon</h4>
+                    <p class="group-works_list_item_caption_creater">作者:9W3R7Y</p>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </div>
+        </section>
+        <div class="main_rule"></div>
+        <section id="specials" class="specials main_content">
+          <h2 class="main_h2">新歓企画</h2>
+          <div class="specials_content">
+            <ul class="special-list">
+              <li class="special-list_item">
+                <a href="special_cg.html#specials" class="special-list_item_link"
+                  ><img src="images/special_cg.png " alt=" " class="special-list_item_thumb"
+                /></a>
+              </li>
+              <li class="special-list_item">
+                <iframe
+                  scrolling="no"
+                  frameborder="no"
+                  allow="autoplay"
+                  class="special-list_item_thumb"
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1243496335&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer class="page-footer ">
-        <div class="container ">
-            <section class="links ">
-                <h2 class="page-footer_h2 ">リンク</h2>
-                <div class="links_content ">
-                    <ul class="link-list ">
-                        <li class="link-list_item ">
-                            <a href="https://misw.jp " target="_blank " rel="noopener noreferrer " class="link-list_item_link ">
-                                <p>公式サイト</p>
-                            </a>
-                        </li>
-                        <li class="link-list_item ">
-                            <a href="https://twitter.com/misw_info " target="_blank " rel="noopener noreferrer " class="link-list_item_link ">
-                                <p>公式Twitter</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="share ">
-                <h2 class="page-footer_h2 ">共有</h2>
-                <div class="share_content ">
-                    <ul class="share-list ">
-                        <li class="share-list_item ">
-                            <a href="https://twitter.com/intent/tweet?text=MIS.W 新歓サイト 2022&url=https://event.misw.jp/shinkan2022/ " target="_blank " rel="noopener noreferrer " class="share-list_item_link "><img src="images/share-twitter.svg " alt="Twitter
-                                        " class="share-list_item_icon "></a>
-                        </li>
-                        <li class="share-list_item ">
-                            <a href="https://social-plugins.line.me/lineit/share?text=MIS.W 新歓サイト 2022&url=https://event.misw.jp/shinkan2022/ " target="_blank " rel="noopener noreferrer " class="share-list_item_link "><img src="images/share-line.png
-                                        " alt="LINE " class="share-list_item_icon "></a>
-                        </li>
-                        <li class="share-list_item ">
-                            <a href="http://www.facebook.com/share.php?u=https://event.misw.jp/shinkan2022/ " target="_blank " rel="noopener noreferrer " class="share-list_item_link "><img src="images/share-facebook.png " alt="Facebook " class="share-list_item_icon "></a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="credits ">
-                <h2 class="page-footer_h2 ">制作</h2>
-                <div class="credits_content ">
-                    <dl class="credit-list ">
-                        <div class="credit-list_item ">
-                            <dt class="credit-list_item_role ">監督</dt>
-                            <dd class="credit-list_item_name ">Maiな</dd>
-                        </div>
-                        <div class="credit-list_item ">
-                            <dt class="credit-list_item_role ">デザイン</dt>
-                            <dd class="credit-list_item_name ">ショコラ丸</dd>
-                        </div>
-                        <div class="credit-list_item ">
-                            <dt class="credit-list_item_role ">イラスト</dt>
-                            <dd class="credit-list_item_name ">Noah</dd>
-                        </div>
-                        <div class="credit-list_item ">
-                            <dt class="credit-list_item_role ">実装</dt>
-                            <dd class="credit-list_item_name ">T_SUM_U</dd>
-                        </div>
-                        <div class="credit-list_item ">
-                            <dt class="credit-list_item_role ">管理</dt>
-                            <dd class="credit-list_item_name ">ヘビ</dd>
-                        </div>
-                    </dl>
-                </div>
-            </section>
-            <p class="copyright ">&copy; 2022 MIS.W</p>
-        </div>
+    <footer class="page-footer">
+      <div class="container">
+        <section class="links">
+          <h2 class="page-footer_h2">リンク</h2>
+          <div class="links_content">
+            <ul class="link-list">
+              <li class="link-list_item">
+                <a href="https://misw.jp " target="_blank " rel="noopener noreferrer " class="link-list_item_link">
+                  <p>公式サイト</p>
+                </a>
+              </li>
+              <li class="link-list_item">
+                <a href="https://twitter.com/misw_info " target="_blank " rel="noopener noreferrer " class="link-list_item_link">
+                  <p>公式Twitter</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="share">
+          <h2 class="page-footer_h2">共有</h2>
+          <div class="share_content">
+            <ul class="share-list">
+              <li class="share-list_item">
+                <a
+                  href="https://twitter.com/intent/tweet?text=MIS.W 新歓サイト 2022&url=https://event.misw.jp/shinkan2022/ "
+                  target="_blank "
+                  rel="noopener noreferrer "
+                  class="share-list_item_link"
+                  ><img
+                    src="images/share-twitter.svg "
+                    alt="Twitter
+                                        "
+                    class="share-list_item_icon"
+                /></a>
+              </li>
+              <li class="share-list_item">
+                <a
+                  href="https://social-plugins.line.me/lineit/share?text=MIS.W 新歓サイト 2022&url=https://event.misw.jp/shinkan2022/ "
+                  target="_blank "
+                  rel="noopener noreferrer "
+                  class="share-list_item_link"
+                  ><img
+                    src="images/share-line.png
+                                        "
+                    alt="LINE "
+                    class="share-list_item_icon"
+                /></a>
+              </li>
+              <li class="share-list_item">
+                <a
+                  href="http://www.facebook.com/share.php?u=https://event.misw.jp/shinkan2022/ "
+                  target="_blank "
+                  rel="noopener noreferrer "
+                  class="share-list_item_link"
+                  ><img src="images/share-facebook.png " alt="Facebook " class="share-list_item_icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="credits">
+          <h2 class="page-footer_h2">制作</h2>
+          <div class="credits_content">
+            <dl class="credit-list">
+              <div class="credit-list_item">
+                <dt class="credit-list_item_role">監督</dt>
+                <dd class="credit-list_item_name">Maiな</dd>
+              </div>
+              <div class="credit-list_item">
+                <dt class="credit-list_item_role">デザイン</dt>
+                <dd class="credit-list_item_name">ショコラ丸</dd>
+              </div>
+              <div class="credit-list_item">
+                <dt class="credit-list_item_role">イラスト</dt>
+                <dd class="credit-list_item_name">Noah</dd>
+              </div>
+              <div class="credit-list_item">
+                <dt class="credit-list_item_role">実装</dt>
+                <dd class="credit-list_item_name">T_SUM_U</dd>
+              </div>
+              <div class="credit-list_item">
+                <dt class="credit-list_item_role">管理</dt>
+                <dd class="credit-list_item_name">ヘビ</dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+        <p class="copyright">&copy; 2022 MIS.W</p>
+      </div>
     </footer>
-</body>
-
+    <!-- Cloudflare Web Analytics -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "869e08462a9249c7ac7fcd0e0ea615dd"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+  </body>
 </html>

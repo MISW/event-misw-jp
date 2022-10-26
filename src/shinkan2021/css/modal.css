@@ -1,9 +1,9 @@
 .modal-wrap {
   position: fixed;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 200;
   display: none;
@@ -11,17 +11,17 @@
 .modal-inner {
   max-width: 90vw;
   max-height: 90vh;
-  background:#F7F7F7;
-  margin:0 auto;
+  background: #f7f7f7;
+  margin: 0 auto;
   text-align: center;
-  padding:20px;
+  padding: 20px;
   border-radius: 5px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.modal-cg-img  {
+.modal-cg-img {
   max-width: 860px;
   width: calc(85vw - 40px);
   height: calc(90vh - 40px - 1rem);
@@ -40,17 +40,17 @@
   object-fit: contain;
   margin: 0 auto;
 }
-.close-icon{
+.close-icon {
   text-align: right;
 }
-.close-icon span{
+.close-icon span {
   cursor: pointer;
 }
 .modal-ttl {
   padding-bottom: 5vh;
   font-weight: bold;
 }
-.modal-ttl h2{
+.modal-ttl h2 {
   border-bottom: 2px solid #2b2b2b;
   white-space: nowrap;
 }
@@ -67,15 +67,15 @@
   max-width: calc(90vw - 40px);
   max-height: calc(90vh - 40px - 1rem);
 }
-.modal-inner  .flex-column:last-child {
+.modal-inner .flex-column:last-child {
   align-items: flex-end;
 }
-@media screen and (max-height:374px) {
+@media screen and (max-height: 374px) {
   .modal-cg-img {
     max-width: 65vw;
   }
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .modal-txt {
     padding: 1rem 0;
   }
@@ -96,7 +96,7 @@
     flex-wrap: wrap;
   }
 }
-@media screen and (max-height:600px) {
+@media screen and (max-height: 600px) {
   .modal-inner .flex-column img {
     min-width: calc(30vw - 40px);
     max-height: calc(90vh - 40px - 1rem);
@@ -105,7 +105,7 @@
     flex-wrap: nowrap;
     max-height: calc(75vh - 40px - 1rem);
   }
-  .modal-inner  .flex-column:last-child {
+  .modal-inner .flex-column:last-child {
     width: max-content;
   }
 }

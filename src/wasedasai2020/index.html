@@ -1,381 +1,408 @@
 <!DOCTYPE html>
 <html lang="ja" prefix="og: http://ogp.me/ns#">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:url" content="https://event.misw.jp/wasedasai2020/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="MIS.W 早稲田祭2020特設サイト" />
     <meta property="og:description" content="オンラインで早稲田祭に参加します！" />
     <meta property="og:image" content="https://event.misw.jp/wasedasai2020/images/og.png" />
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://event.misw.jp/wasedasai2020/images/og.png" />
-    <meta name="twitter:site" content="@misw_info">
+    <meta name="twitter:site" content="@misw_info" />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>MIS.W 早稲田祭2020特設ページ</title>
-    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="shortcut icon" href="./images/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
-        $(function() {
-            var h = $(window).height();
-            $('#wrap').css('display', 'none');
-            $('#loader-bg ,#loader').height(h).css('display', 'block');
-        });
+      $(function () {
+        var h = $(window).height();
+        $('#wrap').css('display', 'none');
+        $('#loader-bg ,#loader').height(h).css('display', 'block');
+      });
 
-        $(window).load(function() {
-            $('#loader-bg').delay(900).fadeOut(800);
-            $('#loader').delay(600).fadeOut(300);
+      $(window).load(function () {
+        $('#loader-bg').delay(900).fadeOut(800);
+        $('#loader').delay(600).fadeOut(300);
 
-            $('#wrap').css('display', 'block');
+        $('#wrap').css('display', 'block');
+      });
+      $(function () {
+        // #で始まるアンカーをクリックした場合に処理
+        $('a[href^=#]').click(function () {
+          // スクロールの速度
+          var speed = 400; // ミリ秒
+          // アンカーの値取得
+          var href = $(this).attr('href');
+          // 移動先を取得
+          var target = $(href == '#' || href == '' ? 'html' : href);
+          // 移動先を数値で取得
+          var position = target.offset().top;
+          // スムーススクロール
+          $('body,html').animate(
+            {
+              scrollTop: position,
+            },
+            speed,
+            'swing'
+          );
+          return false;
         });
-        $(function() {
-            // #で始まるアンカーをクリックした場合に処理
-            $('a[href^=#]').click(function() {
-                // スクロールの速度
-                var speed = 400; // ミリ秒
-                // アンカーの値取得
-                var href = $(this).attr("href");
-                // 移動先を取得
-                var target = $(href == "#" || href == "" ? 'html' : href);
-                // 移動先を数値で取得
-                var position = target.offset().top;
-                // スムーススクロール
-                $('body,html').animate({
-                    scrollTop: position
-                }, speed, 'swing');
-                return false;
-            });
-        });
-
+      });
     </script>
     <link rel="stylesheet" href="style.css?20201107" />
     <link rel="stylesheet" href="media.css" />
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="loader-bg" class="box">
-        <div id="loader">
-            <p>Now Loading...</p>
-        </div>
+      <div id="loader">
+        <p>Now Loading...</p>
+      </div>
     </div>
     <div id="wrap">
-        <header>
-            <div class="navi">
-                <a target="_blank" href="https://event.misw.jp/wasedasai2020/"><img src="images/MISW_logo_v.png" class="header-logo" alt="logo" />
-                    <p class="icontext">-早稲田祭2020-</p>
+      <header>
+        <div class="navi">
+          <a target="_blank" href="https://event.misw.jp/wasedasai2020/"
+            ><img src="images/MISW_logo_v.png" class="header-logo" alt="logo" />
+            <p class="icontext">-早稲田祭2020-</p>
+          </a>
+          <ul class="navilist">
+            <li class="naviitem">
+              <a href="#Top">Top</a>
+            </li>
+            <li class="naviitem">
+              <a href="#About">About</a>
+            </li>
+            <li class="naviitem">
+              <a href="#Time">Schedule</a>
+            </li>
+            <li class="naviitem">
+              <a href="#Event">Event</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <section class="top" id="Top">
+          <div class="top-bg"></div>
+          <div class="top-title">
+            <div class="cover cover1"></div>
+            <h1>早稲田祭2020</h1>
+
+            <div class="cover cover2"></div>
+            <h1>MIS.W</h1>
+
+            <div class="cover cover3"></div>
+            <h1>今を「創る」</h1>
+
+            <div class="cover cover4"></div>
+            <h4><span>早稲田祭2020公式キャッチコピー</span><span>「今、新たに」</span></h4>
+
+            <div class="content-link">
+              <div class="btn2 mis-official">
+                <a target="_blank" href="https://misw.jp/"
+                  ><img class="mis_ico" src="images/mis_icon.png" alt="" />
+                  <p>公式サイト</p>
                 </a>
-                <ul class="navilist">
-                    <li class="naviitem"><a href="#Top">Top</a></li>
-                    <li class="naviitem"><a href="#About">About</a></li>
-                    <li class="naviitem"><a href="#Time">Schedule</a></li>
-                    <li class="naviitem"><a href="#Event">Event</a></li>
-                </ul>
+              </div>
+              <div class="btn3 wasedasai-official">
+                <a target="_blank" class="go_wasedasai" href="https://www.wasedasai.net/">
+                  <p>早稲田祭公式サイト</p>
+                </a>
+              </div>
             </div>
-        </header>
-        <main>
-            <section class="top" id="Top">
-                <div class="top-bg"></div>
-                <div class="top-title">
-                    <div class="cover cover1"></div>
-                    <h1>早稲田祭2020</h1>
+          </div>
+          <div class="top-img"></div>
+          <div class="scroll">
+            <!--<p>scroll</p>-->
+            <div class="bar"></div>
+          </div>
+        </section>
+        <section class="About">
+          <h1 class="title" id="About">ABOUT US</h1>
+          <p class="title-sub">
+            <span>MIS.W(経営情報学会)は</span><span>パソコンなどを使い</span><span>ゲーム・イラスト・音楽の制作を行う</span
+            ><span>早稲田大学最大のデジタル創作サークルです。</span><br /><span>サークル員が共同で作り上げた</span
+            ><span>ゲームの試遊、CD、画集他作品を紹介します。</span><br /><span>ぜひ、YoutubeLiveをご覧ください！</span>
+          </p>
+        </section>
+        <section class="Time-schedule">
+          <h1 class="title" id="Time">TIME SCHEDULE</h1>
+          <p class="title-sub">
+            <span>早稲田祭当日の</span><span>タイムスケジュールです。</span><br /><a target="_blank" href="https://youtu.be/KJx1FtaZSds"
+              ><span style="font-weight: bold" class="jump2">配信場所はこちら！</span></a
+            >
+          </p>
 
-                    <div class="cover cover2"></div>
-                    <h1>MIS.W</h1>
-
-                    <div class="cover cover3"></div>
-                    <h1>今を「創る」</h1>
-
-                    <div class="cover cover4"></div>
-                    <h4><span>早稲田祭2020公式キャッチコピー</span><span>「今、新たに」</span></h4>
-
-                    <div class="content-link">
-                        <div class="btn2 mis-official">
-                            <a target="_blank" href="https://misw.jp/"><img class="mis_ico" src="images/mis_icon.png" alt="" />
-                                <p>公式サイト</p>
-                            </a>
-                        </div>
-                        <div class="btn3 wasedasai-official">
-                            <a target="_blank" class="go_wasedasai" href="https://www.wasedasai.net/">
-                                <p>早稲田祭公式サイト</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="top-img"></div>
-                <div class="scroll">
-                    <!--<p>scroll</p>-->
-                    <div class="bar"></div>
-                </div>
-            </section>
-            <section class="About">
-                <h1 class="title" id="About">ABOUT US</h1>
-                <p class="title-sub"><span>MIS.W(経営情報学会)は</span><span>パソコンなどを使い</span><span>ゲーム・イラスト・音楽の制作を行う</span><span>早稲田大学最大のデジタル創作サークルです。</span><br><span>サークル員が共同で作り上げた</span><span>ゲームの試遊、CD、画集他作品を紹介します。</span><br><span>ぜひ、YoutubeLiveをご覧ください！</span></p>
-            </section>
-            <section class="Time-schedule">
-                <h1 class="title" id="Time">TIME SCHEDULE</h1>
-                <p class="title-sub"><span>早稲田祭当日の</span><span>タイムスケジュールです。</span><br><a target="_blank" href="https://youtu.be/KJx1FtaZSds"><span style="font-weight: bold;" class="jump2">配信場所はこちら！</span></a></p>
-                
-                <div class="timeTable">
-                    <div class="table-color">
-                        <div class="tableBox">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <th class="just borderNone">10:30</th>
-                                        <td class="line4 color01"><span>みすらじ</span><span>オープニング</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">10:50</th>
-                                        <td class="line5 color02">RHYTH-METRIA</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">11:20</th>
-                                        <td class="line2 color01">ライブペイント紹介</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">11:30</th>
-                                        <td class="line2 color02">2d-act</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">11:40</th>
-                                        <td class="line2 color01">Cluster展示の紹介</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">11:50</th>
-                                        <td class="line2 color02">ライブペイント</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">12:00</th>
-                                        <td class="line7 color01">休憩</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">12:45</th>
-                                        <td class="line3 color02"><span>MIDI研ライブ作曲</span><span>前半結果発表</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">13:00</th>
-                                        <td class="line1 color01">ライブペイント紹介</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">13:05</th>
-                                        <td class="line5 color02">VOCALOID企画</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">13:35</th>
-                                        <td class="line2 color01"><span>みすらじ</span><span>&</span><span>コンピXFD2</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="table-color">
-                        <div class="tableBox">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <th class="just borderNone">13:45</th>
-                                        <td class="line6 color02">みすゲームセンター</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">14:25</th>
-                                        <td class="line3 color01">画集宣伝</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">14:40</th>
-                                        <td class="line2 color02">クラスタ展示の紹介</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">14:50</th>
-                                        <td class="line2 color01">鉄道企画2020</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">15:00</th>
-                                        <td class="line5 color02"><span>みすちゃんを</span>描こう!</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">15:30</th>
-                                        <td class="line5 color01"><span>VOCALOID企画</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">16:00</th>
-                                        <td class="line7 color02">同人誌企画</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="just borderNone">16:45</th>
-                                        <td class="line3 color01"><span>みすラジ</span><span>エンディング</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="Event_schedule">
-                <h1 class="title" id="Event">EVENT</h1>
-                <p class="title-sub"><span>早稲田祭で発表する企画一覧です。</span><span>一部企画は公式サイトがあります。</span></p>
-                <div class="container">
-                    <div class="item">
-                        <img src="images/RHYTHMETRIA.png" alt="RHYTH-METRIA">
-                        <p class="goods-name">RHYTH-METRIA</p>
-                        <ul>
-                            <li>
-                                <span>サークル発の新感覚音ゲーリズメトリア！！</span><span>今年新たに追加される新曲をご紹介します！</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- </div>
-            <div class="container"> -->
-                    <div class="item">
-                        <img src="images/vocaloid企画.png" alt="VOCALOID企画">
-                        <p class="goods-name">VOCALOID企画</p>
-                        <ul>
-                            <li>
-                                <span>2〜3人チームで創作したオリジナルVOCALOID MVです。</span><span>cluster企画にて上映します。</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- </div>
-            <div class="container"> -->
-                    <div class="item">
-                        <img src="images/MISW公式早稲田祭バーチャル会場.jpg" alt="MISW公式早稲田祭バーチャル会場">
-                        <p class="goods-name">MISW公式早稲田祭バーチャル会場</p>
-                        <ul>
-                            <li>
-                                <span>MISW公式早稲田祭Cluster会場です。 </span><span>サークル員による渾身のMV、CGの展示を行っております。</span><span>是非お立ち寄り下さい!</span><a target="_blank" href="https://cluster.mu/w/6c104fd5-ac9b-47ed-8c27-8eed8455734a"><span class="jump">詳しくはこちら！</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- </div>            
-            <div class="container"> -->
-                    <div class="item">
-                        <img src="images/みすゲームセンター.png" alt="みすゲームセンター">
-                        <p class="goods-name">みすゲームセンター</p>
-                        <ul>
-                            <li>
-                                <span>個人やサークル内イベントで作成されたゲームを紹介するサイトです。</span><span>気軽に楽しめるゲームが揃ってます！</span><a target="_blank" href="https://misw-gamecenter.herokuapp.com/"><span class="jump">詳しくはこちら！</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- </div>
-            <div class="container"> -->
-                    <div class="item">
-                        <img src="images/2d-act.png" alt="2d-act">
-                        <p class="goods-name">2d-act</p>
-                        <ul>
-                            <li>
-                                <span>Unityで2Dのアクションゲームを作る企画です。</span><span>開発初期なのでこれからの進捗にご期待ください。</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- </div> 
-            <div class="container"> -->
-                    <div class="item">
-                        <img src="images/ライブペイント企画.png" alt="ライブペイント企画">
-                        <p class="goods-name">ライブペイント企画</p>
-                        <ul>
-                            <li>
-                                <span>お絵かき完成までをライブ配信！</span><span>CG研メンバーのリレー形式での配信になるのでぜひ見てください〜！</span><a target="_blank" href="https://www.youtube.com/watch?v=YCsZBy-Rg0U&feature=youtu.be"><span class="jump">配信場所はこちら！</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- </div>
-            <div class="container"> -->
-                    <div class="item">
-                        <img src="images/鉄道企画2020.png" alt="鉄道企画2020">
-                        <p class="goods-name">鉄道企画2020</p>
-                        <ul>
-                            <li>
-                                <span>中央・総武線の三鷹～中野間を再現した鉄道シミュレーターです。</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- </div>
-            <div class="container"> -->
-                    <div class="item">
-                        <img src="images/同人誌企画.jpg" alt="同人誌企画">
-                        <p class="goods-name">同人誌企画</p>
-                        <ul>
-                            <li>
-                                <span>MIS.W同人誌企画も早くも３回目！</span><span>サークル員の「好き」が詰まった同人誌が今年も完成しました！</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- </div>
-            <div class="container"> -->
-                    <div class="item">
-                        <img src="images/みすちゃんを描こう！.png" alt="みすちゃんを描こう！">
-                        <p class="goods-name">みすちゃんを描こう！</p>
-                        <ul>
-                            <li>
-                                <span>公式サイトのイラストをリニューアルする企画です。</span><span>早稲田祭では沢山のみすちゃんのイラストを紹介します！</span><a target="_blank" href="http://misw.jp/"><span class="jump">詳しくはこちら！</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        <img src="images/コンピレーションアルバム.png" alt="コンピレーションアルバム">
-                        <p class="goods-name">コンピレーションアルバム</p>
-                        <ul>
-                            <li>
-                                <span>MIDI研究会メンバーによる個性的な楽曲集。</span><a target="_blank" href="https://drive.google.com/drive/folders/1lQ6hW34lXSvhHcc0mJJWN1pPYDGq8vIz?usp=sharing"><span class="jump">詳しくはこちら！</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        <img src="images/画集.png" alt="画集">
-                        <p class="goods-name">画集</p>
-                        <ul>
-                            <li>
-                                <span>今回のテーマは「HELL OR HEAVEN？」</span><span>CG研のメンバーにイラストを描いてもらいました！</span><a target="_blank" href="https://projects.misw.jp/2020/HELL-OR-HEAVEN/"><span class="jump">詳しくはこちら！</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="footer-container">
-                <div class="share">
-                    <p>share</p>
-                    <ul>
-                        <li>
-                            <a target="_blank" href="http://twitter.com/share?url=https://event.misw.jp/wasedasai2020/&text=MIS.W 2020｜MIS.W 早稲田祭特設サイト2020&related=misw_info">
-                                <i class="twitter fab fa-twitter-square fa-3x"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="http://line.me/R/msg/text/?MIS.W 2020｜MIS.W 早稲田祭特設サイト2020 https://event.misw.jp/wasedasai2020/">
-                                <i class="line fab fa-line fa-3x"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://event.misw.jp/wasedasai2020/" class="icon__share">
-                                <i class="facebook fab fa-facebook-square fa-3x"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="staff">
-                    <div class="designer">
-                        <p>webdesign</p>
-                        <p>924</p>
-                    </div>
-                    <div class="illustrator">
-                        <p>top illust</p>
-                        <p>あんび</p>
-                    </div>
-                </div>
+          <div class="timeTable">
+            <div class="table-color">
+              <div class="tableBox">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th class="just borderNone">10:30</th>
+                      <td class="line4 color01"><span>みすらじ</span><span>オープニング</span></td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">10:50</th>
+                      <td class="line5 color02">RHYTH-METRIA</td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">11:20</th>
+                      <td class="line2 color01">ライブペイント紹介</td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">11:30</th>
+                      <td class="line2 color02">2d-act</td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">11:40</th>
+                      <td class="line2 color01">Cluster展示の紹介</td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">11:50</th>
+                      <td class="line2 color02">ライブペイント</td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">12:00</th>
+                      <td class="line7 color01">休憩</td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">12:45</th>
+                      <td class="line3 color02"><span>MIDI研ライブ作曲</span><span>前半結果発表</span></td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">13:00</th>
+                      <td class="line1 color01">ライブペイント紹介</td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">13:05</th>
+                      <td class="line5 color02">VOCALOID企画</td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">13:35</th>
+                      <td class="line2 color01"><span>みすらじ</span><span>&</span><span>コンピXFD2</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-
-            <div class="copyright">
-                <p>© 2020 MIS.W</p>
+            <div class="table-color">
+              <div class="tableBox">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th class="just borderNone">13:45</th>
+                      <td class="line6 color02">みすゲームセンター</td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">14:25</th>
+                      <td class="line3 color01">画集宣伝</td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">14:40</th>
+                      <td class="line2 color02">クラスタ展示の紹介</td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">14:50</th>
+                      <td class="line2 color01">鉄道企画2020</td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">15:00</th>
+                      <td class="line5 color02"><span>みすちゃんを</span>描こう!</td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">15:30</th>
+                      <td class="line5 color01">
+                        <span>VOCALOID企画</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">16:00</th>
+                      <td class="line7 color02">同人誌企画</td>
+                    </tr>
+                    <tr>
+                      <th class="just borderNone">16:45</th>
+                      <td class="line3 color01"><span>みすラジ</span><span>エンディング</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-        </footer>
+          </div>
+        </section>
+        <section class="Event_schedule">
+          <h1 class="title" id="Event">EVENT</h1>
+          <p class="title-sub"><span>早稲田祭で発表する企画一覧です。</span><span>一部企画は公式サイトがあります。</span></p>
+          <div class="container">
+            <div class="item">
+              <img src="images/RHYTHMETRIA.png" alt="RHYTH-METRIA" />
+              <p class="goods-name">RHYTH-METRIA</p>
+              <ul>
+                <li><span>サークル発の新感覚音ゲーリズメトリア！！</span><span>今年新たに追加される新曲をご紹介します！</span></li>
+              </ul>
+            </div>
+            <!-- </div>
+            <div class="container"> -->
+            <div class="item">
+              <img src="images/vocaloid企画.png" alt="VOCALOID企画" />
+              <p class="goods-name">VOCALOID企画</p>
+              <ul>
+                <li><span>2〜3人チームで創作したオリジナルVOCALOID MVです。</span><span>cluster企画にて上映します。</span></li>
+              </ul>
+            </div>
+            <!-- </div>
+            <div class="container"> -->
+            <div class="item">
+              <img src="images/MISW公式早稲田祭バーチャル会場.jpg" alt="MISW公式早稲田祭バーチャル会場" />
+              <p class="goods-name">MISW公式早稲田祭バーチャル会場</p>
+              <ul>
+                <li>
+                  <span>MISW公式早稲田祭Cluster会場です。 </span><span>サークル員による渾身のMV、CGの展示を行っております。</span
+                  ><span>是非お立ち寄り下さい!</span
+                  ><a target="_blank" href="https://cluster.mu/w/6c104fd5-ac9b-47ed-8c27-8eed8455734a"><span class="jump">詳しくはこちら！</span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- </div>
+            <div class="container"> -->
+            <div class="item">
+              <img src="images/みすゲームセンター.png" alt="みすゲームセンター" />
+              <p class="goods-name">みすゲームセンター</p>
+              <ul>
+                <li>
+                  <span>個人やサークル内イベントで作成されたゲームを紹介するサイトです。</span><span>気軽に楽しめるゲームが揃ってます！</span
+                  ><a target="_blank" href="https://misw-gamecenter.herokuapp.com/"><span class="jump">詳しくはこちら！</span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- </div>
+            <div class="container"> -->
+            <div class="item">
+              <img src="images/2d-act.png" alt="2d-act" />
+              <p class="goods-name">2d-act</p>
+              <ul>
+                <li><span>Unityで2Dのアクションゲームを作る企画です。</span><span>開発初期なのでこれからの進捗にご期待ください。</span></li>
+              </ul>
+            </div>
+            <!-- </div>
+            <div class="container"> -->
+            <div class="item">
+              <img src="images/ライブペイント企画.png" alt="ライブペイント企画" />
+              <p class="goods-name">ライブペイント企画</p>
+              <ul>
+                <li>
+                  <span>お絵かき完成までをライブ配信！</span><span>CG研メンバーのリレー形式での配信になるのでぜひ見てください〜！</span
+                  ><a target="_blank" href="https://www.youtube.com/watch?v=YCsZBy-Rg0U&feature=youtu.be"><span class="jump">配信場所はこちら！</span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- </div>
+            <div class="container"> -->
+            <div class="item">
+              <img src="images/鉄道企画2020.png" alt="鉄道企画2020" />
+              <p class="goods-name">鉄道企画2020</p>
+              <ul>
+                <li>
+                  <span>中央・総武線の三鷹～中野間を再現した鉄道シミュレーターです。</span>
+                </li>
+              </ul>
+            </div>
+            <!-- </div>
+            <div class="container"> -->
+            <div class="item">
+              <img src="images/同人誌企画.jpg" alt="同人誌企画" />
+              <p class="goods-name">同人誌企画</p>
+              <ul>
+                <li><span>MIS.W同人誌企画も早くも３回目！</span><span>サークル員の「好き」が詰まった同人誌が今年も完成しました！</span></li>
+              </ul>
+            </div>
+            <!-- </div>
+            <div class="container"> -->
+            <div class="item">
+              <img src="images/みすちゃんを描こう！.png" alt="みすちゃんを描こう！" />
+              <p class="goods-name">みすちゃんを描こう！</p>
+              <ul>
+                <li>
+                  <span>公式サイトのイラストをリニューアルする企画です。</span><span>早稲田祭では沢山のみすちゃんのイラストを紹介します！</span
+                  ><a target="_blank" href="http://misw.jp/"><span class="jump">詳しくはこちら！</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <img src="images/コンピレーションアルバム.png" alt="コンピレーションアルバム" />
+              <p class="goods-name">コンピレーションアルバム</p>
+              <ul>
+                <li>
+                  <span>MIDI研究会メンバーによる個性的な楽曲集。</span
+                  ><a target="_blank" href="https://drive.google.com/drive/folders/1lQ6hW34lXSvhHcc0mJJWN1pPYDGq8vIz?usp=sharing"
+                    ><span class="jump">詳しくはこちら！</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <img src="images/画集.png" alt="画集" />
+              <p class="goods-name">画集</p>
+              <ul>
+                <li>
+                  <span>今回のテーマは「HELL OR HEAVEN？」</span><span>CG研のメンバーにイラストを描いてもらいました！</span
+                  ><a target="_blank" href="https://projects.misw.jp/2020/HELL-OR-HEAVEN/"><span class="jump">詳しくはこちら！</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-container">
+          <div class="share">
+            <p>share</p>
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  href="http://twitter.com/share?url=https://event.misw.jp/wasedasai2020/&text=MIS.W 2020｜MIS.W 早稲田祭特設サイト2020&related=misw_info">
+                  <i class="twitter fab fa-twitter-square fa-3x"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="http://line.me/R/msg/text/?MIS.W 2020｜MIS.W 早稲田祭特設サイト2020 https://event.misw.jp/wasedasai2020/">
+                  <i class="line fab fa-line fa-3x"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://event.misw.jp/wasedasai2020/" class="icon__share">
+                  <i class="facebook fab fa-facebook-square fa-3x"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="staff">
+            <div class="designer">
+              <p>webdesign</p>
+              <p>924</p>
+            </div>
+            <div class="illustrator">
+              <p>top illust</p>
+              <p>あんび</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>© 2020 MIS.W</p>
+        </div>
+      </footer>
     </div>
-</body>
-
+    <!-- Cloudflare Web Analytics -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "869e08462a9249c7ac7fcd0e0ea615dd"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+  </body>
 </html>
