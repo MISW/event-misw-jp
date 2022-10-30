@@ -122,7 +122,7 @@ h1 {
   height: 100vh;
   margin: 0;
   background-size: contain;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -257,9 +257,9 @@ h1 {
 }
 
 #mischan {
-  background-image: url(img/mischan.webp);
+  background-image: url(img/mischan-pc.webp);
   background-size: contain;
-  background-position: center right;
+  background-position: right 70px;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -521,7 +521,6 @@ h1 {
   /*背景画像*/
   #home-img {
     background-size: auto 100vh;
-    background-attachment: scroll;
   }
 
   /*ホーム*/
@@ -622,6 +621,7 @@ h1 {
 
   /*About*/
   #mischan {
+    background-image: url(img/mischan-sp.webp);
     background-position: center 70px;
     background-size: cover;
   }
