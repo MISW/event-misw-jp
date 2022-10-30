@@ -621,8 +621,9 @@ h1 {
   }
 
   /*About*/
-  #about-content {
-    background-position: bottom center;
+  #mischan {
+    background-position: center 70px;
+    background-size: cover;
   }
 
   #about-content img {
