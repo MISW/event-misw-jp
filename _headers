@@ -1,2 +1,14 @@
 /*
   Access-Control-Allow-Origin: *
+
+**/css/*
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: nosnippet, noindex
+
+**/img/*
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: nosnippet
+
+**/js/*
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: nosnippet, noindex
