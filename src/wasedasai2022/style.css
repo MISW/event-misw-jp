@@ -174,7 +174,7 @@ h1 {
   background-image: url(./img/top-illust.jpg);
   background-color: #f1f8ff;
   height: 100vh;
-  margin: 0;
+  margin: 0 0 10px;
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
@@ -312,11 +312,13 @@ h1 {
 }
 
 #mischan {
+  background-color: #f1f8ff;
   background-image: url(img/mischan-pc.webp);
   background-size: contain;
   background-position: right 70px;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  border-radius: 25px;
 }
 
 #about-content {
@@ -357,11 +359,10 @@ h1 {
   display: grid;
   gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin-top: 5px;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #f1f8ff;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 
 .item {
@@ -431,14 +432,14 @@ h1 {
 
 /*Access*/
 #access-bg {
-  margin: 5px auto 70px;
+  margin: 0 auto 70px;
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f1f8ff;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 
 #access-map {
@@ -477,7 +478,7 @@ h1 {
   color: #2a4895;
   font-weight: bold;
   text-align: center;
-  border-radius: 15px 15px 0 0;
+  border-radius: 25px 25px 0 0;
   background-color: #f1f8ff;
 }
 
@@ -543,7 +544,7 @@ h1 {
   justify-content: center;
 }
 #doujinshi-img {
-  margin: 5px auto 70px;
+  margin: 0 auto 70px;
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
