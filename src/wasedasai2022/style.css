@@ -356,7 +356,7 @@ h1 {
   text-align: center;
 }
 
-#art-project p:first-child {
+#art-project p:first-child { /*Coming Soon...の間だけ設定*/
   font-size: 1.4rem;
   color: #cccccc;
 }
