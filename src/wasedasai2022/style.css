@@ -357,7 +357,7 @@ h1 {
   display: grid;
   gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin-top: 50px;
+  margin-top: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #f1f8ff;
@@ -430,11 +430,8 @@ h1 {
 }
 
 /*Access*/
-#access {
-}
-
 #access-bg {
-  margin: 50px auto;
+  margin: 20px auto 70px;
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
@@ -546,7 +543,7 @@ h1 {
   justify-content: center;
 }
 #doujinshi-img {
-  margin: 50px auto;
+  margin: 20px auto;
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
