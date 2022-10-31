@@ -308,7 +308,7 @@ h1 {
 
 /*About*/
 #about {
-  min-height: 100vh;
+  min-height: calc(100vh + 70px);
 }
 
 #mischan {
@@ -357,7 +357,7 @@ h1 {
   display: grid;
   gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin-top: 20px;
+  margin-top: 5px;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #f1f8ff;
@@ -431,7 +431,7 @@ h1 {
 
 /*Access*/
 #access-bg {
-  margin: 20px auto 70px;
+  margin: 5px auto 70px;
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
@@ -473,7 +473,7 @@ h1 {
 #footer-copyright {
   width: 100%;
   margin-top: 50px;
-  padding: 15px;
+  padding: 20px 15px 15px;
   color: #2a4895;
   font-weight: bold;
   text-align: center;
@@ -761,8 +761,6 @@ h1 {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    margin-top: 20px;
-    margin-bottom: 50px;
   }
 
   .item img {
