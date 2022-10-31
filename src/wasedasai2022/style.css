@@ -788,7 +788,7 @@ h1 {
   #access-map {
     order: 1;
     height: 70%;
-    margin: auto;
+    margin: 20px auto auto;
   }
 
   #access-map iframe {
