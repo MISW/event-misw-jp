@@ -394,7 +394,8 @@ h1 {
   text-align: center;
 }
 
-#art-project p:first-child { /*Coming Soon...の間だけ設定*/
+#art-project p:first-child {
+  /*Coming Soon...の間だけ設定*/
   font-size: 1.4rem;
   color: #cccccc;
 }
@@ -416,7 +417,6 @@ h1 {
 
 /*Access*/
 #access {
-  
 }
 
 #access-bg {
@@ -497,7 +497,7 @@ h1 {
   margin: auto 25px;
 }
 
-#sns ul li a img{
+#sns ul li a img {
   width: 50px;
 }
 
@@ -511,7 +511,7 @@ h1 {
   justify-content: space-around;
 }
 
-#footer-author ul li{
+#footer-author ul li {
   padding: 10px;
 }
 
@@ -521,7 +521,7 @@ h1 {
   font-size: 0.85rem;
   font-weight: normal;
 }
-#copyright-text span{
+#copyright-text span {
   display: inline-block;
 }
 
@@ -819,5 +819,4 @@ h1 {
   #copyright-text {
     margin-bottom: 60px;
   }
-
 }
