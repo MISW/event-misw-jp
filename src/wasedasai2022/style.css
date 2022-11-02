@@ -341,7 +341,8 @@ h1 {
 
 /*About*/
 #about {
-  min-height: 100vh
+  min-height: 750px;
+  height: 100vh;
 }
 
 #mischan::before {
@@ -368,6 +369,7 @@ h1 {
 }
 
 #about-content {
+  min-height: calc(750px - 70px);
   height: calc(100vh - 70px);
   margin-top: 0;
   margin-bottom: 0;
