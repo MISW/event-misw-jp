@@ -408,12 +408,8 @@ h1 {
 }
 
 /*Contents*/
-#contents {
-  min-height: 100vh;
-}
-
 #contents-content {
-  width: 90%;
+  width: 90vw;
   margin: 0 auto;
   background-color: #f1f8ff;
   padding-top: 50px;
