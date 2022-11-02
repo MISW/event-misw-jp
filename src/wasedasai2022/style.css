@@ -171,19 +171,41 @@ h1 {
 }
 
 /* 背景画像 */
-#home-img {
-  background-image: url(./img/top-illust.jpg);
-  background-color: #f1f8ff;
+#home-img-parent {
   height: 100vh;
-  margin: 0 0 10px;
+}
+#home-img::before {
+  width: 100%;
+  height: 100vh;
+  content: "";
+  position: fixed;
+  background-image: url(./img/top-illust.jpg);
   background-size: contain;
-  background-position: top center;
+  background-position: top ;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#home-img {
+  width: 100%;
+  margin: 0 0 10px;
+  position: absolute;
+  background-image: none;
+  clip-path: inset(0%);
+  background-color: #f1f8ff;
+}
+
+@media (max-width: 541px) {
+  #home-img::before {
+    background-size: cover;
+  }
 }
 
 /*ホーム*/
 #home {
+  min-height: 550px;
   display: flex;
   flex-direction: row;
 }
@@ -200,7 +222,9 @@ h1 {
 #left-circle {
   width: 24vw;
   height: 24vw;
-  margin: 150px auto auto;
+  max-width: 40vh;
+  max-height: 40vh;
+  margin: 15vh auto auto;
   background-color: rgba(241, 248, 255, 0.5);
   border: solid 2px #2a4895;
   border-radius: 50%;
@@ -210,14 +234,16 @@ h1 {
 
 #left-text {
   margin: auto;
-  font-size: 3.6vw;
-  color: #e08b1a;
+  font-size: min(3.6vw, 6vh);
+  font-weight: lighter;
+  color: #f79719;
   line-height: 1;
   text-align: center;
 }
 
 #left-text p img {
-  max-width: 20vw;
+  width: 20vw;
+  max-width: 35vh;
   margin: 5% auto 0;
 }
 
@@ -226,7 +252,7 @@ h1 {
 }
 
 #left-text p span {
-  font-size: 4.1vw;
+  font-size: min(4.1vw, 7.5vh);
 }
 
 .youtube-responsive {
@@ -264,10 +290,18 @@ h1 {
   flex-direction: column;
 }
 
-#date-circle {
+#date-circle-parent {
   width: 20vw;
   height: 20vw;
+  max-width: 35vh;
+  max-height: 35vh;
   margin: 25vh auto auto;
+  display: block;
+}
+
+#date-circle {
+  width: 100%;
+  height: 100%;
   background-color: rgba(241, 248, 255, 0.5);
   border: solid 2px #2a4895;
   border-radius: 50%;
@@ -279,7 +313,7 @@ h1 {
   margin: auto auto;
   display: flex;
   flex-direction: column;
-  font-size: 2.15vw;
+  font-size: min(2.15vw, 4vh);
   color: #2a4895;
   text-align: center;
   line-height: 1.2;
@@ -291,7 +325,7 @@ h1 {
 
 #location {
   margin: auto auto 10%;
-  font-size: 2.65vw;
+  font-size: min(2.65vw, 5vh);
   font-weight: bold;
   line-height: 1.7;
   color: #2a4895;
@@ -300,11 +334,8 @@ h1 {
   text-align: center;
 }
 
-#location p {
-}
-
 #location p span {
-  font-size: 4.4vw;
+  font-size: min(4.4vw, 9vh);
 }
 
 /*About*/
@@ -312,14 +343,26 @@ h1 {
   min-height: calc(100vh + 30px);
 }
 
-#mischan {
-  background-color: #f1f8ff;
+#mischan::before {
+  content: "";
+  position: fixed;
   background-image: url(img/mischan-pc.webp);
   background-size: contain;
   background-position: right 70px;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+#mischan{
+  width: 100%;
+  position: absolute;
+  background-image: none;
+  clip-path: inset(0%);
   border-radius: 2px;
+  background-color: #f1f8ff;
 }
 
 #about-content {
@@ -743,10 +786,23 @@ h1 {
   }
 
   /*About*/
-  #mischan {
+  #mischan::before {
+    content: "";
+    position: fixed;
     background-image: url(img/mischan-sp.webp);
+    background-size: contain;
     background-position: center 70px;
-    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+  #mischan{
+    position: absolute;
+    background-image: none;
+    clip-path: inset(0%);
   }
 
   #about-content img {
