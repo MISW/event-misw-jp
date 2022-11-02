@@ -400,7 +400,7 @@ h1 {
   flex-direction: column;
 }
 
-#about-content > div > p {
+#about-content>div>p {
   margin: 5px auto;
   color: #313131;
   text-align: center;
@@ -433,7 +433,7 @@ h1 {
   text-align: center;
 }
 
-.item > img {
+.item>img {
   width: 200px;
   height: auto;
   border-radius: 50%;
@@ -441,7 +441,7 @@ h1 {
 
 }
 
-.item > p {
+.item>p {
   font-size: 1.15rem;
   color: #2a4895;
 }
@@ -641,6 +641,7 @@ h1 {
 
 /*レスポンシブ*/
 @media (max-width: 770px) {
+
   /*共通部分*/
   h2 {
     width: calc(100% - 200px * 0.83);
@@ -858,7 +859,7 @@ h1 {
     bottom: 40px;
   }
 
-  #about-content > div > p {
+  #about-content>div>p {
     font-size: 1.1rem;
   }
 
