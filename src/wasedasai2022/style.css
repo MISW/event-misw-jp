@@ -353,26 +353,26 @@ h1 {
   background-position: right 70px;
   background-repeat: no-repeat;
   top: 0;
-  right: 0;
-  width: 100%;
+  right: 5%;
+  width: 90%;
   height: 100vh;
   z-index: -1;
 }
 
 #mischan {
-  width: 100%;
+  width: 90%;
+  margin: 0 5%;
   position: absolute;
   background-image: none;
   clip-path: inset(0%);
-  border-radius: 2px;
+  border-radius: 10px;
   background-color: #f1f8ff;
 }
 
 #about-content {
   min-height: calc(750px - 70px);
   height: calc(100vh - 70px);
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -410,10 +410,11 @@ h1 {
 /*Contents*/
 #contents {
   min-height: 100vh;
-  margin-bottom: 70px;
 }
 
 #contents-content {
+  width: 90%;
+  margin: 0 auto;
   background-color: #f1f8ff;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -501,6 +502,13 @@ h1 {
 }
 
 /*Access*/
+#access-content {
+  width: 90vw;
+  margin: 0 auto;
+  background-color: #f1f8ff;
+  border-radius: 10px;
+}
+
 #access-bg {
   margin: 0 auto 70px;
   padding-top: 50px;
@@ -508,8 +516,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f1f8ff;
-  border-radius: 10px;
 }
 
 #access-map {
@@ -832,6 +838,7 @@ h1 {
     background-position: center 70px;
     background-repeat: no-repeat;
     top: 0;
+    left: 5%;
     bottom: 0;
     width: 100vw;
     height: 100vh;
