@@ -17,7 +17,8 @@ node_modules
 out
 
 # production
-build
+build/*
+!pdfjs/build
 
 # misc
 .DS_Store
