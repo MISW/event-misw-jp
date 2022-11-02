@@ -73,7 +73,7 @@ a {
 
 .button3 {
   display: inline-block;
-  padding: 9px 18px 12px;
+  padding: 5px 18px 8px;
   color: white;
   font-size: 1.1rem;
   background-color: rgba(0, 0, 0, 0.7);
@@ -341,7 +341,7 @@ h1 {
 
 /*About*/
 #about {
-  min-height: calc(100vh + 30px);
+  min-height: 100vh
 }
 
 #mischan::before {
@@ -375,12 +375,21 @@ h1 {
   flex-direction: column;
 }
 
-#about-content img {
-  max-width: 500px;
-  margin: 70px auto;
+#about-img {
+  height: 40%;
+  display: flex;
+  position: relative;
+  justify-content: center;
 }
 
-#about-content div {
+#about-img img {
+  display: block;
+  max-width: 500px;
+  height: auto;
+  margin: auto;
+}
+
+#about-description {
   background-color: rgba(255, 255, 255, 0.6);
   padding: 8px;
   border-radius: 10px;
@@ -403,7 +412,7 @@ h1 {
 
 #projects {
   display: grid;
-  gap: 50px;
+  gap: 50px 25px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding-top: 50px;
   padding-bottom: 50px;
@@ -416,7 +425,7 @@ h1 {
   text-align: center;
 }
 
-.item img {
+.item>img {
   width: 200px;
   height: auto;
   border-radius: 50%;
@@ -436,9 +445,22 @@ h1 {
   font-weight: bold;
 }
 
-.discription {
+.title span {
+  display: inline-block;
+}
+
+.description {
   text-align: start;
 }
+
+.app-icon {
+  margin: 5px;
+}
+
+.app-icon img {
+  width: 150px;
+}
+
 
 #art-book {
   width: 100%;
@@ -493,12 +515,14 @@ h1 {
 }
 
 #access-map iframe {
+  width: 100%;
   border-radius: 5px;
 }
 
 #access-info {
   margin: 20px auto;
   padding-left: 8px;
+  text-align: center;
 }
 
 #access-info h4 {
@@ -640,7 +664,7 @@ h1 {
     height: 60px;
     margin: 5px 0 0 0;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 35px 35px 0 0;
+    border-radius: 30px 30px 0 0;
     position: fixed;
     z-index: 3;
     bottom: 0;
@@ -706,14 +730,20 @@ h1 {
     flex-direction: row;
   }
 
+  #date-circle-parent {
+    width: 35vw;
+    height: 35vw;
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+  }
+
   #date-circle {
     width: 35vw;
     height: 35vw;
     max-width: 200px;
     max-height: 200px;
-    margin: auto 2% auto auto;
     border: solid 2px #0670e2;
-    border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: center;
@@ -813,10 +843,9 @@ h1 {
     clip-path: inset(0%);
   }
 
-  #about-content img {
+  #about-img img {
     width: 75%;
     height: auto;
-    margin: 15% auto;
   }
 
   #about-content>div>p {
@@ -826,7 +855,7 @@ h1 {
   /*Contents*/
   #projects {
     display: grid;
-    gap: 30px;
+    gap: 30px 15px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
