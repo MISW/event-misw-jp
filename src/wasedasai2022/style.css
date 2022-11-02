@@ -366,7 +366,6 @@ h1 {
   clip-path: inset(0%);
   border-radius: 2px;
   background-color: #f1f8ff;
-
 }
 
 #about-content {
@@ -400,7 +399,7 @@ h1 {
   flex-direction: column;
 }
 
-#about-content>div>p {
+#about-content > div > p {
   margin: 5px auto;
   color: #313131;
   text-align: center;
@@ -433,15 +432,14 @@ h1 {
   text-align: center;
 }
 
-.item>img {
+.item > img {
   width: 200px;
   height: auto;
   border-radius: 50%;
   border: solid 2px #2a4895;
-
 }
 
-.item>p {
+.item > p {
   font-size: 1.15rem;
   color: #2a4895;
 }
@@ -462,7 +460,6 @@ h1 {
 .description {
   text-align: start;
 }
-
 
 .app-icon img {
   width: 175px;
@@ -641,7 +638,6 @@ h1 {
 
 /*レスポンシブ*/
 @media (max-width: 770px) {
-
   /*共通部分*/
   h2 {
     width: calc(100% - 200px * 0.83);
@@ -859,7 +855,7 @@ h1 {
     bottom: 40px;
   }
 
-  #about-content>div>p {
+  #about-content > div > p {
     font-size: 1.1rem;
   }
 
@@ -871,7 +867,7 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
   }
 
-  .item>img {
+  .item > img {
     width: 150px;
     height: auto;
   }
