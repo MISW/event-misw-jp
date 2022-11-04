@@ -880,6 +880,8 @@ h1 {
   }
 
   #art-project {
+    padding: 35px 20px;
+    gap: 40px 50px;
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
 
