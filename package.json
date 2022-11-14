@@ -2,17 +2,13 @@
   "scripts": {
     "format": "prettier --write src/",
     "format:check": "prettier --check src/",
-    "sass:build": "sass src:src",
-    "sass:watch": "sass --watch src:src",
-    "start": "http-server src/ -p 8080 -o",
-    "test": "pnpm sass:build && pnpm start"
+    "sass": "sass --style compressed --no-source-map src/:src/",
+    "squoosh": "squoosh-cli --webp auto src/img/**/*"
   },
-  "dependencies": {
-    "http-server": "^14.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@squoosh/cli": "^0.7.2",
     "prettier": "^2.7.1",
-    "sass": "^1.55.0"
+    "sass": "^1.56.1"
   }
 }
