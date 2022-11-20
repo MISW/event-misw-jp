@@ -1,14 +1,18 @@
 /*
   Access-Control-Allow-Origin: *
 
-**/css/*
+/**/css/*
   Access-Control-Allow-Origin: *
   X-Robots-Tag: nosnippet, noindex
 
-**/img/*
+/**/img/*
   Access-Control-Allow-Origin: *
   X-Robots-Tag: nosnippet
 
-**/js/*
+/**/js/*
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: nosnippet, noindex
+
+https://:event-misw-jp.pages.dev/*
   Access-Control-Allow-Origin: *
   X-Robots-Tag: nosnippet, noindex
