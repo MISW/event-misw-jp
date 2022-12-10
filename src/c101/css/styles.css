@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-/* Body */
+/*body*/
 body {
 	font-family: '游ゴシック体', YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 	margin: 0;
-	padding: 0;
+  padding: 0;
 	background-color: #ffffff;
 }
 
@@ -317,11 +317,13 @@ header {
 	position: absolute;
 	text-decoration: none;
 	color: #fafafa;
-	height: 40px;
-	line-height: 20px;
+	height: 50px;
+	line-height: 50px;
 	text-align: center;
 	padding: 0;
 	z-index: 3;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .btn2:hover {
@@ -431,9 +433,8 @@ footer {
 	padding: 5px 0;
 }
 
-
-/* Mobile */
-@media (max-width: 320px) {
+/*smartphone*/
+@media screen and (max-width: 430px){
 	.logo {
 		width: 100%;
 		text-align: center;
@@ -467,10 +468,26 @@ footer {
 		margin-top: 0px;
 	}
 
+		.mis_ico,
+ .btn2 .fab {
+  display:none!important;
+  width:0
+ }
+	 .btn2>a>p {
+  width:100%;
+  text-align:center
+ }
+	.share{
+		border-right: none;
+/*これいる？*/
+		border-bottom: solid 1px #ffffff;
+	}
+
 }
 
+
 /* Small Tablets */
-@media (min-width: 321px)and (max-width: 767px) {
+@media (min-width: 431px)and (max-width: 767px) {
 	.logo {
 		width: 100%;
 		text-align: center;
@@ -542,3 +559,4 @@ footer {
 		width: 80%;
 	}
 }
+
