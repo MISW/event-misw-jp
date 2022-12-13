@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" prefix="og: http://ogp.me/ns#">
+<html lang="ja" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,14 +15,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>MIS.W 夏コミ特設ページ</title>
     <link rel="shortcut icon" href="./images/favicon.ico" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
       $(function () {
         var h = $(window).height();
         $('#wrap').css('display', 'none');
         $('#loader-bg ,#loader').height(h).css('display', 'block');
       });
-      $(window).load(function () {
+      $(window).on('load', function () {
         $('#loader-bg').delay(900).fadeOut(800);
         $('#loader').delay(600).fadeOut(300);
         $('#wrap').css('display', 'block');
@@ -146,12 +146,12 @@
               <li>
                 <a
                   target="_blank"
-                  href="http://twitter.com/share?url=https://event.misw.jp/c100/&text=MIS.W 2022｜MIS.W 夏コミ特設サイト2022&related=misw_info">
+                  href="https://twitter.com/share?url=https://event.misw.jp/c100/&text=MIS.W 2022｜MIS.W 夏コミ特設サイト2022&related=misw_info">
                   <i class="twitter fab fa-twitter-square fa-3x"></i>
                 </a>
               </li>
               <li>
-                <a target="_blank" href="http://line.me/R/msg/text/?MIS.W 2022｜MIS.W 夏コミ特設サイト2022 https://event.misw.jp/c100/">
+                <a target="_blank" href="https://line.me/R/msg/text/?MIS.W 2022｜MIS.W 夏コミ特設サイト2022 https://event.misw.jp/c100/">
                   <i class="line fab fa-line fa-3x"></i>
                 </a>
               </li>
