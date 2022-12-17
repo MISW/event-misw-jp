@@ -34,7 +34,7 @@ body {
 	opacity: 0;
 	animation: opacity-in 1s ease 2s forwards;
 	background-image: url("../images/background.png");
-	background-size: contain; /*coverとどっちがいいと思う？射し色は言っているほうが綺麗な気はする。*/
+	background-size: cover;
 }
 
 ul {
@@ -252,7 +252,6 @@ header {
 
 .info-bg {
 	position: absolute;
-	/* background-image: url("../images/c_mischan.png"); */
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom center;
