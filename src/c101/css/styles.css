@@ -153,7 +153,7 @@ header {
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
-  line-height: 80px;
+  line-height: 1.2; /*ここは好みの問題な気がする px設定からブラウザ側で計算させる方式にしてみた*/
   margin-bottom: 0px;
   font-weight: lighter;
   margin-left: 20px;
@@ -168,7 +168,7 @@ header {
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
-  line-height: 25px;
+  line-height: 1.2;
   font-weight: lighter;
   margin-left: 20px;
   margin-right: 20px;
@@ -394,6 +394,11 @@ footer {
     width: 100%;
     text-align: justify;
     padding: 0;
+  }
+  .intro .column .top-title h1{
+    /*実機だと2.5ぐらいが見やすい説ない？2.0でもいいと思うけど*/
+    font-size: 2.5em;
+    line-height: normal;
   }
   .intro .column p {
     width: 80%;
