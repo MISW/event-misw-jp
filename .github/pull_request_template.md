@@ -7,7 +7,7 @@
 - [ ] ライセンス感染するパッケージやライブラリ等を使用していませんか？ (例: GNU GPL・CC BY-SA )
 - [ ] サインオフを行いましたか？ (例: Signed-off-by: mischan <miswchan@misw.jp> )
 - [ ] プルリクエストを送信したら、Web の担当者と SysAd の担当者にコードレビューをリクエストしてください。
-- [ ] 新しい特設サイトを追加する場合は、[misw-jp](https://github.com/MISW/misw-jp) のバナーも更新してください。
+- [ ] 新しい特設サイトを追加する場合は、リダイレクトの変更と、[misw-jp](https://github.com/MISW/misw-jp) のバナー更新をしてください。
 
 # プルリクエストの内容を以下に記載してください。
 
