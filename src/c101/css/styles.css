@@ -153,7 +153,7 @@ header {
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
-  line-height: 1.2; /*ここは好みの問題な気がする px設定からブラウザ側で計算させる方式にしてみた*/
+  line-height: 1.2; 
   margin-bottom: 0px;
   font-weight: lighter;
   margin-left: 20px;
@@ -396,7 +396,6 @@ footer {
     padding: 0;
   }
   .intro .column .top-title h1{
-    /*実機だと2.5ぐらいが見やすい説ない？2.0でもいいと思うけど*/
     font-size: 2.5em;
     line-height: normal;
   }
@@ -426,7 +425,6 @@ footer {
   }
   .share {
     border-right: none;
-    /*これいる←いる（鋼の意思）*/
     border-bottom: solid 1px #ffffff;
   }
 }
