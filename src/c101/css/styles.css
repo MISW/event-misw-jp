@@ -203,7 +203,7 @@ header {
 }
 .content > p {
   position: relative;
-  padding-top: 50px;
+  padding-top: 25px;
   text-align: center;
   color: #4e4136;
   z-index: 2;
@@ -211,7 +211,7 @@ header {
 }
 .top-content {
   position: relative;
-  padding-top: 70px;
+  padding-top: 50px;
   color: #4e4136;
   z-index: 2;
 }
@@ -306,7 +306,6 @@ footer {
   flex-flow: row wrap;
   justify-content: center;
   vertical-align: center;
-  padding-top: 20px;
 }
 /*　最初の枠*/
 .intro {
@@ -331,7 +330,8 @@ footer {
 .share {
   width: 383px;
   border-right: solid 1px #ffffff;
-  padding: 20px 0 20px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .share p {
   text-align: center;
@@ -342,7 +342,7 @@ footer {
   list-style-type: none;
   flex-direction: row;
   justify-content: center;
-  padding-top: 20px;
+  padding: 15px;
 }
 .share ul li {
   margin: 0 20px;
@@ -371,11 +371,12 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   width: 383px;
   color: #4e4136;
   margin-top: 50px 0;
   line-height: 60%;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .staff div {
   width: 300px;
@@ -383,6 +384,9 @@ footer {
 .staff p {
   text-align: center;
   padding: 5px 0;
+}
+.footer-container .category {
+  font-weight: bold;
 }
 /*smartphone*/
 @media screen and (max-width: 430px) {
@@ -475,6 +479,10 @@ footer {
     width: 90%;
     text-align: center;
     padding-left: 0px;
+  }
+  .share {
+    border-right: none;
+    border-bottom: solid 1px #ffffff;
   }
 }
 /* Small Desktops */
