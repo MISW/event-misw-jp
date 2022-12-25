@@ -311,6 +311,7 @@ footer {
 .profile {
   width: 100%;
   height: 100%;
+  max-width: 850px;
 }
 .gallery .thumbnail .tag {
   color: #5D5E5D;
