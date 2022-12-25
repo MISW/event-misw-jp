@@ -85,7 +85,10 @@ header {
 }
 .gallery {
   clear: both;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   /* [disabled]min-width: 400px;
 */
@@ -137,6 +140,7 @@ header {
   text-align: center;
   padding-top: 30px;
   float: left;
+  max-width: 1080px;
 }
 .intro .column p {
   color: #ffffff;
@@ -306,7 +310,10 @@ footer {
 }
 /*　最初の枠*/
 .intro {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .profile {
   width: 100%;
