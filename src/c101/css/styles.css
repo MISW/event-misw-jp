@@ -348,19 +348,13 @@ footer {
   margin: 0 20px;
 }
 .twitter {
-  font-family: 'Font Awesome 5 Brands';
-  color: #55acee;
-  transform: translate(-45%);
+  color: #1da1f2;
 }
 .line {
-  font-family: 'Font Awesome 5 Brands';
-  color: #1dcd00;
-  transform: translate(-45%);
+  color: #00c300;
 }
 .facebook {
-  font-family: 'Font Awesome 5 Brands';
   color: #3b5998;
-  transform: translate(-45%);
 }
 .copyright {
   text-align: center;
