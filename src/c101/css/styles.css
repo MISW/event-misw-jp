@@ -27,7 +27,7 @@ body {
   display: none;
   opacity: 0;
   animation: opacity-in 1s ease 2s forwards;
-  background-image: url('../images/background.png');
+  background-image: url('../images/background.webp');
   background-size: cover;
 }
 ul {
