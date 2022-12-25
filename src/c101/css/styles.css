@@ -80,6 +80,8 @@ header {
   padding-left: 20px;
   padding-right: 20px;
   color: #0A0A0A;
+  white-space: normal;
+  max-width: 800px;
 }
 .gallery {
   clear: both;
@@ -153,7 +155,7 @@ header {
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
-  line-height: 1.2; 
+  line-height: 1.2;
   margin-bottom: 0px;
   font-weight: lighter;
   margin-left: 20px;
@@ -391,11 +393,11 @@ footer {
     margin-left: 0px;
   }
   .text_column {
-    width: 100%;
+    /*width: 100%;*/
     text-align: justify;
     padding: 0;
   }
-  .intro .column .top-title h1{
+  .intro .column .top-title h1 {
     font-size: 2.5em;
     line-height: normal;
   }
