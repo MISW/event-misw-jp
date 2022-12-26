@@ -3,7 +3,7 @@
     "format": "prettier --write src/",
     "format:check": "prettier --check src/",
     "sass": "sass --style compressed --no-source-map src/:src/",
-    "squoosh": "squoosh-cli --webp auto src/img/**/*"
+    "squoosh": "squoosh-cli --webp auto src/**/*.{jpg,webp,avif,jxl,wp2,png} -d temp/"
   },
   "dependencies": {},
   "devDependencies": {

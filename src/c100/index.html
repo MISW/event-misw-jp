@@ -23,23 +23,23 @@
         $('#loader-bg ,#loader').height(h).css('display', 'block');
       });
       $(window).on('load', function () {
-        $('#loader-bg').delay(900).fadeOut(800);
-        $('#loader').delay(600).fadeOut(300);
+        $('#loader-bg').delay(450).fadeOut(400);
+        $('#loader').delay(300).fadeOut(150);
         $('#wrap').css('display', 'block');
       });
       $(function () {
         setTimeout(() => {
           stopload();
-        }, 10000);
+        }, 1000);
       });
       function stopload() {
-        $('#loader-bg').delay(900).fadeOut(800);
-        $('#loader').delay(600).fadeOut(300);
+        $('#loader-bg').delay(450).fadeOut(400);
+        $('#loader').delay(300).fadeOut(150);
         $('#wrap').css('display', 'block');
       }
     </script>
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v6.2.1/css/all.css" rel="stylesheet" />
   </head>
 
   <body>
