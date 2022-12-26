@@ -167,8 +167,8 @@ header {
   width: 80%;
   margin-top: 4%;
   font-size: 3rem;
-  text-shadow: 0px 0px 10px black;
-  color: #ffffff;
+  text-shadow: #000 0 0 30px, #000 0 0 30px, #000 0 0 30px;
+  color: #ddddff;
 }
 .intro .column .top-info h1 {
   padding-left: 30px;
@@ -181,8 +181,8 @@ header {
   width: 80%;
   margin-top: 4%;
   font-size: 1.2rem;
-  text-shadow: 0px 0px 10px white;
-  color: #ff8888;
+  text-shadow: #000 0 0 30px, #000 0 0 30px, #000 0 0 30px;
+  color: #ffdddd;
 }
 .information {
   position: relative;
