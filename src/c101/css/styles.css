@@ -156,7 +156,7 @@ header {
   opacity: 0.8;
 }
 /*タイトルの書式*/
-.intro .column .top-title h1,.intro .column .top-title h2 {
+.intro .column .top-title h1, .intro .column .top-title h2 {
   padding-left: 0px;
   padding-right: 0px;
   text-align: center;
