@@ -156,7 +156,7 @@ header {
   opacity: 0.8;
 }
 /*タイトルの書式*/
-.intro .column .top-title h1, .intro .column .top-title h2 {
+.intro .column .top-title h1 {
   padding-left: 0px;
   padding-right: 0px;
   text-align: center;
@@ -170,20 +170,22 @@ header {
     #00479c 0 0 25px, #00479c 0 0 25px;
   color: #eeeeff;
 }
-.intro .column .top-info h1 {
+.intro .column .top-info h2 {
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
   line-height: 1.2;
   font-weight: lighter;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 auto;
   width: 80%;
   margin-top: 4%;
   font-size: 1.2rem;
   text-shadow: #9c0046 0 0 25px, #9c0046 0 0 25px, #9c0046 0 0 25px, #9c0046 0 0 25px, #9c0046 0 0 25px, #9c0046 0 0 25px, #9c0046 0 0 25px, #9c0046 0 0 25px,
     #9c0046 0 0 25px, #9c0046 0 0 25px;
   color: #ffeeee;
+}
+.top-info {
+  margin-top: 8%;
 }
 .information {
   position: relative;
