@@ -44,6 +44,13 @@
         $('#loader').delay(300).fadeOut(150);
         $('#wrap').css('display', 'block');
       }
+      $(window).on('scroll', function(){
+        var scrollTop = $(window).scrollTop();
+        var bgPosition = scrollTop / 3;
+        if(bgPosition){
+          $('#wrap').css('background-position', 'center top -'+ bgPosition + 'px');
+        }
+      });
     </script>
     <link href="https://use.fontawesome.com/releases/v6.2.1/css/all.css" rel="stylesheet" />
   </head>
@@ -74,8 +81,8 @@
               <h1>WINTER</h1>
             </div>
             <div class="top-info">
-              <h1>DATE: Day2 12/31 (Sat)</h1>
-              <h1>PLACE : 西ホール "つ" 05-b</h1>
+              <h2>DATE: Day2 12/31 (Sat)</h2>
+              <h2>PLACE : 西ホール "つ" 05-b</h2>
             </div>
           </div>
           <div class="column">
@@ -111,7 +118,7 @@
 
       <section class="information">
         <div class="info-bg"></div>
-        <h1 class="title">PROFILE</h1>
+        <h2 class="title">PROFILE</h2>
         <p class="title-sub">What is MIS.W?</p>
         <div class="content">
           <p class="top-content">MIS.Wは早稲田大学最大のデジタル創作サークルです。</p>

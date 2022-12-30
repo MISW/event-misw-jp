@@ -28,7 +28,7 @@ body {
   opacity: 0;
   animation: opacity-in 1s ease 2s forwards;
   background-image: url('../images/background.webp');
-  background-size: cover;
+  background-size: 80em;
   background-attachment: fixed;
   background-position: top;
 }
@@ -103,7 +103,8 @@ header {
   height: 600px;
   text-align: center;
   float: left;
-  margin-top: 35px;
+  margin-top: 0px;
+  margin-bottom: 35px;
   background-color: #f8f8f8;
   padding-bottom: 20px;
   margin-left: 1%;
@@ -155,15 +156,13 @@ header {
   opacity: 0.8;
 }
 /*タイトルの書式*/
-.intro .column .top-title h1 {
+.intro .column .top-title h1,.intro .column .top-title h2 {
   padding-left: 0px;
   padding-right: 0px;
   text-align: center;
-  margin-bottom: 0px;
+  margin: 0 auto;
   line-height: 1;
   font-weight: lighter;
-  margin-left: 20px;
-  margin-right: 20px;
   width: 80%;
   margin-top: 4%;
   font-size: 3rem;
@@ -171,7 +170,7 @@ header {
     #00479c 0 0 25px, #00479c 0 0 25px;
   color: #eeeeff;
 }
-.intro .column .top-info h1 {
+.intro .column .top-info h1, .intro .column .top-info h2 {
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
@@ -191,7 +190,7 @@ header {
   width: 100%;
   background-color: #c5daff;
 }
-.information h1 {
+.information h2 {
   position: relative;
   text-align: center;
   padding-top: 50px;
@@ -457,13 +456,6 @@ footer {
   .thumbnail {
     width: 100%;
   }
-  .column {
-    width: 100%;
-    margin-top: 0px;
-  }
-  .thumbnail {
-    width: 100%;
-  }
   .text_column {
     padding-left: 20px;
     padding-right: 20px;
@@ -471,6 +463,7 @@ footer {
   }
   .column {
     width: 100%;
+    margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
   }
