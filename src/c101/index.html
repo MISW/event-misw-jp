@@ -44,10 +44,10 @@
         $('#loader').delay(300).fadeOut(150);
         $('#wrap').css('display', 'block');
       }
-      $(window).on('scroll', function(){
+      $(window).on('scroll', function () {
         var scrollTop = $(window).scrollTop();
         var bgPosition = scrollTop / 3;
-        if(bgPosition){
+        if (bgPosition) {
           $('#wrap').css('background-position', 'center top -' + bgPosition + 'px');
         }
       });
