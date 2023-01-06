@@ -1,25 +1,25 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@squoosh/cli': ^0.7.2
+  '@squoosh/cli': ^0.7.3
   prettier: ^2.8.1
-  sass: ^1.56.2
+  sass: ^1.57.1
 
 devDependencies:
-  '@squoosh/cli': 0.7.2
+  '@squoosh/cli': 0.7.3
   prettier: 2.8.1
-  sass: 1.56.2
+  sass: 1.57.1
 
 packages:
 
-  /@squoosh/cli/0.7.2:
-    resolution: {integrity: sha512-uMnUWMx4S8UApO/EfPyRyvUmw+0jI9wwAfdHfGjvVg4DAIvEgsA+VWK2KOBnJiChvVd768K27g09ESzptyX93w==}
+  /@squoosh/cli/0.7.3:
+    resolution: {integrity: sha512-mU/iWbVWqLXX+gJJa4RBl5U4LdKYaiD9cmxW7bjyw8EEFAuMXFDGAQcq7hEvUZwoP5Em5s7sjimBPirSBJQ87g==}
     engines: {node: ' ^12.20.2 || ^14.13.1 || ^16.0.0 '}
     hasBin: true
     dependencies:
       '@squoosh/lib': 0.4.0
       commander: 7.2.0
-      json5: 2.2.1
+      json5: 2.2.3
       kleur: 4.1.5
       ora: 5.4.1
     dev: true
@@ -176,8 +176,8 @@ packages:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
     dev: true
 
-  /immutable/4.1.0:
-    resolution: {integrity: sha512-oNkuqVTA8jqG1Q6c+UglTOD1xhC1BtjKI7XkCXRkZHrN5m18/XsnUp8Q89GkQO/z+0WjonSvl0FLhDYftp46nQ==}
+  /immutable/4.2.1:
+    resolution: {integrity: sha512-7WYV7Q5BTs0nlQm7tl92rDYYoyELLKHoDMBKhrxEoiV4mrfVdRz8hzPiYOzH7yWjzoVEamxRuAqhxL2PLRwZYQ==}
     dev: true
 
   /inherits/2.0.4:
@@ -218,8 +218,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /json5/2.2.1:
-    resolution: {integrity: sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==}
+  /json5/2.2.3:
+    resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
     engines: {node: '>=6'}
     hasBin: true
     dev: true
@@ -308,13 +308,13 @@ packages:
     resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
     dev: true
 
-  /sass/1.56.2:
-    resolution: {integrity: sha512-ciEJhnyCRwzlBCB+h5cCPM6ie/6f8HrhZMQOf5vlU60Y1bI1rx5Zb0vlDZvaycHsg/MqFfF1Eq2eokAa32iw8w==}
+  /sass/1.57.1:
+    resolution: {integrity: sha512-O2+LwLS79op7GI0xZ8fqzF7X2m/m8WFfI02dHOdsK5R2ECeS5F62zrwg/relM1rjSLy7Vd/DiMNIvPrQGsA0jw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
       chokidar: 3.5.3
-      immutable: 4.1.0
+      immutable: 4.2.1
       source-map-js: 1.0.2
     dev: true
 
