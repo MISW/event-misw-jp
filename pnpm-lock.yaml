@@ -1,9 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@squoosh/cli': ^0.7.3
-  prettier: ^2.8.4
-  sass: ^1.58.3
+  '@squoosh/cli': 0.7.3
+  prettier: 2.8.4
+  sass: 1.58.3
 
 devDependencies:
   '@squoosh/cli': 0.7.3
@@ -28,7 +28,7 @@ packages:
     resolution: {integrity: sha512-O1LyugWLZjMI4JZeZMA5vzfhfPjfMZXH5/HmVkRagP8B70wH3uoR7tjxfGNdSavey357MwL8YJDxbGwBBdHp7Q==}
     engines: {node: ' ^12.5.0 || ^14.0.0 || ^16.0.0 '}
     dependencies:
-      wasm-feature-detect: 1.5.0
+      wasm-feature-detect: 1.5.1
       web-streams-polyfill: 3.2.1
     dev: true
 
@@ -66,7 +66,7 @@ packages:
     dependencies:
       buffer: 5.7.1
       inherits: 2.0.4
-      readable-stream: 3.6.0
+      readable-stream: 3.6.1
     dev: true
 
   /braces/3.0.2:
@@ -280,8 +280,8 @@ packages:
     hasBin: true
     dev: true
 
-  /readable-stream/3.6.0:
-    resolution: {integrity: sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==}
+  /readable-stream/3.6.1:
+    resolution: {integrity: sha512-+rQmrWMYGA90yenhTYsLWAsLsqVC8osOw6PKE1HDYiO0gdPeKe/xDHNzIAIn4C91YQ6oenEhfYqqc1883qHbjQ==}
     engines: {node: '>= 6'}
     dependencies:
       inherits: 2.0.4
@@ -358,8 +358,8 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /wasm-feature-detect/1.5.0:
-    resolution: {integrity: sha512-Wxw7de5ouYoFJsWXJdexwy8WU+8/LGUp4bFWS/1FlVzBUin0Yjko75772MFJdwf91N+MBZKINoOgsxw0UWKlRQ==}
+  /wasm-feature-detect/1.5.1:
+    resolution: {integrity: sha512-GHr23qmuehNXHY4902/hJ6EV5sUANIJC3R/yMfQ7hWDg3nfhlcJfnIL96R2ohpIwa62araN6aN4bLzzzq5GXkg==}
     dev: true
 
   /wcwidth/1.0.1:
