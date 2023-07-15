@@ -166,8 +166,17 @@ header {
   width: 80%;
   margin-top: 4%;
   font-size: 3rem;
-  text-shadow: #00479c 0 0 25px, #00479c 0 0 25px, #00479c 0 0 25px, #00479c 0 0 25px, #00479c 0 0 25px, #00479c 0 0 25px, #00479c 0 0 25px, #00479c 0 0 25px,
-    #00479c 0 0 25px, #00479c 0 0 25px;
+  text-shadow:
+    #00479c 0 0 25px,
+    #00479c 0 0 25px,
+    #00479c 0 0 25px,
+    #00479c 0 0 25px,
+    #00479c 0 0 25px,
+    #00479c 0 0 25px,
+    #00479c 0 0 25px,
+    #00479c 0 0 25px,
+    #00479c 0 0 25px,
+    #00479c 0 0 25px;
   color: #eeeeff;
 }
 .intro .column .top-info h2 {
@@ -180,8 +189,17 @@ header {
   width: 80%;
   margin-top: 4%;
   font-size: 1.2rem;
-  text-shadow: #9c0046 0 0 25px, #9c0046 0 0 25px, #9c0046 0 0 25px, #9c0046 0 0 25px, #9c0046 0 0 25px, #9c0046 0 0 25px, #9c0046 0 0 25px, #9c0046 0 0 25px,
-    #9c0046 0 0 25px, #9c0046 0 0 25px;
+  text-shadow:
+    #9c0046 0 0 25px,
+    #9c0046 0 0 25px,
+    #9c0046 0 0 25px,
+    #9c0046 0 0 25px,
+    #9c0046 0 0 25px,
+    #9c0046 0 0 25px,
+    #9c0046 0 0 25px,
+    #9c0046 0 0 25px,
+    #9c0046 0 0 25px,
+    #9c0046 0 0 25px;
   color: #ffeeee;
 }
 .top-info {

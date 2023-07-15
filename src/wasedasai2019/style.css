@@ -165,7 +165,9 @@ body {
   left: 0; */
   bottom: 3px;
   height: 1px;
-  transition-property: transform, -webkit-transform;
+  transition-property:
+    transform,
+    -webkit-transform;
   background-color: white;
   width: 98%;
   transform: scale(0, 1);

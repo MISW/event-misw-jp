@@ -74,7 +74,14 @@ select {
 body {
   color: #fff;
   font-size: 14px;
-  font-family: 'Noto Sans JP', 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, Arial, 'メイリオ', Meiryo, sans-serif;
+  font-family:
+    'Noto Sans JP',
+    'ヒラギノ角ゴ ProN W3',
+    Hiragino Kaku Gothic ProN,
+    Arial,
+    'メイリオ',
+    Meiryo,
+    sans-serif;
   font-weight: 400;
   background-color: #73c0d6;
   line-height: 2;
@@ -510,7 +517,9 @@ a:hover {
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  transition:
+    transform 0.3s,
+    -webkit-transform 0.3s;
 }
 
 .footer__link a:hover {
@@ -590,7 +599,9 @@ a:hover {
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  transition:
+    transform 0.3s,
+    -webkit-transform 0.3s;
 }
 
 .credit-item a:hover {
@@ -710,7 +721,9 @@ a:hover {
   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:
+    transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1),
+    -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .topic-heading.is__scrolled,

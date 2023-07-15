@@ -27,7 +27,14 @@ td,
 header,
 nav,
 section {
-  font-family: 'Noto Sans JP', 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, Arial, 'メイリオ', Meiryo, sans-serif;
+  font-family:
+    'Noto Sans JP',
+    'ヒラギノ角ゴ ProN W3',
+    Hiragino Kaku Gothic ProN,
+    Arial,
+    'メイリオ',
+    Meiryo,
+    sans-serif;
   color: #2b2b2b;
   font-weight: 400;
   line-height: 1.5;
@@ -772,7 +779,9 @@ main {
   background-repeat: repeat-x;
   background-size: 200% 0.8em;
   background-position: 0 0.5em;
-  transition: background 2s ease, opacity 0.5s ease;
+  transition:
+    background 2s ease,
+    opacity 0.5s ease;
   font-weight: 500;
   opacity: 0;
 }

@@ -113,8 +113,12 @@ header {
 }
 
 .cover1 {
-  animation: slide-right 0.5s ease 3.2s forwards, slide-left 0.3s ease 5s forwards;
-  -webkit-animation: slide-right 0.5s ease 3.2s forwards, slide-left 0.3s ease 5s forwards;
+  animation:
+    slide-right 0.5s ease 3.2s forwards,
+    slide-left 0.3s ease 5s forwards;
+  -webkit-animation:
+    slide-right 0.5s ease 3.2s forwards,
+    slide-left 0.3s ease 5s forwards;
 }
 
 .cover1 + h1 {
@@ -123,8 +127,12 @@ header {
 }
 
 .cover2 {
-  animation: slide-right 0.5s ease 3.4s forwards, slide-left 0.3s ease 5s forwards;
-  -webkit-animation: slide-right 0.5s ease 3.4s forwards, slide-left 0.3s ease 5s forwards;
+  animation:
+    slide-right 0.5s ease 3.4s forwards,
+    slide-left 0.3s ease 5s forwards;
+  -webkit-animation:
+    slide-right 0.5s ease 3.4s forwards,
+    slide-left 0.3s ease 5s forwards;
 }
 
 .cover2 + h1 {
@@ -133,8 +141,12 @@ header {
 }
 
 .cover3 {
-  animation: slide-right 0.5s ease 3.6s forwards, slide-left 0.3s ease 5s forwards;
-  -webkit-animation: slide-right 0.5s ease 3.6s forwards, slide-left 0.3s ease 5s forwards;
+  animation:
+    slide-right 0.5s ease 3.6s forwards,
+    slide-left 0.3s ease 5s forwards;
+  -webkit-animation:
+    slide-right 0.5s ease 3.6s forwards,
+    slide-left 0.3s ease 5s forwards;
 }
 
 .cover3 + h1 {
@@ -143,8 +155,12 @@ header {
 }
 
 .cover4 {
-  animation: slide-right 0.5s ease 3.8s forwards, slide-left 0.3s ease 5s forwards;
-  -webkit-animation: slide-right 0.5s ease 3.8s forwards, slide-left 0.3s ease 5s forwards;
+  animation:
+    slide-right 0.5s ease 3.8s forwards,
+    slide-left 0.3s ease 5s forwards;
+  -webkit-animation:
+    slide-right 0.5s ease 3.8s forwards,
+    slide-left 0.3s ease 5s forwards;
 }
 
 .cover4 + h1 {
@@ -153,8 +169,12 @@ header {
 }
 
 .cover5 {
-  animation: slide-right 0.5s ease 4s forwards, slide-left 0.3s ease 5s forwards;
-  -webkit-animation: slide-right 0.5s ease 4s forwards, slide-left 0.3s ease 5s forwards;
+  animation:
+    slide-right 0.5s ease 4s forwards,
+    slide-left 0.3s ease 5s forwards;
+  -webkit-animation:
+    slide-right 0.5s ease 4s forwards,
+    slide-left 0.3s ease 5s forwards;
 }
 
 .cover5 + h1 {

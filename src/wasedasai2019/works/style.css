@@ -248,7 +248,9 @@ body {
   left: 0; */
   bottom: 3px;
   height: 1px;
-  transition-property: transform, -webkit-transform;
+  transition-property:
+    transform,
+    -webkit-transform;
   background-color: white;
   width: 98%;
   transform: scale(0, 1);
@@ -944,7 +946,9 @@ a.cp_btn {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   opacity: 0;
-  transition: opacity 0.5s, transform 0s 0.5s;
+  transition:
+    opacity 0.5s,
+    transform 0s 0.5s;
   transform: scale(0);
 }
 
