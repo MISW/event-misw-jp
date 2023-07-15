@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
-npm install -g pnpm
+corepack enable
+corepack prepare pnpm@latest --activate
 pnpm i --frozen-lockfile
-pnpm sass
 mv -v src/ dist/
 mv -v _headers dist/
 mv -v _redirects dist/

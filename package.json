@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "build": "cp -v src/ dist/",
+    "clean": "rm -rf dist/",
     "format": "prettier --write src/",
     "format:check": "prettier --check src/",
     "sass": "sass --style compressed --no-source-map src/:src/",
