@@ -12,8 +12,8 @@ devDependencies:
     specifier: 3.0.1
     version: 3.0.1
   sass:
-    specifier: 1.64.2
-    version: 1.64.2
+    specifier: 1.65.0
+    version: 1.65.0
 
 packages:
 
@@ -313,8 +313,8 @@ packages:
     resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
     dev: true
 
-  /sass@1.64.2:
-    resolution: {integrity: sha512-TnDlfc+CRnUAgLO9D8cQLFu/GIjJIzJCGkE7o4ekIGQOH7T3GetiRR/PsTWJUHhkzcSPrARkPI+gNWn5alCzDg==}
+  /sass@1.65.0:
+    resolution: {integrity: sha512-FSZ+vXbv4lj5nYEAF9xuMXGaAnu5WDH05hYfvEx6cm9zLNBA3oLBBbg9rx5EwwRaq/9X7xpAhSRllR4CW0uKJw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
