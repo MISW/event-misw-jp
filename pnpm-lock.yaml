@@ -33,7 +33,7 @@ packages:
     resolution: {integrity: sha512-O1LyugWLZjMI4JZeZMA5vzfhfPjfMZXH5/HmVkRagP8B70wH3uoR7tjxfGNdSavey357MwL8YJDxbGwBBdHp7Q==}
     engines: {node: ' ^12.5.0 || ^14.0.0 || ^16.0.0 '}
     dependencies:
-      wasm-feature-detect: 1.5.1
+      wasm-feature-detect: 1.6.0
       web-streams-polyfill: 3.2.1
     dev: true
 
@@ -363,8 +363,8 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /wasm-feature-detect@1.5.1:
-    resolution: {integrity: sha512-GHr23qmuehNXHY4902/hJ6EV5sUANIJC3R/yMfQ7hWDg3nfhlcJfnIL96R2ohpIwa62araN6aN4bLzzzq5GXkg==}
+  /wasm-feature-detect@1.6.0:
+    resolution: {integrity: sha512-9pU2FAr7OaZarGJBU6eMg2a03gFDHhUoGCb5ob9MVT+d58eFz6eVhiXnPOO9BNoDE8KRKbuqO96cuOtUJJuekw==}
     dev: true
 
   /wcwidth@1.0.1:
