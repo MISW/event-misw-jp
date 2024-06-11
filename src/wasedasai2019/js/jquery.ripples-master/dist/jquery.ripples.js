@@ -8,8 +8,8 @@
   typeof exports === 'object' && typeof module !== 'undefined'
     ? factory(require('jquery'))
     : typeof define === 'function' && define.amd
-    ? define(['jquery'], factory)
-    : factory(global.$);
+      ? define(['jquery'], factory)
+      : factory(global.$);
 })(this, function ($) {
   'use strict';
 

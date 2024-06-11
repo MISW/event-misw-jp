@@ -8,8 +8,8 @@
   'object' == typeof exports && 'undefined' != typeof module
     ? t(require('jquery'))
     : 'function' == typeof define && define.amd
-    ? define(['jquery'], t)
-    : t(e.$);
+      ? define(['jquery'], t)
+      : t(e.$);
 })(this, function (e) {
   'use strict';
   function t(e) {

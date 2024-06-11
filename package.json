@@ -1,6 +1,8 @@
 {
+  "name": "event-misw-jp",
+  "license": "MPL-2.0",
   "scripts": {
-    "build": "cp -v src/ dist/",
+    "build": "cp -rv src/ dist/",
     "clean": "rm -rf dist/",
     "format": "prettier --write src/",
     "format:check": "prettier --check src/",
@@ -10,7 +12,11 @@
   "dependencies": {},
   "devDependencies": {
     "@squoosh/cli": "0.7.3",
-    "prettier": "3.0.3",
+    "prettier": "3.3.1",
     "sass": "1.77.4"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
   }
 }
