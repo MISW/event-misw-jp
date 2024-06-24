@@ -225,8 +225,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  wasm-feature-detect@1.6.1:
-    resolution: {integrity: sha512-R1i9ED8UlLu/foILNB1ck9XS63vdtqU/tP1MCugVekETp/ySCrBZRk5I/zI67cI1wlQYeSonNm1PLjDHZDNg6g==}
+  wasm-feature-detect@1.6.2:
+    resolution: {integrity: sha512-4dnaZ+Fq/q+BbMlTIfaNS851i+0zmHzui++NUZdskESRu3xwB6g6x2FnGvBdWtpijqO5yuj1l+EUTJGc4S4DKg==}
 
   wcwidth@1.0.1:
     resolution: {integrity: sha512-XHPEwS0q6TaxcvG85+8EYkbiCux2XtWG2mkc47Ng2A77BQu9+DqIOJldST4HgPkuea7dvKSj5VgX3P1d4rW8Tg==}
@@ -247,7 +247,7 @@ snapshots:
 
   '@squoosh/lib@0.4.0':
     dependencies:
-      wasm-feature-detect: 1.6.1
+      wasm-feature-detect: 1.6.2
       web-streams-polyfill: 3.3.3
 
   ansi-regex@5.0.1: {}
@@ -430,7 +430,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  wasm-feature-detect@1.6.1: {}
+  wasm-feature-detect@1.6.2: {}
 
   wcwidth@1.0.1:
     dependencies:
