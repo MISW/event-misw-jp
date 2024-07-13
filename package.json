@@ -12,7 +12,7 @@
   "dependencies": {},
   "devDependencies": {
     "@squoosh/cli": "0.7.3",
-    "prettier": "3.3.2",
+    "prettier": "3.3.3",
     "sass": "1.77.8"
   },
   "engines": {
