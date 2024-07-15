@@ -805,7 +805,7 @@
               }
             }
             const userOption = userOptions[name];
-            options[name] = userOption !== undefined ? userOption : compatibilityParams[name] ?? defaultOption.value;
+            options[name] = userOption !== undefined ? userOption : (compatibilityParams[name] ?? defaultOption.value);
           }
           return options;
         }
