@@ -12,8 +12,8 @@ importers:
         specifier: 0.7.3
         version: 0.7.3
       prettier:
-        specifier: 3.4.2
-        version: 3.4.2
+        specifier: 3.8.3
+        version: 3.8.3
       sass:
         specifier: 1.99.0
         version: 1.99.0
@@ -233,8 +233,8 @@ packages:
     resolution: {integrity: sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==}
     engines: {node: '>=12'}
 
-  prettier@3.4.2:
-    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
+  prettier@3.8.3:
+    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -469,7 +469,7 @@ snapshots:
   picomatch@4.0.4:
     optional: true
 
-  prettier@3.4.2: {}
+  prettier@3.8.3: {}
 
   readable-stream@3.6.2:
     dependencies:
