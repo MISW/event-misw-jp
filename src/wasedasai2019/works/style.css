@@ -576,7 +576,8 @@ label {
   background-size: 20px 20px;
   border-radius: 5px;
   background-color: #f9ffff;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       rgba(161, 208, 248, 0.1) 25%,
       transparent 25%,
@@ -1254,7 +1255,8 @@ padding: 0!important; */
 }
 
 .fc .popup-comment {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       rgba(92, 185, 229, 0.08) 25%,
       transparent 25%,
@@ -1316,7 +1318,8 @@ padding: 0!important; */
 }
 
 .bc .popup-comment {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       rgba(154, 124, 106, 0.05) 25%,
       transparent 25%,
@@ -1357,7 +1360,8 @@ padding: 0!important; */
 }
 
 .m1 .popup-comment {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       rgba(154, 124, 106, 0.05) 25%,
       transparent 25%,
@@ -1398,7 +1402,8 @@ padding: 0!important; */
 }
 
 .m2 .popup-comment {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       rgba(132, 157, 229, 0.05) 25%,
       transparent 25%,
@@ -1439,7 +1444,8 @@ padding: 0!important; */
 }
 
 .m3 .popup-comment {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       rgba(199, 114, 163, 0.05) 25%,
       transparent 25%,
@@ -1480,7 +1486,8 @@ padding: 0!important; */
 }
 
 .m4 .popup-comment {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       rgba(181, 133, 154, 0.05) 25%,
       transparent 25%,
@@ -1521,7 +1528,8 @@ padding: 0!important; */
 }
 
 .m5 .popup-comment {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       rgba(146, 149, 118, 0.05) 25%,
       transparent 25%,
@@ -1562,7 +1570,8 @@ padding: 0!important; */
 }
 
 .m6 .popup-comment {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       rgba(126, 169, 237, 0.08) 25%,
       transparent 25%,
@@ -1603,7 +1612,8 @@ padding: 0!important; */
 }
 
 .m7 .popup-comment {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       rgba(97, 120, 157, 0.05) 25%,
       transparent 25%,
@@ -1643,7 +1653,8 @@ padding: 0!important; */
 }
 
 .m8 .popup-comment {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       rgba(101, 101, 185, 0.05) 25%,
       transparent 25%,
@@ -1683,7 +1694,8 @@ padding: 0!important; */
 }
 
 .m9 .popup-comment {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       rgba(191, 114, 114, 0.07) 25%,
       transparent 25%,
@@ -1723,7 +1735,8 @@ padding: 0!important; */
 }
 
 .m10 .popup-comment {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       rgba(248, 182, 108, 0.1) 25%,
       transparent 25%,
@@ -1763,7 +1776,8 @@ padding: 0!important; */
 }
 
 .m11 .popup-comment {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       rgba(150, 150, 150, 0.1) 25%,
       transparent 25%,
@@ -1803,7 +1817,8 @@ padding: 0!important; */
 }
 
 .m12 .popup-comment {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       rgba(42, 198, 77, 0.1) 25%,
       transparent 25%,

@@ -301,7 +301,7 @@ $(function () {
 });
 
 function resetSectProps() {
-  (sect_top = []), (sect_bottom = []), (sect_h = []);
+  ((sect_top = []), (sect_bottom = []), (sect_h = []));
   sect_pad_h = ($('section:eq(1)').innerHeight() - $('section:eq(1)').height()) / 2;
   scr_ratio = sect_pad_h / (sect_pad_h + h);
 

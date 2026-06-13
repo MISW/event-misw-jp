@@ -1,7 +1,7 @@
 /*t.js-1.5.6;(c)2014-2019 - Mntn(r) <https://mn.tn/> c/o Benjamin Lips <g--[AT]--mn.tn>;MIT-Licensed <https://mit-license.org/>;For documentation, see <https://mntn-dev.github.io/t.js/>*/
 
 (function ($) {
-  ($.fn.t = function ($c, $o) {
+  (($.fn.t = function ($c, $o) {
     return this.each(function () {
       if ($c == 'queue') {
         return $(this).q($o);
@@ -441,5 +441,5 @@
         }
         if ($_ === !!1) C.text('');
       });
-    });
+    }));
 })(jQuery);

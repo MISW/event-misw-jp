@@ -12862,7 +12862,7 @@
             a += bytes[i] & 0xff;
             b += a;
           }
-          return (b % 65521 << 16) | a % 65521;
+          return ((b % 65521) << 16) | (a % 65521);
         }
         class Parser {
           constructor({ lexer, xref, allowStreams = false, recoveryMode = false }) {

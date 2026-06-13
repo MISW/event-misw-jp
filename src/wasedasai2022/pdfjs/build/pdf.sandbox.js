@@ -287,7 +287,7 @@
                 const e = c.externalCall(a, b);
                 return e ? X(e) : null;
               } catch (e) {
-                return (c.HEAPU8[d] = 1), X(e.message);
+                return ((c.HEAPU8[d] = 1), X(e.message));
               }
             };
             var ja =
@@ -439,7 +439,7 @@
                 try {
                   return c.instantiateWasm(e, a);
                 } catch (f) {
-                  return u('Module.instantiateWasm callback failed with error: ' + f), !1;
+                  return (u('Module.instantiateWasm callback failed with error: ' + f), !1);
                 }
               (function () {
                 return v || 'function' != typeof WebAssembly.instantiateStreaming || T(U) || 'function' != typeof fetch

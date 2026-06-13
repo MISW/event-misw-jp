@@ -62,12 +62,12 @@
       !s.getProgramParameter(o.id, s.LINK_STATUS))
     )
       throw new Error('link error: ' + s.getProgramInfoLog(o.id));
-    (o.uniforms = {}), (o.locations = {}), s.useProgram(o.id), s.enableVertexAttribArray(0);
-    for (var n, a, u = /uniform (\w+) (\w+)/g, h = e + t; null != (n = u.exec(h)); ) (a = n[2]), (o.locations[a] = s.getUniformLocation(o.id, a));
+    ((o.uniforms = {}), (o.locations = {}), s.useProgram(o.id), s.enableVertexAttribArray(0));
+    for (var n, a, u = /uniform (\w+) (\w+)/g, h = e + t; null != (n = u.exec(h)); ) ((a = n[2]), (o.locations[a] = s.getUniformLocation(o.id, a)));
     return o;
   }
   function o(e, t) {
-    s.activeTexture(s.TEXTURE0 + (t || 0)), s.bindTexture(s.TEXTURE_2D, e);
+    (s.activeTexture(s.TEXTURE0 + (t || 0)), s.bindTexture(s.TEXTURE_2D, e));
   }
   function n(e) {
     var t = /url\(["']?([^"']*)["']?\)/.exec(e);
@@ -106,15 +106,15 @@
       )
         return null;
       var i = [];
-      i.push(e('float', s.FLOAT, Float32Array)), r.OES_texture_half_float && i.push(e('half_float', r.OES_texture_half_float.HALF_FLOAT_OES, null));
+      (i.push(e('float', s.FLOAT, Float32Array)), r.OES_texture_half_float && i.push(e('half_float', r.OES_texture_half_float.HALF_FLOAT_OES, null)));
       var o = s.createTexture(),
         n = s.createFramebuffer();
-      s.bindFramebuffer(s.FRAMEBUFFER, n),
+      (s.bindFramebuffer(s.FRAMEBUFFER, n),
         s.bindTexture(s.TEXTURE_2D, o),
         s.texParameteri(s.TEXTURE_2D, s.TEXTURE_MIN_FILTER, s.NEAREST),
         s.texParameteri(s.TEXTURE_2D, s.TEXTURE_MAG_FILTER, s.NEAREST),
         s.texParameteri(s.TEXTURE_2D, s.TEXTURE_WRAP_S, s.CLAMP_TO_EDGE),
-        s.texParameteri(s.TEXTURE_2D, s.TEXTURE_WRAP_T, s.CLAMP_TO_EDGE);
+        s.texParameteri(s.TEXTURE_2D, s.TEXTURE_WRAP_T, s.CLAMP_TO_EDGE));
       for (var a = null, u = 0; u < i.length; u++)
         if (
           (s.texImage2D(s.TEXTURE_2D, 0, s.RGBA, 32, 32, 0, s.RGBA, i[u].type, null),
@@ -139,16 +139,16 @@
       o.destroyed || (o.step(), requestAnimationFrame(i));
     }
     var o = this;
-    (this.$el = e(t)),
+    ((this.$el = e(t)),
       (this.interactive = r.interactive),
       (this.resolution = r.resolution),
       (this.textureDelta = new Float32Array([1 / this.resolution, 1 / this.resolution])),
       (this.perturbance = r.perturbance),
       (this.dropRadius = r.dropRadius),
       (this.crossOrigin = r.crossOrigin),
-      (this.imageUrl = r.imageUrl);
+      (this.imageUrl = r.imageUrl));
     var n = document.createElement('canvas');
-    (n.width = this.$el.innerWidth()),
+    ((n.width = this.$el.innerWidth()),
       (n.height = this.$el.innerHeight()),
       (this.canvas = n),
       (this.$canvas = e(n)),
@@ -170,11 +170,11 @@
       (this.textures = []),
       (this.framebuffers = []),
       (this.bufferWriteIndex = 0),
-      (this.bufferReadIndex = 1);
+      (this.bufferReadIndex = 1));
     for (var a = h.arrayType, u = a ? new a(this.resolution * this.resolution * 4) : null, d = 0; d < 2; d++) {
       var c = s.createTexture(),
         f = s.createFramebuffer();
-      s.bindFramebuffer(s.FRAMEBUFFER, f),
+      (s.bindFramebuffer(s.FRAMEBUFFER, f),
         s.bindTexture(s.TEXTURE_2D, c),
         s.texParameteri(s.TEXTURE_2D, s.TEXTURE_MIN_FILTER, h.linearSupport ? s.LINEAR : s.NEAREST),
         s.texParameteri(s.TEXTURE_2D, s.TEXTURE_MAG_FILTER, h.linearSupport ? s.LINEAR : s.NEAREST),
@@ -183,9 +183,9 @@
         s.texImage2D(s.TEXTURE_2D, 0, s.RGBA, this.resolution, this.resolution, 0, s.RGBA, h.type, u),
         s.framebufferTexture2D(s.FRAMEBUFFER, s.COLOR_ATTACHMENT0, s.TEXTURE_2D, c, 0),
         this.textures.push(c),
-        this.framebuffers.push(f);
+        this.framebuffers.push(f));
     }
-    (this.quad = s.createBuffer()),
+    ((this.quad = s.createBuffer()),
       s.bindBuffer(s.ARRAY_BUFFER, this.quad),
       s.bufferData(s.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, 1, 1, -1, 1]), s.STATIC_DRAW),
       this.initShaders(),
@@ -199,9 +199,9 @@
       (this.inited = !0),
       (this.destroyed = !1),
       this.setupPointerEvents(),
-      requestAnimationFrame(i);
+      requestAnimationFrame(i));
   };
-  (c.DEFAULTS = {
+  ((c.DEFAULTS = {
     imageUrl: null,
     resolution: 256,
     dropRadius: 20,
@@ -236,35 +236,35 @@
         if (t != this.imageSource)
           if (((this.imageSource = t), this.imageSource)) {
             var r = new Image();
-            (r.onload = function () {
+            ((r.onload = function () {
               function t(e) {
                 return 0 == (e & (e - 1));
               }
               s = e.context;
               var i = t(r.width) && t(r.height) ? s.REPEAT : s.CLAMP_TO_EDGE;
-              s.bindTexture(s.TEXTURE_2D, e.backgroundTexture),
+              (s.bindTexture(s.TEXTURE_2D, e.backgroundTexture),
                 s.texParameteri(s.TEXTURE_2D, s.TEXTURE_WRAP_S, i),
                 s.texParameteri(s.TEXTURE_2D, s.TEXTURE_WRAP_T, i),
                 s.texImage2D(s.TEXTURE_2D, 0, s.RGBA, s.RGBA, s.UNSIGNED_BYTE, r),
                 (e.backgroundWidth = r.width),
                 (e.backgroundHeight = r.height),
-                e.hideCssBackground();
+                e.hideCssBackground());
             }),
               (r.onerror = function () {
-                (s = e.context), e.setTransparentTexture();
+                ((s = e.context), e.setTransparentTexture());
               }),
               (r.crossOrigin = a(this.imageSource) ? null : this.crossOrigin),
-              (r.src = this.imageSource);
+              (r.src = this.imageSource));
           } else this.setTransparentTexture();
       },
       step: function () {
-        (s = this.context), this.visible && (this.computeTextureBoundaries(), this.running && this.update(), this.render());
+        ((s = this.context), this.visible && (this.computeTextureBoundaries(), this.running && this.update(), this.render()));
       },
       drawQuad: function () {
-        s.bindBuffer(s.ARRAY_BUFFER, this.quad), s.vertexAttribPointer(0, 2, s.FLOAT, !1, 0, 0), s.drawArrays(s.TRIANGLE_FAN, 0, 4);
+        (s.bindBuffer(s.ARRAY_BUFFER, this.quad), s.vertexAttribPointer(0, 2, s.FLOAT, !1, 0, 0), s.drawArrays(s.TRIANGLE_FAN, 0, 4));
       },
       render: function () {
-        s.bindFramebuffer(s.FRAMEBUFFER, null),
+        (s.bindFramebuffer(s.FRAMEBUFFER, null),
           s.viewport(0, 0, this.canvas.width, this.canvas.height),
           s.enable(s.BLEND),
           s.clear(s.COLOR_BUFFER_BIT | s.DEPTH_BUFFER_BIT),
@@ -278,18 +278,18 @@
           s.uniform1i(this.renderProgram.locations.samplerBackground, 0),
           s.uniform1i(this.renderProgram.locations.samplerRipples, 1),
           this.drawQuad(),
-          s.disable(s.BLEND);
+          s.disable(s.BLEND));
       },
       update: function () {
-        s.viewport(0, 0, this.resolution, this.resolution),
+        (s.viewport(0, 0, this.resolution, this.resolution),
           s.bindFramebuffer(s.FRAMEBUFFER, this.framebuffers[this.bufferWriteIndex]),
           o(this.textures[this.bufferReadIndex]),
           s.useProgram(this.updateProgram.id),
           this.drawQuad(),
-          this.swapBufferIndices();
+          this.swapBufferIndices());
       },
       swapBufferIndices: function () {
-        (this.bufferWriteIndex = 1 - this.bufferWriteIndex), (this.bufferReadIndex = 1 - this.bufferReadIndex);
+        ((this.bufferWriteIndex = 1 - this.bufferWriteIndex), (this.bufferReadIndex = 1 - this.bufferReadIndex));
       },
       computeTextureBoundaries: function () {
         var e,
@@ -316,23 +316,23 @@
         else {
           var s = (i = i.split(' '))[0] || '',
             h = i[1] || s;
-          t(s) ? (s = (e.width * parseFloat(s)) / 100) : 'auto' != s && (s = parseFloat(s)),
+          (t(s) ? (s = (e.width * parseFloat(s)) / 100) : 'auto' != s && (s = parseFloat(s)),
             t(h) ? (h = (e.height * parseFloat(h)) / 100) : 'auto' != h && (h = parseFloat(h)),
             'auto' == s && 'auto' == h
               ? ((s = this.backgroundWidth), (h = this.backgroundHeight))
               : ('auto' == s && (s = this.backgroundWidth * (h / this.backgroundHeight)),
-                'auto' == h && (h = this.backgroundHeight * (s / this.backgroundWidth)));
+                'auto' == h && (h = this.backgroundHeight * (s / this.backgroundWidth))));
         }
         var d = n[0],
           c = n[1];
-        (d = t(d) ? e.left + ((e.width - s) * parseFloat(d)) / 100 : e.left + parseFloat(d)),
-          (c = t(c) ? e.top + ((e.height - h) * parseFloat(c)) / 100 : e.top + parseFloat(c));
+        ((d = t(d) ? e.left + ((e.width - s) * parseFloat(d)) / 100 : e.left + parseFloat(d)),
+          (c = t(c) ? e.top + ((e.height - h) * parseFloat(c)) / 100 : e.top + parseFloat(c)));
         var f = this.$el.offset();
-        (this.renderProgram.uniforms.topLeft = new Float32Array([(f.left - d) / s, (f.top - c) / h])),
+        ((this.renderProgram.uniforms.topLeft = new Float32Array([(f.left - d) / s, (f.top - c) / h])),
           (this.renderProgram.uniforms.bottomRight = new Float32Array([
             this.renderProgram.uniforms.topLeft[0] + this.$el.innerWidth() / s,
             this.renderProgram.uniforms.topLeft[1] + this.$el.innerHeight() / h,
-          ]));
+          ])));
         var l = Math.max(this.canvas.width, this.canvas.height);
         this.renderProgram.uniforms.containerRatio = new Float32Array([this.canvas.width / l, this.canvas.height / l]);
       },
@@ -345,7 +345,7 @@
           'gl_Position = vec4(vertex, 0.0, 1.0);',
           '}',
         ].join('\n');
-        (this.dropProgram = i(
+        ((this.dropProgram = i(
           e,
           [
             'precision highp float;',
@@ -425,17 +425,17 @@
               '}',
             ].join('\n')
           )),
-          s.uniform2fv(this.renderProgram.locations.delta, this.textureDelta);
+          s.uniform2fv(this.renderProgram.locations.delta, this.textureDelta));
       },
       initTexture: function () {
-        (this.backgroundTexture = s.createTexture()),
+        ((this.backgroundTexture = s.createTexture()),
           s.bindTexture(s.TEXTURE_2D, this.backgroundTexture),
           s.pixelStorei(s.UNPACK_FLIP_Y_WEBGL, 1),
           s.texParameteri(s.TEXTURE_2D, s.TEXTURE_MAG_FILTER, s.LINEAR),
-          s.texParameteri(s.TEXTURE_2D, s.TEXTURE_MIN_FILTER, s.LINEAR);
+          s.texParameteri(s.TEXTURE_2D, s.TEXTURE_MIN_FILTER, s.LINEAR));
       },
       setTransparentTexture: function () {
-        s.bindTexture(s.TEXTURE_2D, this.backgroundTexture), s.texImage2D(s.TEXTURE_2D, 0, s.RGBA, s.RGBA, s.UNSIGNED_BYTE, d);
+        (s.bindTexture(s.TEXTURE_2D, this.backgroundTexture), s.texImage2D(s.TEXTURE_2D, 0, s.RGBA, s.RGBA, s.UNSIGNED_BYTE, d));
       },
       hideCssBackground: function () {
         var e = this.$el[0].style.backgroundImage;
@@ -457,7 +457,7 @@
           u = Math.max(n, a);
         r /= u;
         var h = new Float32Array([(2 * e - n) / u, (a - 2 * t) / u]);
-        s.viewport(0, 0, this.resolution, this.resolution),
+        (s.viewport(0, 0, this.resolution, this.resolution),
           s.bindFramebuffer(s.FRAMEBUFFER, this.framebuffers[this.bufferWriteIndex]),
           o(this.textures[this.bufferReadIndex]),
           s.useProgram(this.dropProgram.id),
@@ -465,7 +465,7 @@
           s.uniform1f(this.dropProgram.locations.radius, r),
           s.uniform1f(this.dropProgram.locations.strength, i),
           this.drawQuad(),
-          this.swapBufferIndices();
+          this.swapBufferIndices());
       },
       updateSize: function () {
         var e = this.$el.innerWidth(),
@@ -473,18 +473,18 @@
         (e == this.canvas.width && t == this.canvas.height) || ((this.canvas.width = e), (this.canvas.height = t));
       },
       destroy: function () {
-        this.$el.off('.ripples').removeClass('jquery-ripples').removeData('ripples'),
+        (this.$el.off('.ripples').removeClass('jquery-ripples').removeData('ripples'),
           (s = null),
           e(window).off('resize', this.updateSize),
           this.$canvas.remove(),
           this.restoreCssBackground(),
-          (this.destroyed = !0);
+          (this.destroyed = !0));
       },
       show: function () {
-        (this.visible = !0), this.$canvas.show(), this.hideCssBackground();
+        ((this.visible = !0), this.$canvas.show(), this.hideCssBackground());
       },
       hide: function () {
-        (this.visible = !1), this.$canvas.hide(), this.restoreCssBackground();
+        ((this.visible = !1), this.$canvas.hide(), this.restoreCssBackground());
       },
       pause: function () {
         this.running = !1;
@@ -501,12 +501,12 @@
             this[e] = t;
             break;
           case 'imageUrl':
-            (this.imageUrl = t), this.loadImage();
+            ((this.imageUrl = t), this.loadImage());
         }
       },
-    });
+    }));
   var f = e.fn.ripples;
-  (e.fn.ripples = function (t) {
+  ((e.fn.ripples = function (t) {
     if (!h) throw new Error('Your browser does not support WebGL, the OES_texture_float extension or rendering to floating point textures.');
     var r = arguments.length > 1 ? Array.prototype.slice.call(arguments, 1) : void 0;
     return this.each(function () {
@@ -518,6 +518,6 @@
   }),
     (e.fn.ripples.Constructor = c),
     (e.fn.ripples.noConflict = function () {
-      return (e.fn.ripples = f), this;
-    });
+      return ((e.fn.ripples = f), this);
+    }));
 });

@@ -5,8 +5,8 @@ html {
 }
 body {
   font-size: 1.2rem;
-  font-family: 'M PLUS 1p', 'Open Sans', '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック',
-    sans-serif;
+  font-family:
+    'M PLUS 1p', 'Open Sans', '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-backface-visibility: hidden;
