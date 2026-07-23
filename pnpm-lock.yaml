@@ -15,8 +15,8 @@ importers:
         specifier: 3.8.5
         version: 3.8.5
       sass:
-        specifier: 1.101.3
-        version: 1.101.3
+        specifier: 1.101.5
+        version: 1.101.5
 
 packages:
 
@@ -253,8 +253,8 @@ packages:
   safe-buffer@5.2.1:
     resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
 
-  sass@1.101.3:
-    resolution: {integrity: sha512-Z1lLHhtAII+dyLNIQB6JQTZMy7sDxk3f5NzbINRc9ks1P0HCGvSuKev0wUhULFpLSaHBIMZrcTs9WDQUZerrgA==}
+  sass@1.101.5:
+    resolution: {integrity: sha512-lSQKnEQmUH8yXmCxE2IzdrA6PIDPXivAWUjmfaUYtBMvzCZzFsNwVM63UOSTEid0Cp5LnoHD2PD8yWeiaAFqJg==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -486,7 +486,7 @@ snapshots:
 
   safe-buffer@5.2.1: {}
 
-  sass@1.101.3:
+  sass@1.101.5:
     dependencies:
       chokidar: 5.0.0
       immutable: 5.1.9
